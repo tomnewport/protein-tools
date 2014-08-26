@@ -6,7 +6,7 @@ This library allows PDB ePISA Interface data to be downloaded, accessed and
 searched. It may be imported as a python module or called via command line
 arguments.
 
-Run python pintlib.py help for command line help.
+Run python pisaint.py help for command line help.
 """
 
 import os
@@ -304,24 +304,24 @@ def print_help():
     """Prints the command line documentation for the PISA Interface Search
     Library"""
     helpstring = '''
-pintlib command line
+pisaint command line
 ====================
 Tom Newport 2014
 
 Any problems, questions or suggestions, email me (tom.newport@gmail.com)
 
-PISA Interface Library (pintlib) may be called in one of 3 ways:
+PISA Interface Library (pisaint) may be called in one of 3 ways:
 
-1: Simple - python pintlib.py [pdb_id] [chain] [start] [end]
-   Example: >> python pintlib.py 2y26 A 10 300
+1: Simple - python pisaint.py [pdb_id] [chain] [start] [end]
+   Example: >> python pisaint.py 2y26 A 10 300
             This will print all PISA interfaces present between
             residues 10 and 300 of chain A of pdb molecule 2y26
 
-2: Batch -  python pintlib.py [pdb_id] [chain] [start] [end] [output]
+2: Batch -  python pisaint.py [pdb_id] [chain] [start] [end] [output]
             This will output to the specified file rather than print
             to the command window.
 
-3: Advanced-python pintlib.py [pdb_id] [chain] [start] [end] [output] [cache]
+3: Advanced-python pisaint.py [pdb_id] [chain] [start] [end] [output] [cache]
             This allows the PISA data cache to be specified.
 
 
