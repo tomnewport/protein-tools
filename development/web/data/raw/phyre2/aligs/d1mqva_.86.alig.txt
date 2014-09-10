@@ -1,0 +1,14 @@
+86 d1mqva_ Probab=17.98   E-value=48  Score=10.63  Aligned_columns=35  Identities=9%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHH
+Q ss_conf             99999999875554430654256774356799989
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHI  105 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  105 (1200)
+                      .+.+.|..+|--||.|++|.--|+.......-..|
+T Consensus        10 ~~m~~~~~~~~~l~~m~kg~~~~da~~~~~~a~~l   44 (123)
+T d1mqva_          10 AILKQMGEATKPIAAMLKGEAKWDQAVVQKSLAAI   44 (123)
+T ss_dssp             HHHHHHHHHHHHHHHHHHTSSCCCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCHHHHHHHHHHH
+T ss_conf             99999999999999996498889999999999999
+
+

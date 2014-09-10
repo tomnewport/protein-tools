@@ -1,0 +1,14 @@
+30 c2khdA_ Probab=40.13   E-value=5.9  Score=17.13  Aligned_columns=13  Identities=15%
+
+Q ss_pred             HHHHHHHHCCCCC
+Q ss_conf             8755544306542
+Q phyrecall_frag   79 SLADYKDIFQGKD   91 (1200)
+Q Consensus        79 ~~~~~~~~~~~~~   91 (1200)
+                      +|+|||-||.+.|
+T Consensus        17 c~vDIGtIId~~D   29 (108)
+T c2khdA_          17 CAGEIGFIIREGD   29 (108)
+T ss_dssp             CCCCSCCSCCCST
+T ss_pred             CEEEEEEEECCCC
+T ss_conf             3155423353897
+
+

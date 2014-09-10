@@ -1,0 +1,14 @@
+96 d1w0da_ Probab=16.60   E-value=49  Score=10.58  Aligned_columns=12  Identities=33%
+
+Q ss_pred             HHHHHHHHHHHH
+Q ss_conf             578898988999
+Q phyrecall_frag  156 FLRFFAEWEEEF  167 (1200)
+Q Consensus       156 ~~~~~~~~~~~~  167 (1200)
+                      |++||.|||..|
+T Consensus       190 f~~~~~eva~ey  201 (337)
+T d1w0da_         190 WLRTVDEVGECY  201 (337)
+T ss_dssp             HHHHHHHHHTTC
+T ss_pred             HHHHHHHHHHHC
+T ss_conf             999999998767
+
+

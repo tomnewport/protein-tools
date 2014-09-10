@@ -1,0 +1,14 @@
+28 d2nv0a1 Probab=41.02   E-value=20  Score=13.42  Aligned_columns=24  Identities=21%
+
+Q ss_pred             CCCCCCCCCCCHHHHHHHHHHHHH
+Q ss_conf             899998242651578898988999
+Q phyrecall_frag  144 CEERSRDDTEDQFLRFFAEWEEEF  167 (1200)
+Q Consensus       144 ~~~~~~~~~~~~~~~~~~~~~~~~  167 (1200)
+                      +.+||.+..-|++||||-+|...|
+T Consensus       163 ~QfHPE~~~~~~~~~~fi~~~~~~  186 (191)
+T d2nv0a1         163 CSFHPELTEDHRVTQLFVEMVEEY  186 (191)
+T ss_dssp             ESSCTTSSSCCHHHHHHHHHHHHH
+T ss_pred             EEECCCCCCCHHHHHHHHHHHHHH
+T ss_conf             950873268868999999999998
+
+

@@ -1,0 +1,14 @@
+74 c1n0zA_ Probab=20.47   E-value=43  Score=11.00  Aligned_columns=32  Identities=28%
+
+Q ss_pred             CCCCCCCCCCCCCCCCC-CCCCCCCHHHHHHHH
+Q ss_conf             98776768674004578-876587355654067
+Q phyrecall_frag    1 MSNINNKDSSTEWNCKE-DVGCVPPRRQNLNME   32 (1200)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~   32 (1200)
+                      ||..|.....+-|.|.+ .=..+=|+|...|.+
+T Consensus         3 ~s~~~~~~~~gDW~C~~~~C~~~NFa~R~~C~r   35 (45)
+T c1n0zA_           3 MSTKNFRVSDGDWICPDKKCGNVNFARRTSCDR   35 (45)
+T ss_dssp             SCCSSCSSCSSSCBCSSTTTCCBCCSSCSBCSS
+T ss_pred             CCCCCCCCCCCCCCCCCCCCCCEECHHHHHHHC
+T ss_conf             777888877887038875668211145401111
+
+

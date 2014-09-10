@@ -1,0 +1,14 @@
+90 c2w36B_ Probab=17.75   E-value=49  Score=10.59  Aligned_columns=13  Identities=15%
+
+Q ss_pred             CCCCCCCCHHHHH
+Q ss_conf             9982426515788
+Q phyrecall_frag  147 RSRDDTEDQFLRF  159 (1200)
+Q Consensus       147 ~~~~~~~~~~~~~  159 (1200)
+                      +..|.|||.||-|
+T Consensus        75 ~~~~PYIPG~LaF   87 (223)
+T c2w36B_          75 EITFPYIPGLLAF   87 (223)
+T ss_dssp             ECCSCCCTTCTHH
+T ss_pred             ECCCCCCCHHHHH
+T ss_conf             3157832404667
+
+

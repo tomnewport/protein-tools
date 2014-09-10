@@ -1,0 +1,14 @@
+33 d1j1va_ Probab=35.43   E-value=24  Score=12.82  Aligned_columns=50  Identities=24%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHHHHHCCC----CHHHHHHHHHH-----HHHHHHHHCCCCC
+Q ss_conf             11578999999975533777654389----98899999999-----8755544306542
+Q phyrecall_frag   42 VPDFMKKTFYLAAAGEGKKLREKHDE----SCDEFCDAWNR-----SLADYKDIFQGKD   91 (1200)
+Q Consensus        42 ~~~~~~~~~~~~~~~~~~~~~~~~~~----~~~~~~~~~~~-----~~~~~~~~~~~~~   91 (1200)
+                      +.+.++..||-.-.=...-|+..-..    ..-++|++|+|     ||.+||..+.|||
+T Consensus         2 t~e~Ii~~Va~~f~i~~~~i~s~~R~~~i~~aR~iamyL~r~~~~~sl~~Ig~~fg~Rd   60 (94)
+T d1j1va_           2 TIDNIQKTVAEYYKIKVADLLSKRRSRSVARPRQXAXALAKELTNHSLPEIGDAFGGRD   60 (94)
+T ss_dssp             CHHHHHHHHHHHTTCCHHHHHSCCCCHHHHHHHHHHHHHHHHHSCCCHHHHHHHTTSCC
+T ss_pred             CHHHHHHHHHHHHCCCHHHHHCCCCCHHHHHHHHHHHHHHHHHHCCCHHHHHHHHCCCC
+T ss_conf             88999999999928999998478745025357888999999980999899999967988
+
+

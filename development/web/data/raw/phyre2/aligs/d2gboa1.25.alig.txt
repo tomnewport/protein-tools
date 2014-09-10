@@ -1,0 +1,14 @@
+25 d2gboa1 Probab=45.04   E-value=17  Score=13.84  Aligned_columns=37  Identities=19%
+
+Q ss_pred             HHHHHHHCCCCCCHHHHHHHCCHHHHHHHHHHHHHHH
+Q ss_conf             9999875378832678742000567889998899999
+Q phyrecall_frag  174 HEEQLKSCTKDINCDIKCSNFKDWLETKKDEYDIQSR  210 (1200)
+Q Consensus       174 ~~~~~~~~~~~~~c~~~c~~~~~~~~~~~~~~~~q~~  210 (1200)
+                      ++..++..|.+--|...|--|.+-||.|-=.|.++.+
+T Consensus        20 kI~~Li~~q~~~Lcl~~CPa~EEViDTQ~yGlSkeV~   56 (82)
+T d2gboa1          20 RIKXLIRNQKNSLCISQCKAFEEVVDTQXYGFSRQVT   56 (82)
+T ss_dssp             HHHHHHHHHHTCCHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHCCHHHCHHHHHHHHHHHHCCHHHHH
+T ss_conf             9999999997641410073699986333315014412
+
+

@@ -1,0 +1,14 @@
+93 d1t1ua2 Probab=17.15   E-value=50  Score=10.50  Aligned_columns=21  Identities=38%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHCC
+Q ss_conf             988999999998755544306
+Q phyrecall_frag   68 SCDEFCDAWNRSLADYKDIFQ   88 (1200)
+Q Consensus        68 ~~~~~~~~~~~~~~~~~~~~~   88 (1200)
+                      +...||.+|.+|+.||.+|+.
+T Consensus       194 ~~~~f~~~L~~al~di~~ll~  214 (215)
+T d1t1ua2         194 SSVEFAEAVGASLVDMRDLCS  214 (215)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHHC
+T ss_pred             CHHHHHHHHHHHHHHHHHHHC
+T ss_conf             789999999999999999860
+
+

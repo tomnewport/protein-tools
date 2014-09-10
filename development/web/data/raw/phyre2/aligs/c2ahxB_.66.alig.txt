@@ -1,0 +1,14 @@
+66 c2ahxB_ Probab=23.40   E-value=36  Score=11.56  Aligned_columns=12  Identities=25%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+++
+T Consensus        80 ~irg~~l~~~~~   91 (615)
+T c2ahxB_          80 IIRGTKLYEDRY   91 (615)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EEECCEEECCCE
+T ss_conf             870434531660
+
+

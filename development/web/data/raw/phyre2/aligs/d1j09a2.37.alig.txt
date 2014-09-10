@@ -1,0 +1,14 @@
+37 d1j09a2 Probab=30.40   E-value=28  Score=12.26  Aligned_columns=36  Identities=14%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCC-CCCCHHHHHHHHHHHHH
+Q ss_conf             99999999875554430654256-77435679998999998
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIFQGKDMW-NDGKYGEAKNHIKNAFG  110 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~  110 (1200)
+                      .++.++-.++-.|-.||||.|+. +..    .+..|-..||
+T Consensus       188 ~fA~vVDD~~~gIThviRG~d~l~st~----~Q~~l~~aLg  224 (305)
+T d1j09a2         188 HLANVVDDHLMGVTDVIRAEEWLVSTP----IHVLLYRAFG  224 (305)
+T ss_dssp             HHHHHHHHHHTTCCEEEEEGGGGGGHH----HHHHHHHHHT
+T ss_pred             HCHHHHCCHHCCCCEEEECCHHHCCCH----HHHHHHHHCC
+T ss_conf             061111101139983774312215928----9999999828
+
+

@@ -1,0 +1,14 @@
+91 d2zjrh1 Probab=17.28   E-value=18  Score=13.67  Aligned_columns=12  Identities=25%
+
+Q ss_pred             HHHHHHHHHCCC
+Q ss_conf             987555443065
+Q phyrecall_frag   78 RSLADYKDIFQG   89 (1200)
+Q Consensus        78 ~~~~~~~~~~~~   89 (1200)
+                      |.||-+||+|.+
+T Consensus        42 ~~~a~vGD~I~v   53 (134)
+T d2zjrh1          42 KRYAHVGDIIVA   53 (134)
+T ss_dssp             CCCBCTTCEEEE
+T ss_pred             CCCCCCCCEEEE
+T ss_conf             545553889999
+
+

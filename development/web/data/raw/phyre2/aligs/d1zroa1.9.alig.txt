@@ -1,0 +1,62 @@
+9 d1zroa1 Probab=100.00  E-value=0  Score=475.08  Aligned_columns=248  Identities=22%
+
+Q ss_pred             CCCCCCCCCCCCCCCCC-----CCCCCCCHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHH
+Q ss_conf             98776768674004578-----87658735565406777640023311578999999975
+Q phyrecall_frag    1 MSNINNKDSSTEWNCKE-----DVGCVPPRRQNLNMERLDNENEDSVPDFMKKTFYLAAA   55 (1200)
+Q Consensus         1 ~~~~~~~~~~~~~~~~~-----~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   55 (1200)
+                      |.+-|+|++...|+|+.     +++||||||+|||++||..+ .....+.|+.+|+.||+
+T Consensus         4 i~~C~~K~~~~~W~c~~~~~~~~gvcvPPRR~~LC~~~l~~~-~~~~~~~l~~~fi~~A~   62 (273)
+T d1zroa1           4 LSNCREKRKGMKWDCKKKNDRSNYVCIPDRRIQLCIVNLAII-KTYTKETMKDHFIEASK   62 (273)
+T ss_dssp             GGGSCCCCCSCCEEEECSSTTSCCEEEEHHHHHCCCHHHHHS-CCCCHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCCCCCCCCCCCCCCCEECCHHHHHHHHHHHHHC-CCCCHHHHHHHHHHHHH
+T ss_conf             645667888887755877888698673713776552101104-46885789999999999
+
+
+Q ss_pred             HHHHHHHHHC-CCCHHHHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHHHHHHHHHC-
+Q ss_conf             5337776543-899889999999987555443065425677435679998999998514-
+Q phyrecall_frag   56 GEGKKLREKH-DESCDEFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHIKNAFGDMN-  113 (1200)
+Q Consensus        56 ~~~~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  113 (1200)
+                      +||..|+.+| +++++.||+||.||||||||||||+|||.++..++|+.+|+.||++++ 
+T Consensus        63 ~E~~~l~~ky~~~~~~~~c~~m~ySfaDy~DIi~G~D~~~~~~~~~i~~~i~~if~~~~~  122 (273)
+T d1zroa1          63 KESQLLLKKNDNKYNSKFCNDLKNSFLDYGHLAMGNDMDFGGYSTKAENKIQEVFKGAHG  122 (273)
+T ss_dssp             HHHHHHHHHTTTCCSHHHHHHHHHHHHHHHHHHHTCCCCCSHHHHHHHHHHHHHHHHHHC
+T ss_pred             HHHHHHHHHCCCCCHHHHHHHHHHHHHHHHHHHCCCCCCCCCCHHHHHHHHHHHHHCCCC
+T ss_conf             999999985178881799999998599867675176557788688999999998300467
+
+
+Q ss_pred             -----CHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHH
+Q ss_conf             -----7157799985201788997530477787778999982426515788989889999
+Q phyrecall_frag  114 -----NRKTMLNEIEKGIKDETFSRENGLDVCKSQCEERSRDDTEDQFLRFFAEWEEEFC  168 (1200)
+Q Consensus       114 -----~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  168 (1200)
+                           ++..+|++||.+||++||.||+|++..+.   .++++|++|||||||.||||+||
+T Consensus       123 ~~~~~~~~~~r~~WW~~n~~~IW~aM~C~~~~~~---~~~~~~~~pQflRWf~EW~e~FC  179 (273)
+T d1zroa1         123 EISEHKIKNFRKKWWNEFREKLWEAMLSEHKNNI---CKNIPQEELQITQWIKEWHGEFL  179 (273)
+T ss_dssp             SCCHHHHHHHHHHHHHHHHHHHHHHHHTTCSCCC---CCSCCCCCCHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCHHHHHHHHHHHHHHHHHHCCCCCC---CCCCCHHHHHHHHHHHHHHHHHH
+T ss_conf             8888764332589999899998876610356887---78871034689989999999999
+
+
+Q ss_pred             HHHHHHHHHHHHCCC--------CCCHHHHHHHCCHHHHHHHHHHHHHHHHHHHHHCCCC
+Q ss_conf             999999999875378--------8326787420005678899988999999888721667
+Q phyrecall_frag  169 DGLNKHEEQLKSCTK--------DINCDIKCSNFKDWLETKKDEYDIQSRVFEKKYANDN  220 (1200)
+Q Consensus       169 ~~~~~~~~~~~~~~~--------~~~c~~~c~~~~~~~~~~~~~~~~q~~~y~~~~~~~~  220 (1200)
+                      ++++++++.|+..|.        |..|..+|..|+.||.+||.||++|+.+|.+.+.+..
+T Consensus       180 ~~~~~~~~~lk~~C~~~~~~~~c~~~Ck~~C~~Yk~WI~~kk~Ew~~qk~kY~~~k~~~~  239 (273)
+T d1zroa1         180 LERDNRAKLPKSKCKNNALYEACEKECIDPCMKYRDWIIRSKFEWHTLSKEYETQKVPKE  239 (273)
+T ss_dssp             HHHHHHTHHHHHHHTTSCSSGGGSHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCSSCC
+T ss_pred             HHHHHHHHHHHHHHCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCC
+T ss_conf             999999998898620788787668546762288999999999999999999998641336
+
+
+Q ss_pred             CCCCC-CHHHHHHHHHHHCCHHHHHHHHHHHHC
+Q ss_conf             87742-002456664332011134566421101
+Q phyrecall_frag  221 KSKHL-NYLKEGMNKCKVKNPEMVFKSGFANVA  252 (1200)
+Q Consensus       221 ~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~  252 (1200)
+                      ...+. .........+.+..+...+...+...|
+T Consensus       240 ~~~~~~~~~~~~~~~~~~~~~~~~~~~ey~k~C  272 (273)
+T d1zroa1         240 NAENYLIKISENKNDAKVSLLLNNCDAEYSKYC  272 (273)
+T ss_dssp             CHHHHHHHHCSSSSTTCHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHC
+T ss_conf             666654322245654667666754467764305
+
+

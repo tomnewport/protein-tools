@@ -1,0 +1,14 @@
+97 c2voiB_ Probab=16.52   E-value=52  Score=10.39  Aligned_columns=18  Identities=33%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHH
+Q ss_conf             988999999998755544
+Q phyrecall_frag   68 SCDEFCDAWNRSLADYKD   85 (1200)
+Q Consensus        68 ~~~~~~~~~~~~~~~~~~   85 (1200)
+                      +-..+-+-+||-+|.|||
+T Consensus         1 sqeeiihniarhlaqigd   18 (26)
+T c2voiB_           1 SQEEIIHNIARHLAQIGD   18 (26)
+T ss_dssp             CHHHHHHHHHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHH
+T ss_conf             988999999999999855
+
+

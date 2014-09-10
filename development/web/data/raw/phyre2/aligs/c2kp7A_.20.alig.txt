@@ -1,0 +1,14 @@
+20 c2kp7A_ Probab=63.03   E-value=5.6  Score=17.32  Aligned_columns=13  Identities=38%
+
+Q ss_pred             CHHHHHHHHHHHH
+Q ss_conf             5157889898899
+Q phyrecall_frag  154 DQFLRFFAEWEEE  166 (1200)
+Q Consensus       154 ~~~~~~~~~~~~~  166 (1200)
+                      |=|++||+||.+.
+T Consensus         9 ~lf~~wL~e~~~~   21 (80)
+T c2kp7A_           9 PLFVRWLTEWRDE   21 (80)
+T ss_dssp             CHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHH
+T ss_conf             8999999999999
+
+

@@ -1,0 +1,14 @@
+92 c1q6xA_ Probab=17.27   E-value=50  Score=10.52  Aligned_columns=23  Identities=35%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHCCCC
+Q ss_conf             98899999999875554430654
+Q phyrecall_frag   68 SCDEFCDAWNRSLADYKDIFQGK   90 (1200)
+Q Consensus        68 ~~~~~~~~~~~~~~~~~~~~~~~   90 (1200)
+                      +...||.+|.+|+.||.+|+.+|
+T Consensus       578 ~~~~f~~~L~~al~~i~~ll~~~  600 (600)
+T c1q6xA_         578 SSVEFAEAVGASLVDMRDLCSSR  600 (600)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHHHTC
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHCC
+T ss_conf             98999999999999999987359
+
+

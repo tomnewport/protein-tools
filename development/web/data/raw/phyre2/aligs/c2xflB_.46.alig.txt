@@ -1,0 +1,14 @@
+46 c2xflB_ Probab=27.78   E-value=31  Score=11.96  Aligned_columns=19  Identities=16%
+
+Q ss_pred             CCCHHHHHHHHHHHHHHHH
+Q ss_conf             2651578898988999999
+Q phyrecall_frag  152 TEDQFLRFFAEWEEEFCDG  170 (1200)
+Q Consensus       152 ~~~~~~~~~~~~~~~~~~~  170 (1200)
+                      |-++||+||++=.+.|++.
+T Consensus        21 ~~~~Y~~~~e~ar~~~~~~   39 (141)
+T c2xflB_          21 YFAHYLHWQGHCREHFLAD   39 (141)
+T ss_dssp             CTTHHHHHHHHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHH
+T ss_conf             1189999999999999997
+
+

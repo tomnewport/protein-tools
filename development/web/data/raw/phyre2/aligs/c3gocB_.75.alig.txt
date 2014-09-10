@@ -1,0 +1,14 @@
+75 c3gocB_ Probab=19.75   E-value=24  Score=12.79  Aligned_columns=17  Identities=12%
+
+Q ss_pred             CCCCCCCCCCCCHHHHH
+Q ss_conf             78999982426515788
+Q phyrecall_frag  143 QCEERSRDDTEDQFLRF  159 (1200)
+Q Consensus       143 ~~~~~~~~~~~~~~~~~  159 (1200)
+                      ++..+..|.|||.||-|
+T Consensus        74 ~~~~~~~~PYIPG~LaF   90 (228)
+T c3gocB_          74 TAVGEVSFPYVPGLLAF   90 (228)
+T ss_dssp             EEEEECCSCCCTTCGGG
+T ss_pred             EEEEECCCCCCCHHHHH
+T ss_conf             88742368832404667
+
+

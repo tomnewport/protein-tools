@@ -1,0 +1,14 @@
+41 c3s8vX_ Probab=29.53   E-value=11  Score=15.15  Aligned_columns=18  Identities=22%
+
+Q ss_pred             CCCCCCCCCCHHHHHHHH
+Q ss_conf             578876587355654067
+Q phyrecall_frag   15 CKEDVGCVPPRRQNLNME   32 (1200)
+Q Consensus        15 ~~~~~~~~~~~~~~~~~~   32 (1200)
+                      |..++.|.|.+|+|+|.+
+T Consensus        56 C~~GL~C~~~~r~~~Cq~   73 (73)
+T c3s8vX_          56 CGEGLSCRIQSRLHTCQR   73 (73)
+T ss_dssp             BCTTCCEEECCCCEEEC-
+T ss_pred             CCCCCEEEECCCCCCCCC
+T ss_conf             853766985175411339
+
+

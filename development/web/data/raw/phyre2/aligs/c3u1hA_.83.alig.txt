@@ -1,0 +1,14 @@
+83 c3u1hA_ Probab=18.46   E-value=42  Score=11.09  Aligned_columns=12  Identities=17%
+
+Q ss_pred             HHHHHHHHHHHH
+Q ss_conf             578898988999
+Q phyrecall_frag  156 FLRFFAEWEEEF  167 (1200)
+Q Consensus       156 ~~~~~~~~~~~~  167 (1200)
+                      |++||.|||..|
+T Consensus       191 f~~~~~eva~ey  202 (355)
+T c3u1hA_         191 WREVAEEVAKEY  202 (355)
+T ss_dssp             HHHHHHHHHTTC
+T ss_pred             HHHHHHHHHHHC
+T ss_conf             999999999766
+
+

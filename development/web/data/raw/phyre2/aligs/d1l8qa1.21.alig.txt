@@ -1,0 +1,14 @@
+21 d1l8qa1 Probab=57.42   E-value=8.9  Score=15.89  Aligned_columns=21  Identities=29%
+
+Q ss_pred             HHHHHHHH-----HHHHHHHHCCCCC
+Q ss_conf             99999999-----8755544306542
+Q phyrecall_frag   71 EFCDAWNR-----SLADYKDIFQGKD   91 (1200)
+Q Consensus        71 ~~~~~~~~-----~~~~~~~~~~~~~   91 (1200)
+                      ++|++|+|     ||.+||.++.|||
+T Consensus        48 ~iamyL~r~~t~~sl~~Ig~~Fg~Rd   73 (108)
+T d1l8qa1          48 KIAXYLCRKVCSASLIEIARAFKRKD   73 (108)
+T ss_dssp             HHHHHHHHHHHCCCHHHHHHHSSCCC
+T ss_pred             HHHHHHHHHHCCCCHHHHHHHHCCCC
+T ss_conf             99999999980999899999968987
+
+

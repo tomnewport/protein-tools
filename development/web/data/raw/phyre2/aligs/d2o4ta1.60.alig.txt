@@ -1,0 +1,14 @@
+60 d2o4ta1 Probab=24.26   E-value=36  Score=11.52  Aligned_columns=39  Identities=26%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHCCCCHHHHHHHHHHHHHHHHH
+Q ss_conf             999999975533777654389988999999998755544
+Q phyrecall_frag   47 KKTFYLAAAGEGKKLREKHDESCDEFCDAWNRSLADYKD   85 (1200)
+Q Consensus        47 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   85 (1200)
+                      +.+..+-|.-.|.++...-|.++..||..|...+..+-|
+T Consensus        41 il~~~~eaq~~G~~~~~v~G~Dp~~fadeli~~~~~~~~   79 (90)
+T d2o4ta1          41 ILGFFEEGAAAGKGVLDVTGTDVAAFCDALIGDSKTYAD   79 (90)
+T ss_dssp             HHHHHHHHHHTTCCHHHHHCSCHHHHHHHTTSCSHHHHH
+T ss_pred             HHHHHHHHHHCCCCHHHHHCCCHHHHHHHHHHHHHHHHH
+T ss_conf             999999999849839998487999999999983578999
+
+

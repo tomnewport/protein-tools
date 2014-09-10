@@ -1,0 +1,38 @@
+39 c3fayA_ Probab=30.08   E-value=29  Score=12.23  Aligned_columns=98  Identities=10%
+
+Q ss_pred             HHHHHHHHHHH----HHHHCCCCCCC-----CCCCHHHHHHHHHHHHHHHCCHHHHHHH-
+Q ss_conf             99999998755----54430654256-----7743567999899999851471577999-
+Q phyrecall_frag   72 FCDAWNRSLAD----YKDIFQGKDMW-----NDGKYGEAKNHIKNAFGDMNNRKTMLNE-  121 (1200)
+Q Consensus        72 ~~~~~~~~~~~----~~~~~~~~~~~-----~~~~~~~~~~~~~~~~~~~~~~~~~~~~-  121 (1200)
+                      +|.+|.+=|..    +++|+||..+|     .......-...|+.++|..-..-..-.+ 
+T Consensus        66 i~~~l~~Ei~~~~~~~~~l~R~Ns~~tk~l~~y~r~~~g~~yL~~~L~~~i~~i~~~~~l  125 (379)
+T c3fayA_          66 FKTALQEEIKSKVDQIQEIVTGNPTVIKXVVSFNRGARGQNALRQILAPVVKEIXDDKSL  125 (379)
+T ss_dssp             HHHHHHHHHHHHCSSSSHHHHSCCHHHHHHHHHTTSHHHHHHHHHHHHHHHHHHHHCTTC
+T ss_pred             HHHHHHHHHHHCCCCHHHHHHCCHHHHHHHHHHHHCCCHHHHHHHHHHHHHHHHHCCCCC
+T ss_conf             999999997512478888742351689999999720220799999988999997215687
+
+
+Q ss_pred             HHHHHHHHHHHHH--HCCCCCCCCCCCCCCC------------CCCCHHHHHHHHHHHHH
+Q ss_conf             8520178899753--0477787778999982------------42651578898988999
+Q phyrecall_frag  122 IEKGIKDETFSRE--NGLDVCKSQCEERSRD------------DTEDQFLRFFAEWEEEF  167 (1200)
+Q Consensus       122 ~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~------------~~~~~~~~~~~~~~~~~  167 (1200)
+                      .+..+...++..+  ......+.....|.+.            +.+.+.++-+..|++.|
+T Consensus       126 ~~E~dP~ki~~~~~~~~e~~~~~~s~~~~~~~~~~a~~~~~v~~~~~~n~~~L~~~~~~f  185 (379)
+T c3fayA_         126 NIKTDPVDIYKSWVNQXESQTGEASKLPYDVTPEQALAHEEVKTRLDSSIRNXRAVTDKF  185 (379)
+T ss_dssp             CCCCCHHHHHHHHHHHHHHHHSSCCSSCSSCCHHHHTTSHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCHHHHHHHHHHHHHHCCCCCCCCCCCCCHHHHHCCHHHHHHHHHHHHHHHHHHHHH
+T ss_conf             632468897666411111013455555544340222000356889999999999999999
+
+
+Q ss_pred             HH
+Q ss_conf             99
+Q phyrecall_frag  168 CD  169 (1200)
+Q Consensus       168 ~~  169 (1200)
+                      +.
+T Consensus       186 ~~  187 (379)
+T c3fayA_         186 LS  187 (379)
+T ss_dssp             HH
+T ss_pred             HH
+T ss_conf             99
+
+

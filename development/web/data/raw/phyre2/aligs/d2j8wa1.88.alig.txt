@@ -1,0 +1,14 @@
+88 d2j8wa1 Probab=17.84   E-value=48  Score=10.61  Aligned_columns=35  Identities=11%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHH
+Q ss_conf             99999999875554430654256774356799989
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHI  105 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  105 (1200)
+                      .+++.|..+|-.||+|++|..=|+.......-..|
+T Consensus        14 ~~mk~~~~~~~~l~~m~kg~~~~d~~~~~~~a~~l   48 (128)
+T d2j8wa1          14 SAFTLIANHFGRVAAMAQGKAPFDAKVAAENIALV   48 (128)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTSSCCCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCHHHHHHHHHHH
+T ss_conf             99999999999999995498889999999999999
+
+

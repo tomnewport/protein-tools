@@ -1,0 +1,14 @@
+78 d1q15a2 Probab=19.20   E-value=21  Score=13.24  Aligned_columns=41  Identities=20%
+
+Q ss_pred             HHHCCHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHH
+Q ss_conf             85147157799985201788997530477787778999982426515788989889999
+Q phyrecall_frag  110 GDMNNRKTMLNEIEKGIKDETFSRENGLDVCKSQCEERSRDDTEDQFLRFFAEWEEEFC  168 (1200)
+Q Consensus       110 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  168 (1200)
+                      |.||||..||         ..-.+..+.+.+.+.|.+         -|+.|++|+++|.
+T Consensus        56 GEIYN~~eLr---------~~l~~~~~~~~t~sDtEv---------il~~y~~~G~~~l   96 (204)
+T d1q15a2          56 GSLYNRTFLI---------GLAGVWEGEAYLANDAEL---------LALLFTRLGANAL   96 (204)
+T ss_dssp             ECCSCHHHHH---------HHHTTTCGGGGGCCHHHH---------HHHHHHHHCGGGG
+T ss_pred             EEECCHHHHH---------HHHHHCCCCEECCCCHHH---------HHHHHHHHHHHHH
+T ss_conf             9845989999---------887526963022670999---------9999998847988
+
+

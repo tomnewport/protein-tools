@@ -1,0 +1,14 @@
+34 c3pvpA_ Probab=32.20   E-value=27  Score=12.47  Aligned_columns=49  Identities=16%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHHHHHCCC----CHHHHHHHHHH-----HHHHHHHHCCCCC
+Q ss_conf             11578999999975533777654389----98899999999-----8755544306542
+Q phyrecall_frag   42 VPDFMKKTFYLAAAGEGKKLREKHDE----SCDEFCDAWNR-----SLADYKDIFQGKD   91 (1200)
+Q Consensus        42 ~~~~~~~~~~~~~~~~~~~~~~~~~~----~~~~~~~~~~~-----~~~~~~~~~~~~~   91 (1200)
+                      +.+.++..||-.-.=...-|+..-..    -.-++|++|+|     ||.+||..+ |+|
+T Consensus         2 t~e~Ii~~Va~~f~i~~~~i~s~~R~~~i~~aR~iamyL~r~~~~~s~~~Ig~~f-grd   59 (96)
+T c3pvpA_           2 SAATIMAATAEYFDTTVEELRGPGKTRALAQSRQIAMYLCRELTDLSLPKIGQAF-GRD   59 (96)
+T ss_dssp             CHHHHHHHHHHHTTCCHHHHHSSCCCHHHHHHHHHHHHHHHHHCCCCHHHHHHHT-TCC
+T ss_pred             CHHHHHHHHHHHHCCCHHHHHCCCCCCCCCCHHHHHHHHHHHHHCCCHHHHHHHH-CCC
+T ss_conf             9899999999993899999945876512135999999999998199999999994-899
+
+

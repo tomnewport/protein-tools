@@ -1,0 +1,14 @@
+50 d1ndba2 Probab=26.91   E-value=32  Score=11.85  Aligned_columns=23  Identities=13%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHCCCC
+Q ss_conf             98899999999875554430654
+Q phyrecall_frag   68 SCDEFCDAWNRSLADYKDIFQGK   90 (1200)
+Q Consensus        68 ~~~~~~~~~~~~~~~~~~~~~~~   90 (1200)
+                      +...||.+|.+++.||.+|+.+.
+T Consensus       194 ~~~~F~~~L~~al~~i~~ll~~~  216 (220)
+T d1ndba2         194 NAARXAHYLEKALLDXRTLLQNH  216 (220)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHHHTS
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHCC
+T ss_conf             68999999999999999997258
+
+

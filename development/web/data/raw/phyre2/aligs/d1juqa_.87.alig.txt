@@ -1,0 +1,14 @@
+87 d1juqa_ Probab=17.91   E-value=48  Score=10.62  Aligned_columns=12  Identities=8%
+
+Q ss_pred             HHHHHHHHHHHH
+Q ss_conf             788989889999
+Q phyrecall_frag  157 LRFFAEWEEEFC  168 (1200)
+Q Consensus       157 ~~~~~~~~~~~~  168 (1200)
+                      |.++..|++.||
+T Consensus       109 l~li~~W~~~f~  120 (151)
+T d1juqa_         109 IELLYSWTXALP  120 (151)
+T ss_dssp             HHHHHHHHHHCT
+T ss_pred             HHHHHHHHHHCC
+T ss_conf             999999854043
+
+

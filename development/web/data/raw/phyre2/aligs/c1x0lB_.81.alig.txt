@@ -1,0 +1,14 @@
+81 c1x0lB_ Probab=18.50   E-value=41  Score=11.10  Aligned_columns=12  Identities=33%
+
+Q ss_pred             HHHHHHHHHHHH
+Q ss_conf             578898988999
+Q phyrecall_frag  156 FLRFFAEWEEEF  167 (1200)
+Q Consensus       156 ~~~~~~~~~~~~  167 (1200)
+                      |++||.|||.+|
+T Consensus       176 f~~~~~eva~~y  187 (326)
+T c1x0lB_         176 FLDTVKEVAKDF  187 (326)
+T ss_dssp             HHHHHHHHHTTC
+T ss_pred             HHHHHHHHHHHC
+T ss_conf             999999999774
+
+

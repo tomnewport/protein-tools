@@ -1,0 +1,342 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Exportome Viewer</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+			<style>
+
+.figure .axis line, .figure .axis path {
+fill: none;
+vector-effect: non-scaling-stroke;
+}
+
+.figure text{
+	font-size: 10px;
+}
+.figure .fig_area{
+	fill-opacity: 0.2;
+}
+.figure .fig_line{
+	stroke-width: 1.5px;
+	fill: none;
+	vector-effect: non-scaling-stroke;
+}
+.figure .threshold path{
+	fill: none;
+	vector-effect: non-scaling-stroke;	
+	stroke-dasharray: 5,5;
+}
+.figure .threshold text{
+	text-anchor: end;
+}
+.figure .select_area{
+	fill: white;
+	opacity: 1;
+}
+.figure .select_area_negative{
+	fill: white;
+	opacity: 0.3;
+}
+
+
+</style>
+		<style>
+
+		.aa_A, .aa_I, .aa_L, .aa_V{
+			/* Hydrophobic aliphatic */
+			color: green;
+		}
+		.aa_F, .aa_W, .aa_Y{
+			/* Hydrophobic aromatic*/
+			color: purple;
+		}
+		.aa_N, .aa_C, .aa_Q, .aa_M, .aa_S, .aa_T{
+			/* Polar */
+			color: orange;
+		}
+		 .aa_D, .aa_E{
+		 	/* Charged side chains, acidic*/
+		 	color: red;
+		 }
+		 .aa_R, .aa_H, .aa_K{
+		 	/* Charged side chains, basic*/
+		 	color: blue;
+		 }
+		 .aa_G, .aa_P{
+		 	/* Unique */
+		 	color: orange;
+		 }
+
+
+		body {
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+			margin: 0;
+			padding: 0;
+			background: rgba(251,255,255,1);
+		}
+		input{
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+		}
+		.jumbotron{
+			color: white;
+			background:  #b53939;
+		}
+		.jumbotron a.styled{
+			color: white;
+			text-decoration: underline;
+			opacity: 0.8;
+			font-weight: bold;
+		}
+		.deck{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.data_card{
+			position: relative;
+			background-color: rgba(250,250,250,1);
+			box-shadow: 0.02em 0.05em 0.3em rgba(0,0,0,0.8);
+			border-radius: 0.2em;
+			padding: 1.5em;
+			margin: 2em 0;
+		}
+		.data_card h2:first-child{
+			margin-top: 0;
+		}
+		
+		span.preposition, span.data_label{
+			font-weight: 200;
+		}
+		h3.figtitle{
+			font-weight: 300;
+		}
+		a[rel="Amino Acid Subset"], a[rel="self"]{
+			color: inherit;
+			text-decoration: inherit;
+		}
+		a[rel="Amino Acid Subset"]:before, a[rel="self"]:before{
+			content: "";
+		}
+		p{
+			text-align: justify;
+			font-weight: 300;
+
+		}
+		h1, h2, h3, h4{
+			font-weight: 500;
+		}
+		.select_container select{
+			text-transform: uppercase;
+			text-align: center;
+			float: right;
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+			border: none;
+			outline: none;
+			color: #b53939;
+		}
+		.select_container{
+			width: 100%;
+			position: relative;
+			height: 20px;
+		}
+		svg.figure{
+			width: 100%;
+		}
+		.fig_overview{
+			width: calc(100% - 32px);
+			position: relative;
+			left: 16px;
+		}
+
+		.fig_overview:before{
+			content: "";
+			display: block;
+
+		}
+		section{
+			perspective: 450px;
+		}
+		section>div{
+			transition: 0.4s opacity, 0.4s background-color, 0.4s max-height, 0.4s transform;
+			transform: rotateX(0deg);
+			transform-origin: 0px 0px 0px;
+			opacity: 1;
+			overflow: hidden;
+		}
+		section.collapsed>div{
+			background-color: white;
+			max-height: 0px !important;
+			transform: rotateX(-90deg);
+			transform-origin: 0px 0px 0px;
+			opacity: 0;
+		}
+		section h4{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow-x: hidden;
+			outline: 1px solid transparent;
+			cursor: pointer;
+			transform-origin: 0px 0px 0px;
+		}
+		section.collapsed h4{
+			cursor: pointer;
+			transform-origin: 0px 0px 0px;
+		}
+		section h4 span{
+			margin-right: 10px;
+			transition: 0.4s transform;
+			position: relative;
+			display: inline-block;
+			transform-origin: 50% 50% 0px;
+			transform: rotate(90deg);
+		}
+		section.collapsed h4 span{
+			transform: rotate(0deg);
+		}
+
+		</style>
+		<link href='css/range_selector.css' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=RobotoDraft:100,200,300,400,500,700,400italic' rel='stylesheet' type='text/css'>
+
+		<link rel="shortcut icon" href="">
+
+	</head>
+
+	<body>
+
+		<div id="protein">
+			<div id="overview" class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1><span class="data_label">Protein</span> <a href="#" rel="self" class="protein_title"></a></h1>
+						</div>
+						<div class="col-md-4">
+							<p>1000 amino acids of 6000 analysed.</p>
+							<h4>Key</h4>
+							<span style=" background-color: NavajoWhite; width: 15px; margin-top: 2px; margin-right: 10px; float: left; height: 15px"></span></span>  Phyre2 Fold Library </br>
+							<span style=" background-color: PaleGreen; width: 15px; margin-top: 2px; margin-right: 10px; float: left; height: 15px"></span></span>  Coiled Coil </br>
+							<span style=" background-color: PaleTurquoise; width: 15px; margin-top: 2px; margin-right: 10px; float: left; height: 15px"></span></span>  Transmembrane</br>
+							<span style=" background-color: Pink; width: 15px; margin-top: 2px; margin-right: 10px; float: left; height: 15px"></span></span>  Superfamily</br>
+							<span style=" background-color: Plum; width: 15px; margin-top: 2px; margin-right: 10px; float: left; height: 15px"></span></span>  Pfam domain</br>
+						</div>
+						<div class="col-md-8">
+							<div id = "annotations"></div>
+							<div  id = "rs_view" data-color="white">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="inspect" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2><span class="preposition">Domain: </span> <a rel="Amino Acid Subset" title="SH3 Domain 1" href="#SH3_Domain_1">Erythrocyte membrane protein 1</a></h2>
+					<p>
+						Erythrocyte membrane protein 1 domain identified from Phyre2 fold library.
+					</p>
+				</div>
+				<div class="col-md-6">
+						<h3>Transmembrane Domains</h3>
+						<div  id = "transmembrane"></div>
+						<h3>Coiled Coil Prediction</h3>
+						<div  id = "coiled_coil"></div>
+						<h3>Disorder</h3>
+						<div  id = "fig_overview_disorder">
+						</div>
+				</div>
+				<div class="col-md-6">
+					<h3>Sequence and Secondary Structure</h3>
+					<div id = "secondary_structure">
+
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div id="domains"></div>
+				</div>
+			</div>
+		</div>
+		<script src = 'http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js'></script>
+		<script src = 'http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/lib_numeric.js"></script>
+		<script src="js/data_manager.js"></script>
+		<script src="js/ui_bindings.js"></script>
+		<script src = 'js/range_selector.js'></script>
+		<script src = 'js/figures.js'></script>
+		<script>
+		verbose = true;
+		aa_length = 6000;
+		function l(message){
+			if (verbose){
+				console.log(message);
+			}
+		}
+		$( document ).ready(function() {
+			makeColourScheme("white", "white");
+			makeColourScheme("lightred", "#E18884");
+			makeColourScheme("lightgreen", "#BECF67");
+			makeColourScheme("lightblue", "#99EEFF");
+			makeColourScheme("lightyellow", "#FFFE66");
+			makeColourScheme("darkred", "#B53939");
+			makeColourScheme("darkblue", "SteelBlue");
+			makeColourScheme("darkyellow", "DarkGoldenrod");
+			makeColourScheme("darkgreen", "DarkOliveGreen");
+			makeColourScheme("darkpurple", "MediumOrchid");
+
+			//view_slider = slider('#rs_view');
+			//view_slider.on('update',function(){
+
+			//});
+			protein_data = new Data_manager();
+			protein_data.ready = function(){
+				for (i in protein_data.series.sequence.series.d()){
+					aa = protein_data.series.sequence.series.d()[i];
+				$("#secondary_structure").append($("<span class='aa_"+aa+"'>"+aa+" </span>"));
+				}
+				$("#secondary_structure").css("font-family","monospace")
+				view = new Viewscope(protein_data);
+				view.start = 16;
+				view.end = 511;
+				ui = new UI_Manager(view);
+				
+
+				ui.bind_view_scope("#rs_view");
+
+				ui.bind(".protein_title", protein_data.metadata, WriteMeta, {"key":"name"});
+
+				//ui.bind("#inspect", view, MatchVisibility, {"key":"detail_view"})
+
+				ui.bind("#domains", protein_data.annotations, AnnotationList, {});
+
+				ui.bind("#fig_overview_disorder", protein_data.series.disorder, D3SingleSeriesOverview, {round:true, cscheme:"darkred"});
+
+				ui.bind("#transmembrane", protein_data.series_groups.transmembrane, D3SeriesGroupOverview, {"round":true, "cscheme":"darkred", "colours": ["cscheme_darkblue", "cscheme_darkyellow", "cscheme_darkgreen"]});
+
+				ui.bind("#coiled_coil",protein_data.series_groups.coiled_coil, D3SeriesGroupOverview, {"round":true, "cscheme":"darkred", "colours": ["cscheme_darkblue", "cscheme_darkyellow", "cscheme_darkgreen", "cscheme_lightblue", "cscheme_lightyellow", "cscheme_lightgreen"]});
+
+				ui.bind("#annotations",protein_data.annotations, D3AnnotationPlot, {});
+				ui.bind("#secondary_structure", protein_data.series_groups.secondary_structure, D3SeriesGroupOverview, {"round":true, "cscheme":"darkred", "colours": ["cscheme_darkblue", "cscheme_darkyellow", "cscheme_darkgreen"]});
+
+
+				
+
+				//ui.bind("#fig_coiled_coil", )
+			}
+			protein_data.from_json("data/schema.json");
+		});
+		$(document).on("dragstart", function() {
+			return false;
+		});
+
+		</script>
+	</body>
+	</html>

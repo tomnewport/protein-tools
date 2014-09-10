@@ -1,0 +1,14 @@
+27 d1p3qq_ Probab=41.34   E-value=12  Score=14.88  Aligned_columns=12  Identities=33%
+
+Q ss_pred             HHHHHHHHHHHHH
+Q ss_conf             8999999975533
+Q phyrecall_frag   46 MKKTFYLAAAGEG   58 (1200)
+Q Consensus        46 ~~~~~~~~~~~~~   58 (1200)
+                      |..+||+|+|| |
+T Consensus        30 lIeDVcIAkky-G   41 (45)
+T d1p3qq_          30 LIEDVCIAAAS-G   41 (45)
+T ss_dssp             HHHHHHHHSCC-C
+T ss_pred             HHHHHHHHHHH-C
+T ss_conf             99988746553-5
+
+

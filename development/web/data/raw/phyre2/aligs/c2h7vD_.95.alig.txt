@@ -1,0 +1,14 @@
+95 c2h7vD_ Probab=16.71   E-value=41  Score=11.14  Aligned_columns=11  Identities=18%
+
+Q ss_pred             HHHHHHHHCCC
+Q ss_conf             87555443065
+Q phyrecall_frag   79 SLADYKDIFQG   89 (1200)
+Q Consensus        79 ~~~~~~~~~~~   89 (1200)
+                      ||.|||-+||.
+T Consensus        93 sfsdigslvra  103 (259)
+T c2h7vD_          93 SFSDIGSLVRA  103 (259)
+T ss_dssp             CGGGHHHHHHH
+T ss_pred             CHHHHHHHHHH
+T ss_conf             46679999988
+
+

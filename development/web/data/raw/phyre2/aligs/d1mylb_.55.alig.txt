@@ -1,0 +1,14 @@
+55 d1mylb_ Probab=25.01   E-value=14  Score=14.53  Aligned_columns=10  Identities=50%
+
+Q ss_pred             CCHH-HHHHHH
+Q ss_conf             6515-788989
+Q phyrecall_frag  153 EDQF-LRFFAE  162 (1200)
+Q Consensus       153 ~~~~-~~~~~~  162 (1200)
+                      +||| |||-.|
+T Consensus         1 mpqfnlrwpre   11 (40)
+T d1mylb_           1 MPQFNLRWPRE   11 (40)
+T ss_dssp             CCCCCCCCCHH
+T ss_pred             CCCCCCCCHHH
+T ss_conf             98775408499
+
+

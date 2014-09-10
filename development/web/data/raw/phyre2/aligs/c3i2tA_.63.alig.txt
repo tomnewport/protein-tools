@@ -1,0 +1,14 @@
+63 c3i2tA_ Probab=23.97   E-value=36  Score=11.50  Aligned_columns=12  Identities=17%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+..
+T Consensus        81 virg~~l~~~~~   92 (542)
+T c3i2tA_          81 IIRGRTLFSLSV   92 (542)
+T ss_dssp             EECCSSCBCSST
+T ss_pred             EEECCEEECCCC
+T ss_conf             870633421233
+
+

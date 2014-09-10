@@ -1,0 +1,14 @@
+79 c4o9tH_ Probab=19.10   E-value=14  Score=14.51  Aligned_columns=12  Identities=33%
+
+Q ss_pred             HHHHHHHHHHHH
+Q ss_conf             999999987555
+Q phyrecall_frag   72 FCDAWNRSLADY   83 (1200)
+Q Consensus        72 ~~~~~~~~~~~~   83 (1200)
+                      ||+|++|||..+
+T Consensus       248 MC~AMNRsl~~V  259 (260)
+T c4o9tH_         248 MARAMNRSVWSV  259 (260)
+T ss_dssp             HHTTTTCCSTTT
+T ss_pred             HHHHCCCCHHHC
+T ss_conf             998619864530
+
+

@@ -1,0 +1,14 @@
+56 c3q4nA_ Probab=24.78   E-value=28  Score=12.27  Aligned_columns=13  Identities=23%
+
+Q ss_pred             CCCCCHHHHHHHHHHHHH
+Q ss_conf             242651578898988999
+Q phyrecall_frag  150 DDTEDQFLRFFAEWEEEF  167 (1200)
+Q Consensus       150 ~~~~~~~~~~~~~~~~~~  167 (1200)
+                      ++|.||||-|     ++|
+T Consensus       148 ~~y~pq~l~~-----~e~  160 (169)
+T c3q4nA_         148 SNYTPQYISK-----EEY  160 (169)
+T ss_dssp             CCCCCSSSCH-----HHH
+T ss_pred             CCCCCEECCH-----HHH
+T ss_conf             7501121259-----999
+
+

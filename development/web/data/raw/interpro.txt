@@ -1,0 +1,7 @@
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	Coils	Coil		607	628	-	T	11-08-2014
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	Coils	Coil		503	524	-	T	11-08-2014
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	Phobius	CYTOPLASMIC_DOMAIN	Region of a membrane-bound protein predicted to be outside the membrane, in the cytoplasm.	567	1200	-	T	11-08-2014
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	Phobius	NON_CYTOPLASMIC_DOMAIN	Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.	1	543	-	T	11-08-2014
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	SUPERFAMILY	SSF140924		3	237	1.57E-42	T	11-08-2014
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	Pfam	PF05424	Duffy binding domain	21	119	2.0E-17	T	11-08-2014	IPR008602	Duffy-antigen binding	GO:0004872|GO:0009405|GO:0016021	
+Submitted	f49c86fba3089f43d6ec18bb5ece678d	1200	Phobius	TRANSMEMBRANE	Region of a membrane-bound protein predicted to be embedded in the membrane.	544	566	-	T	11-08-2014

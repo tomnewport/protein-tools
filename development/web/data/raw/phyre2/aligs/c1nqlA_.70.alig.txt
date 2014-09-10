@@ -1,0 +1,14 @@
+70 c1nqlA_ Probab=21.88   E-value=40  Score=11.22  Aligned_columns=12  Identities=17%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+.+
+T Consensus        80 ~irg~~~~~~~~   91 (612)
+T c1nqlA_          80 IIRGNMYYENSY   91 (612)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EECCCEEECCCE
+T ss_conf             561534323873
+
+

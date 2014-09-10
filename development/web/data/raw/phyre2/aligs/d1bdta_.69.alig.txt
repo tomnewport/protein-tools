@@ -1,0 +1,14 @@
+69 d1bdta_ Probab=22.23   E-value=17  Score=13.90  Aligned_columns=10  Identities=50%
+
+Q ss_pred             CCHH-HHHHHH
+Q ss_conf             6515-788989
+Q phyrecall_frag  153 EDQF-LRFFAE  162 (1200)
+Q Consensus       153 ~~~~-~~~~~~  162 (1200)
+                      +||| |||-.|
+T Consensus         7 mpqfnlrwpre   17 (52)
+T d1bdta_           7 MPQFNLRWPRE   17 (52)
+T ss_dssp             SCCCCCCCCHH
+T ss_pred             CCCCCCCCHHH
+T ss_conf             87666618499
+
+

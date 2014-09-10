@@ -1,0 +1,62 @@
+6 c3rrcA_ Probab=100.00  E-value=0  Score=491.20  Aligned_columns=245  Identities=24%
+
+Q ss_pred             CCCCCCCCCCCCCC-CCCCCCCCHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHHHHHHHH
+Q ss_conf             77676867400457-887658735565406777640023311578999999975533777
+Q phyrecall_frag    3 NINNKDSSTEWNCK-EDVGCVPPRRQNLNMERLDNENEDSVPDFMKKTFYLAAAGEGKKL   61 (1200)
+Q Consensus         3 ~~~~~~~~~~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   61 (1200)
+                      |..+++....|+|. ..++|+||||+|||++||+.+  ....+.|+.+|+.||++||.+|
+T Consensus         9 ~~K~~~~~~~W~c~~~~~vcvPPRR~~lC~~~L~~~--~~~~~~l~~~~~~~A~~E~~~l   66 (276)
+T c3rrcA_           9 NYKRKRRERDWDCNTKKDVCIPDRRYQLCMKELTNL--TFRKLYLKRKLIYDAAVEGDLL   66 (276)
+T ss_dssp             TCCCCTTSSCCBCSSSTTSCBCHHHHHCCCHHHHTC--CCHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCCCCCCCCCEECCCHHHHHHHHHHHHC--CCCCHHHHHHHHHHHHHHHHHH
+T ss_conf             446747887765588898464703775642114533--4684356999999999999999
+
+
+Q ss_pred             HHHCC-CCHHHHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHHHHHHHHHCCHHHHHH
+Q ss_conf             65438-998899999999875554430654256774356799989999985147157799
+Q phyrecall_frag   62 REKHD-ESCDEFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHIKNAFGDMNNRKTMLN  120 (1200)
+Q Consensus        62 ~~~~~-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  120 (1200)
+                      +.+|. ++++.||+||+||||||||||||+|||+++..++|+.+|++||++..++..+|+
+T Consensus        67 ~~~y~~~~~~~~c~~m~ySfaDy~DIi~G~D~~~~~~~~~i~~~i~~if~~~~~~~~~r~  126 (276)
+T c3rrcA_          67 LKLNNYRYNKDFCKDIRWSLGDFGDIIMGTDMEGIGYSKVVENNLRSIFGTDEKAQQRRK  126 (276)
+T ss_dssp             HHHTTTCCSHHHHHHHHHHHHHHHHHHHTCCSCCCTHHHHHHHHHHHHHCSSTTHHHHHH
+T ss_pred             HHHCCCCCHHHHHHHHHHHHHHHHHHHCCCCCCCCCCHHHHHHHHHHHHCCCCCCCCCHH
+T ss_conf             986056897899999999788767775166657775467899999997046876543369
+
+
+Q ss_pred             HHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHH
+Q ss_conf             985201788997530477787778999982426515788989889999999999999875
+Q phyrecall_frag  121 EIEKGIKDETFSRENGLDVCKSQCEERSRDDTEDQFLRFFAEWEEEFCDGLNKHEEQLKS  180 (1200)
+Q Consensus       121 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  180 (1200)
+                      +||.+||++||.||+|..     |..|++|||+|||||||+||||+||++|+++++.|+.
+T Consensus       127 ~WW~~n~~~IW~aM~C~~-----~~~~~~~d~~PQflRW~~EW~e~fC~~~~~~~~~l~~  181 (276)
+T c3rrcA_         127 QWWNESKAQIWTAMMYSV-----CKLNVAVNIEPQIYRWIREWGRDYVSELPTEVQKLKE  181 (276)
+T ss_dssp             HHHHHHHHHHHHHHTTTC-----CCHHHHHSCCCHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHCCC-----CCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHH
+T ss_conf             999956675533210255-----6889874446189999999999999999999998873
+
+
+Q ss_pred             CCC------------CCCHHHHHHHCCHHHHHHHHHHHHHHHHHHHHH-----CCCCCCC
+Q ss_conf             378------------832678742000567889998899999988872-----1667877
+Q phyrecall_frag  181 CTK------------DINCDIKCSNFKDWLETKKDEYDIQSRVFEKKY-----ANDNKSK  223 (1200)
+Q Consensus       181 ~~~------------~~~c~~~c~~~~~~~~~~~~~~~~q~~~y~~~~-----~~~~~~~  223 (1200)
+                      .|.            |+.|..+|..|+.||.+||.||++|+++|.+.|     ...++..
+T Consensus       182 ~C~~~~~~~~~~~~~~~~C~~~C~~Yk~WI~~kK~Ew~kq~~kY~k~k~~~~~~~~~~~~  241 (276)
+T c3rrcA_         182 KCDGKINYTDKKVCKVPPCQNACKSYDQWITRKKNQWDVLSNKFISVKNAEKVQTAGIVT  241 (276)
+T ss_dssp             HHCSBSSSSCBGGGTCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHTCCCTTCSS
+T ss_pred             HCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCC
+T ss_conf             113443688888766832566228899999999999999999999997420456678876
+
+
+Q ss_pred             CCCHHHHHHHHHHHCCHHHHHHH---HHHHHCCC
+Q ss_conf             42002456664332011134566---42110133
+Q phyrecall_frag  224 HLNYLKEGMNKCKVKNPEMVFKS---GFANVAEC  254 (1200)
+Q Consensus       224 ~~~~~~~~~~~~~~~~~~~~~~~---~~~~~~~~  254 (1200)
+                      ...|++.....+.+.++...+..   .+...|.|
+T Consensus       242 ~~~~Lk~~~~~~~~~n~~~kl~k~~g~y~~~C~C  275 (276)
+T c3rrcA_         242 PYDILKQELDEFNEVAFENEINKRDGAYIELCVC  275 (276)
+T ss_dssp             HHHHHHHHSTTCCHHHHHHHHTTCSHHHHHHHCC
+T ss_pred             CCHHHHHHHHCCCHHHHHHHHHHHHCCCCCCCCC
+T ss_conf             2024565421022123457665310686563101
+
+

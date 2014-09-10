@@ -1,0 +1,14 @@
+43 c3p11A_ Probab=28.91   E-value=25  Score=12.73  Aligned_columns=12  Identities=8%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+++
+T Consensus        78 vIrg~~l~~~~~   89 (506)
+T c3p11A_          78 VVRGTQVYDGKF   89 (506)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EECCCEEECCCE
+T ss_conf             662623422650
+
+

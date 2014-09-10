@@ -1,0 +1,14 @@
+44 c3l0aA_ Probab=28.42   E-value=31  Score=12.03  Aligned_columns=50  Identities=10%
+
+Q ss_pred             CCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHH----HCCCCCCHHHHHHHCCH
+Q ss_conf             99998242651578898988999999999999987----53788326787420005
+Q phyrecall_frag  145 EERSRDDTEDQFLRFFAEWEEEFCDGLNKHEEQLK----SCTKDINCDIKCSNFKD  196 (1200)
+Q Consensus       145 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~----~~~~~~~c~~~c~~~~~  196 (1200)
+                      ..||+..-|-..--|+..+-+..|....+ +..|+    ++-+|+.|.+ |+.-+.
+T Consensus       199 e~Ppd~~ii~~~~~~L~~~l~~v~~~~~~-i~~vk~g~~~P~~C~~C~Y-Cr~tk~  252 (266)
+T c3l0aA_         199 QTEPDIRIIHVTDNYLQEALHXVEXNXPR-ILRVKNGEVEPDRCELCDC-CRHNRV  252 (266)
+T ss_dssp             SSSCCEEEEEECHHHHHHHHHHHHHHHHH-HHHHHTTSSCCCCCSCSHH-HHHHCC
+T ss_pred             CCCCCEEEEEECHHHHHHHHHHHHCCHHH-HHHHHHCCCCCCCCCCCHH-HHHHHH
+T ss_conf             89863478984588888678643204588-9999828657826876423-454310
+
+

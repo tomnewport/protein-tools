@@ -1,0 +1,14 @@
+38 d1nzja_ Probab=30.30   E-value=27  Score=12.37  Aligned_columns=22  Identities=14%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCC
+Q ss_conf             9999999987555443065425
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIFQGKDM   92 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~~~~~~   92 (1200)
+                      .|+.++-.++..|-.||||.|+
+T Consensus       170 ~fA~vVDD~~~gIThViRg~d~  191 (273)
+T d1nzja_         170 NLAVVVDDHFQGVTEIVRGADL  191 (273)
+T ss_dssp             HHHHHHHHHHTTCCEEEEEGGG
+T ss_pred             HCCCCCCHHHCCCCEEEECCHH
+T ss_conf             2723134132499836745410
+
+

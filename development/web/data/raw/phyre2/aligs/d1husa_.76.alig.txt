@@ -1,0 +1,14 @@
+76 d1husa_ Probab=19.74   E-value=44  Score=10.90  Aligned_columns=52  Identities=23%
+
+Q ss_pred             CCCHHHHHHHHHH----HHHCCCCCHHHHHHHHHHHHHHHHHHHHHHCCCCHHHHHHH
+Q ss_conf             8735565406777----64002331157899999997553377765438998899999
+Q phyrecall_frag   22 VPPRRQNLNMERL----DNENEDSVPDFMKKTFYLAAAGEGKKLREKHDESCDEFCDA   75 (1200)
+Q Consensus        22 ~~~~~~~~~~~~~----~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   75 (1200)
+                      .|.||..|-++.|    .+.........|-..+..|+...|..++.+.+  .+.+|.+
+T Consensus        83 ~~~rr~~lAirWil~~a~~r~~k~~~~~La~Eii~A~~~~g~aikKK~e--~hK~A~a  138 (139)
+T d1husa_          83 RPDRRVSLGLRWLVQYARLRNEKTXEERLANEIXDAANNTGAAVKKRED--THKXAEA  138 (139)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHSCSSSHHHHHHHHHHHHHTTCSHHHHHHHH--HHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHHHCCCCHHHHHHH--HHHHHHC
+T ss_conf             8999999999999999973689998999999999984026514377999--9988741
+
+

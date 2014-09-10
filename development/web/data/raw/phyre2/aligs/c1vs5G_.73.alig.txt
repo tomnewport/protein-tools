@@ -1,0 +1,14 @@
+73 c1vs5G_ Probab=20.74   E-value=42  Score=11.04  Aligned_columns=49  Identities=22%
+
+Q ss_pred             CCCCCCCHHHHHHHHHH----HHHCCCCCHHHHHHHHHHHHHHHHHHHHHHCC
+Q ss_conf             87658735565406777----64002331157899999997553377765438
+Q phyrecall_frag   18 DVGCVPPRRQNLNMERL----DNENEDSVPDFMKKTFYLAAAGEGKKLREKHD   66 (1200)
+Q Consensus        18 ~~~~~~~~~~~~~~~~~----~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   66 (1200)
+                      ++...|.||..|-++.|    ......+..+.|-..+..|+...|..++.+.+
+T Consensus        86 Pv~i~~~rr~~lAirWil~~a~~r~~~~~~~~La~Eii~A~~~~g~aikKK~e  138 (150)
+T c1vs5G_          86 PVEVRPVRRNALAMRWIVEAARKRGDKSMALRLANELSDAAENKGTAVKKRED  138 (150)
+T ss_dssp             CBCCCHHHHHHHHHHHHHTTTSTTCSSCHHHHHHHHHHHHHTTCHHHHHHHHH
+T ss_pred             EEECCHHHHHHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHHCCCCHHHHHHHH
+T ss_conf             35429999999999999999862689978999999999997257516599999
+
+

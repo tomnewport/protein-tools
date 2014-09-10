@@ -1,0 +1,62 @@
+10 c2y8dA_ Probab=100.00  E-value=0  Score=473.45  Aligned_columns=228  Identities=28%
+
+Q ss_pred             CCCCCCCCCCCC------CCCCCCCCHHHHHHHHHHHHH--CCCCCHHHHHHHHHHHHHH
+Q ss_conf             676867400457------887658735565406777640--0233115789999999755
+Q phyrecall_frag    5 NNKDSSTEWNCK------EDVGCVPPRRQNLNMERLDNE--NEDSVPDFMKKTFYLAAAG   56 (1200)
+Q Consensus         5 ~~~~~~~~~~~~------~~~~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~~~~   56 (1200)
+                      ++.+..--|.|.      ..++|+||||+|||++||..+  +.....+.|+.+|+.||++
+T Consensus        17 ~~~~~~~~~~~~k~~~~~~~gvciPPRRq~LCi~~l~~~~~~~~~~~~~l~~~i~~aA~~   76 (281)
+T c2y8dA_          17 KNNGNFVTDNFVKKSWEISNGVLIPPRRKNLFLYIDPSKICEYKKDPKLFKDFIYWSAFT   76 (281)
+T ss_dssp             HHSCCCCCCCGGGCCCEEETTEEECHHHHTCSCCCCGGGHHHHHHCHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCCCCCCCCCCCCEECCHHHHHHHHHHHHHHCCCCCCCHHHHHHHHHHHHHH
+T ss_conf             679977655524687887787664713897752235540246788868999999999999
+
+
+Q ss_pred             HHHHHHHHCCCCHHHHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHHHHHHHHHCCHH
+Q ss_conf             337776543899889999999987555443065425677435679998999998514715
+Q phyrecall_frag   57 EGKKLREKHDESCDEFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHIKNAFGDMNNRK  116 (1200)
+Q Consensus        57 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  116 (1200)
+                      ||.+|+.+|+++++.||+||.||||||||||||+|||++.    +..+|++||++..++.
+T Consensus        77 E~~~l~~ky~~~~~~~c~am~ySFaDy~DIi~G~D~~~~~----~~~ki~~if~~~~~~~  132 (281)
+T c2y8dA_          77 EVERLKKAYGGARAKVVHAMKYSFTDIGSIIKGDDMMEKN----SSDKIGKILGDTDGQN  132 (281)
+T ss_dssp             HHHHHHHHTTTCHHHHHHHHHHHHHHHHHHHHTCCSSCSH----HHHHHHHHTTCCTTCC
+T ss_pred             HHHHHHHHCCCCHHHHHHHHHHHHHHHHHHHCCCCCCCCC----HHHHHHHHHCCCCCCC
+T ss_conf             9999999819890799999998677644353157677560----7899999711367887
+
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHC------CCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHH
+Q ss_conf             77999852017889975304------7778777899998242651578898988999999
+Q phyrecall_frag  117 TMLNEIEKGIKDETFSRENG------LDVCKSQCEERSRDDTEDQFLRFFAEWEEEFCDG  170 (1200)
+Q Consensus       117 ~~~~~~~~~~~~~~~~~~~~------~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  170 (1200)
+                      .+|++||.+||++||.||+|      .......+..|++|||+|||||||.||||+||++
+T Consensus       133 ~~R~~WW~~n~~~IW~aM~C~~~~~~~~~~~~~~~~~~~~d~~PQflRWf~EW~e~FC~e  192 (281)
+T c2y8dA_         133 EKRKKWWDMNKYHIWESMLCGYREAEGDTETNENCRFPDIESVPQFLRWFQEWSENFCDR  192 (281)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHCSSCCCCSCCSSCGGGGSCHHHHHHHHHHHHHHHH
+T ss_pred             CCHHHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHH
+T ss_conf             888999998999899998506746898887578899982024840543288899999999
+
+
+Q ss_pred             HHHHHHHHHHCC----------CCCCHHHHHHHCCHHHHHHHHHHHHHHHHHHHHHCCCC
+Q ss_conf             999999987537----------88326787420005678899988999999888721667
+Q phyrecall_frag  171 LNKHEEQLKSCT----------KDINCDIKCSNFKDWLETKKDEYDIQSRVFEKKYANDN  220 (1200)
+Q Consensus       171 ~~~~~~~~~~~~----------~~~~c~~~c~~~~~~~~~~~~~~~~q~~~y~~~~~~~~  220 (1200)
+                      |+++++.|+..|          .|+.|..+|..|+.||..|+.||++|+++|.+.+.+..
+T Consensus       193 ~~~~~~~lk~~C~~~~~~~~~~~~~~C~~~C~~Yk~wI~~kK~E~~~q~~kY~~~~~~~~  252 (281)
+T c2y8dA_         193 RQKLYDKLNSECISAECTNGSVDNSKCTHACVNYKNYILTKKTEYEIQTNKYDNEFKNKN  252 (281)
+T ss_dssp             HHHHHHHHHHHSSSCCBCSSSBSCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHTTTBT
+T ss_pred             HHHHHHHHHHHCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCC
+T ss_conf             999999997410478887777668105563177999999999999999999998641256
+
+
+Q ss_pred             CCCCC--CHHHHHHHHHH
+Q ss_conf             87742--00245666433
+Q phyrecall_frag  221 KSKHL--NYLKEGMNKCK  236 (1200)
+Q Consensus       221 ~~~~~--~~~~~~~~~~~  236 (1200)
+                      .....  .|++..+..|.
+T Consensus       253 ~~~~~a~~yLk~kc~~~~  270 (281)
+T c2y8dA_         253 SNDKDAPDYLKEKCNDNK  270 (281)
+T ss_dssp             TBCCCHHHHHHHHCCTTT
+T ss_pred             CCCCCHHHHHHHHCCCCC
+T ss_conf             666628899875332798
+
+

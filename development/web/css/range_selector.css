@@ -1,0 +1,105 @@
+.range_selector{
+		position: relative;
+		width: 100%;
+		height: 40px;
+	}
+	.range_selector .span.rs_container{
+		position: relative;
+		width: calc(100% - 32px);
+		left: 16px;
+		height: 4px;
+		top: 10px;
+		right: 16px;
+	}
+	.range_selector .span.rs_container span{
+		transition: top 0.2s, height 0.2s;
+		width: 33.3333%;
+		height: 100%;
+		color: red;
+		float: left;
+		top: 0%;
+		position: relative;
+
+	}
+	.range_selector .span.rs_container span.pre, .range_selector .span.rs_container span.post {
+		opacity: 0.3;
+	}
+
+	.range_selector .span.rs_container span.mid:hover, .range_selector .span.rs_container span.mid.moving{
+		cursor: ew-resize;
+		height: 200%;
+		top: -50%;
+	}
+
+	.range_selector .slider{
+		transition: 0.2s transform;
+		position: absolute;
+		top: -2px;
+		width: 8px;
+		height: 8px;
+		border-radius: 4px;
+	}
+	.range_selector .slider:hover{
+		transform: scale(1.5,1.5);
+	}
+	.range_selector .slider:active{
+		transform: scale(2,2);
+	}
+	.range_selector .slider.start{
+		right: calc(66.666% - 4px);
+		
+	}
+	.range_selector .slider.end{
+		left: calc(66.6666% - 4px);
+	}
+	.range_selector .slider.start *{
+		cursor: w-resize;
+	}
+	.range_selector .slider.end *{
+		cursor: e-resize;
+	}
+	.range_selector .slider .inner{
+		width: 15px;
+		height: 30px;
+		position: relative;
+		background-color: inherit;
+		opacity: 0;
+		top: -11px;
+	}
+	.range_selector .slider.start .inner{
+		left: -10px;
+	}
+
+	.range_selector .slider.end .inner{
+		left: 4px;
+	}
+
+
+	.range_selector input{
+		position: absolute;
+		display: block;
+		background: none;
+		border: none;
+		outline: none;
+		top: 10px;
+		width: 40px;
+		font-weight: 500;
+		transition: 0.6s transform;
+		opacity: 0.6;
+		text-decoration: none;
+	}
+	.range_selector input:hover{
+		opacity: 1;
+		text-decoration: underline;
+	}
+	.range_selector input:focus{
+		opacity: 1;
+		font-weight: 900;
+	}
+	.range_selector input.rs_label.start{
+		right: 66.66%;
+		text-align: right;
+	}
+	.range_selector input.rs_label.end{
+		left: 66.66%;
+	}

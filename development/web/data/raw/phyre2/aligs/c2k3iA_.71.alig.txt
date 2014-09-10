@@ -1,0 +1,14 @@
+71 c2k3iA_ Probab=21.43   E-value=19  Score=13.44  Aligned_columns=13  Identities=8%
+
+Q ss_pred             HHHHHHHHCCCCC
+Q ss_conf             8755544306542
+Q phyrecall_frag   79 SLADYKDIFQGKD   91 (1200)
+Q Consensus        79 ~~~~~~~~~~~~~   91 (1200)
+                      +|+|||-||.+.|
+T Consensus        15 c~~diGsIIdn~D   27 (109)
+T c2k3iA_          15 CAIDIGTVIDNDN   27 (109)
+T ss_dssp             CSCCCSCCCCCSC
+T ss_pred             CEEEEEEEECCCC
+T ss_conf             0578524463897
+
+

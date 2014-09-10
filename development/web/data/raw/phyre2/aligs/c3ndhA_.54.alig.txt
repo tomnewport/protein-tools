@@ -1,0 +1,14 @@
+54 c3ndhA_ Probab=25.19   E-value=35  Score=11.64  Aligned_columns=17  Identities=24%
+
+Q ss_pred             CCCCCCCHHHHHHHHHHH
+Q ss_conf             982426515788989889
+Q phyrecall_frag  148 SRDDTEDQFLRFFAEWEE  165 (1200)
+Q Consensus       148 ~~~~~~~~~~~~~~~~~~  165 (1200)
+                      |.+||-| |-||.+=|++
+T Consensus       197 t~i~y~~-fkrwv~lw~~  213 (214)
+T c3ndhA_         197 TNVQYNA-FKRWVDLWSE  213 (214)
+T ss_dssp             CCCCCCT-THHHHHHHHC
+T ss_pred             HCCCHHH-HHHHHHHHCC
+T ss_conf             1045146-8889887347
+
+

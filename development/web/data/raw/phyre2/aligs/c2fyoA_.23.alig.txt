@@ -1,0 +1,14 @@
+23 c2fyoA_ Probab=51.71   E-value=12  Score=14.93  Aligned_columns=32  Identities=22%
+
+Q ss_pred             HHHHCCCCHHHHHHHHHHHHHHHHHHCCCCCC
+Q ss_conf             76543899889999999987555443065425
+Q phyrecall_frag   61 LREKHDESCDEFCDAWNRSLADYKDIFQGKDM   92 (1200)
+Q Consensus        61 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   92 (1200)
+                      +...+..+...||.+|.+++.||.+|+-|+.+
+T Consensus       594 iss~~~t~~~~F~~~L~~al~~i~~lle~~~~  625 (625)
+T c2fyoA_         594 VSSYSGRNAREFLHCVQKCLEDIFDALEGKAI  625 (625)
+T ss_dssp             EEECTTSCHHHHHHHHHHHHHHHHHHHHTCCC
+T ss_pred             ECCCCCCCHHHHHHHHHHHHHHHHHHHCCCCC
+T ss_conf             70699989999999999999999998504889
+
+

@@ -1,0 +1,14 @@
+82 c2xgjA_ Probab=18.50   E-value=46  Score=10.75  Aligned_columns=18  Identities=22%
+
+Q ss_pred             HHHHHHHH--HHHHH--------HHHCC
+Q ss_conf             99999999--87555--------44306
+Q phyrecall_frag   71 EFCDAWNR--SLADY--------KDIFQ   88 (1200)
+Q Consensus        71 ~~~~~~~~--~~~~~--------~~~~~   88 (1200)
+                      .++.+||+  ||++|        |||||
+T Consensus       890 ~vv~~Wa~g~sf~~i~~~t~~~eG~ivr  917 (964)
+T c2xgjA_         890 EVVYEWCRGATFTQICKMTDVYEGSLIR  917 (964)
+T ss_dssp             HHHHHHTTTCCHHHHTTSCSSCHHHHHH
+T ss_pred             HHHHHHHCCCCHHHHHHHCCCCCCHHHH
+T ss_conf             9999985589978998632899778999
+
+

@@ -1,0 +1,62 @@
+7 c3vuuA_ Probab=100.00  E-value=0  Score=481.05  Aligned_columns=239  Identities=23%
+
+Q ss_pred             CCCC--------CCCCCCCCHHHHHHHHHHHHH--CCCCCHHHHHHHHHHHHHHHHHHHH
+Q ss_conf             0457--------887658735565406777640--0233115789999999755337776
+Q phyrecall_frag   13 WNCK--------EDVGCVPPRRQNLNMERLDNE--NEDSVPDFMKKTFYLAAAGEGKKLR   62 (1200)
+Q Consensus        13 ~~~~--------~~~~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~~~~~~~~~~~~   62 (1200)
+                      |.|.        ++++||||||+|||+++|.++  +.....+.|+.+|+.||++||.+|+
+T Consensus        13 W~~~~~k~~~~~~~gvcvPPRRq~LC~~~l~~~~~~~~~~~~~l~~~~~~~A~~E~~~L~   72 (270)
+T c3vuuA_          13 WLGSSVKNFSSDNKGVLVPPRRQSLCLRITLQDFRTKKKKEGDFEKFIYSYASSEARKLR   72 (270)
+T ss_dssp             CBSSSBTTTTTTTTTCCBCHHHHTCCCCCCHHHHHHHTTSTTHHHHHHHHHHHHHHHHHH
+T ss_pred             CCCCCCCCCCCCCCCEECCHHHHHHHHHHHHHCCCCCCCCHHHHHHHHHHHHHHHHHHHH
+T ss_conf             566543566888787662725897887666530236788968999999999999999999
+
+
+Q ss_pred             HHCCCCHHHHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHHHHHHHHHC---CHHHHH
+Q ss_conf             543899889999999987555443065425677435679998999998514---715779
+Q phyrecall_frag   63 EKHDESCDEFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHIKNAFGDMN---NRKTML  119 (1200)
+Q Consensus        63 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---~~~~~~  119 (1200)
+                      .+|+.+.+.||+||.||||||||||+|+|||+++..++++.+|++||+...   +...+|
+T Consensus        73 ~ky~~~~~~~~~~m~ySFaDy~DIi~G~D~~~~~~~~~~~~~i~ki~~~~~~~~~~~~~r  132 (270)
+T c3vuuA_          73 TIHNNNLEKAHQAIRYSFADIGNIIRGDDMMDTPTSKETITYLEKVLKIYNENNDKPKDA  132 (270)
+T ss_dssp             HHTTTCHHHHHHHHHHHHHHHHHHHTTCCSBCSHHHHHHHHHHHHHHHHHSSSSSCCCSH
+T ss_pred             HHCCCCHHHHHHHHHHHHHHHHHHHCCCCCCCCCCHHHHHHHHHHHHHHCCCCCCCCCCH
+T ss_conf             872889369999999855554435326656568773149999999973037787776798
+
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCC---CCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHH
+Q ss_conf             99852017889975304777---8777899998242651578898988999999999999
+Q phyrecall_frag  120 NEIEKGIKDETFSRENGLDV---CKSQCEERSRDDTEDQFLRFFAEWEEEFCDGLNKHEE  176 (1200)
+Q Consensus       120 ~~~~~~~~~~~~~~~~~~~~---~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  176 (1200)
+                      ++||.+||.+||.||+|++.   ....|..||+|||||||||||.||||+||++|++++.
+T Consensus       133 ~~WW~~n~~~IW~aM~C~~~~~~~~~~~~~~~~~d~~PQflRWf~EW~e~FCker~k~~~  192 (270)
+T c3vuuA_         133 KKWWTENRHHVWEAMMCGYQSAQKDNQCTGYGNIDDIPQFLRWFREWGTYVCEESEKNMN  192 (270)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHTCCCCCCCTTGGGSCHHHHHHHHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHHHHHHH
+T ss_conf             999997878886776531146887777899963002217999999899999999999999
+
+
+Q ss_pred             HHHHCCC---CCCHHHHHHHCCHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCCHHHHHHH
+Q ss_conf             9875378---83267874200056788999889999998887216678774200245666
+Q phyrecall_frag  177 QLKSCTK---DINCDIKCSNFKDWLETKKDEYDIQSRVFEKKYANDNKSKHLNYLKEGMN  233 (1200)
+Q Consensus       177 ~~~~~~~---~~~c~~~c~~~~~~~~~~~~~~~~q~~~y~~~~~~~~~~~~~~~~~~~~~  233 (1200)
+                      .|+..|.   |.+|..+|..|+.||.+||.||++|+++|++++..........+......
+T Consensus       193 ~lk~~C~~~~~~~C~~~C~~Yk~WI~~kK~E~~~q~~kY~k~~~~~~~~~~~~~~~yLk~  252 (270)
+T c3vuuA_         193 TLKAVCFPHENEMCSSTLKKYEEWYNKRKTEWTEQSIKYNNDKINYTDIKTLSPSEYLIE  252 (270)
+T ss_dssp             HHHHHHCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGGCTTTTTCCHHHHHHH
+T ss_pred             HHHHCCCCCCCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCHHHHHHH
+T ss_conf             752013567670266622879999999999999999999887520367777789899997
+
+
+Q ss_pred             HHHHCCHHHHHHHHHHHH
+Q ss_conf             433201113456642110
+Q phyrecall_frag  234 KCKVKNPEMVFKSGFANV  251 (1200)
+Q Consensus       234 ~~~~~~~~~~~~~~~~~~  251 (1200)
+                      .|....+......+++++
+T Consensus       253 ~~~~~~c~~~d~~d~~k~  270 (270)
+T c3vuuA_         253 KCPECKCTKKNLQDVFEL  270 (270)
+T ss_dssp             SCTTTCCCTTTTHHHHCC
+T ss_pred             HHHCCCCCCCCHHHHHHC
+T ss_conf             620788871103465409
+
+

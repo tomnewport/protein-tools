@@ -1,0 +1,14 @@
+45 d1u8xx2 Probab=28.33   E-value=12  Score=14.94  Aligned_columns=43  Identities=5%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHCCCCCCCCCCCC--------CCCCCCCHHHHH
+Q ss_conf             7799985201788997530477787778999--------982426515788
+Q phyrecall_frag  117 TMLNEIEKGIKDETFSRENGLDVCKSQCEER--------SRDDTEDQFLRF  159 (1200)
+Q Consensus       117 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--------~~~~~~~~~~~~  159 (1200)
+                      .+.+++.+++|...+.|+.-.-...+.....        -.-||-|||.||
+T Consensus       218 l~veAa~~gd~~~al~Al~~~Plv~s~~~a~~lldell~a~~~~LPqf~~~  268 (269)
+T d1u8xx2         218 LTVEAWAEKSFQKLWQALILSKTVPNARVARLILEDLVEANKDFWPELDQS  268 (269)
+T ss_dssp             HHHHHHHHTBHHHHHHHHHHCTTCCCHHHHHHHHHHHHHHTTTTSCCCBSC
+T ss_pred             HHHHHHHHCCHHHHHHHHHHCCCCCCHHHHHHHHHHHHHHHHHHCCHHCCC
+T ss_conf             999999919999999999947888898999999999999828745202028
+
+

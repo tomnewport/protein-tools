@@ -1,0 +1,26 @@
+18 d2qalg1 Probab=67.03   E-value=2.1  Score=20.33  Aligned_columns=61  Identities=23%
+
+Q ss_pred             CCCCCCCHHHHHHHHHH----HHHCCCCCHHHHHHHHHHHHHHHHHHHHHHCCCCHHHHH
+Q ss_conf             87658735565406777----640023311578999999975533777654389988999
+Q phyrecall_frag   18 DVGCVPPRRQNLNMERL----DNENEDSVPDFMKKTFYLAAAGEGKKLREKHDESCDEFC   73 (1200)
+Q Consensus        18 ~~~~~~~~~~~~~~~~~----~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   73 (1200)
+                      ++...|.||..|-++.|    ......+..+.|-..+..|+...|..++.+.+  .+.+|
+T Consensus        86 Pv~i~~~rr~~lAirWil~~a~~r~~~~~~~~La~Eii~A~~~~g~aikKK~e--~hK~A  143 (150)
+T d2qalg1          86 PVEVRPVRRNALAMRWIVEAARKRGDKSMALRLANELSDAAENKGTAVKKRED--VHRMA  143 (150)
+T ss_dssp             EEECCHHHHHHHHHHHHHHHHTTSCCSSHHHHHHHHHHHHTTTCSHHHHHHHH--HHHHT
+T ss_pred             EEECCHHHHHHHHHHHHHHHHHHCCCCCHHHHHHHHHHHHHCCCCHHHHHHHH--HHHHH
+T ss_conf             35429999999999999999862689978999999999997257516599999--99999
+
+
+Q ss_pred             HHHHHHHH
+Q ss_conf             99999875
+Q phyrecall_frag   74 DAWNRSLA   81 (1200)
+Q Consensus        74 ~~~~~~~~   81 (1200)
+                      .+ +|+||
+T Consensus       144 ~a-NRa~a  150 (150)
+T d2qalg1         144 EA-NKAFA  150 (150)
+T ss_dssp             TT-TTTTC
+T ss_pred             HH-HHHCC
+T ss_conf             98-53129
+
+

@@ -1,0 +1,14 @@
+35 c3pt3A_ Probab=31.94   E-value=27  Score=12.44  Aligned_columns=32  Identities=16%
+
+Q ss_pred             CCCCHHHHHHHHHHHHHHHHHHHHHHHHHHCC
+Q ss_conf             42651578898988999999999999987537
+Q phyrecall_frag  151 DTEDQFLRFFAEWEEEFCDGLNKHEEQLKSCT  182 (1200)
+Q Consensus       151 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  182 (1200)
+                      |.+.|+.|||-+.-+.|..+..+..-.+..+|
+T Consensus        13 ~~~~~~i~~Fw~vl~~~t~~e~~~fL~F~TGs   44 (88)
+T c3pt3A_          13 EKLLQFKRWFWSIVEKMSMTERQDLVYFWTSS   44 (88)
+T ss_dssp             HHHHHHHHHHHHHHHHCCHHHHHHHHHHHHSC
+T ss_pred             HHHHHHHHHHHHHHHHCCHHHHHHHHHHHHCC
+T ss_conf             23558999999999629999999999885289
+
+

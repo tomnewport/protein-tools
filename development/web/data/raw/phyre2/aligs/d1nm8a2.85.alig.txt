@@ -1,0 +1,14 @@
+85 d1nm8a2 Probab=18.05   E-value=48  Score=10.64  Aligned_columns=21  Identities=14%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHCC
+Q ss_conf             988999999998755544306
+Q phyrecall_frag   68 SCDEFCDAWNRSLADYKDIFQ   88 (1200)
+Q Consensus        68 ~~~~~~~~~~~~~~~~~~~~~   88 (1200)
+                      +...+|.+|.+++.||.+|++
+T Consensus       193 ~~~~f~~~L~~al~~i~~ll~  213 (214)
+T d1nm8a2         193 NAARLAHYLEKALLDMRALLQ  213 (214)
+T ss_dssp             CHHHHHHHHHHHHHHHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHH
+T ss_conf             489999999999999999960
+
+

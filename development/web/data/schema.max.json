@@ -1,0 +1,48 @@
+{
+    "protein": {
+        "csv_files": [
+            "data/series.csv",
+            "data/annotations.csv"
+        ],
+        "metadata": "data/meta.json",
+        "position": "data/series.csv$pos",
+        "sequence": "data/series.csv$aa",
+        "series": {
+            "disorder": "data/series.csv$metaprdos_diso"
+        },
+        "series_groups": {
+            "secondary_structure": {
+                "series": {
+                    "coil": "data/series.csv$ss2_coil",
+                    "strand": "data/series.csv$ss2_strand",
+                    "helix": "data/series.csv$ss2_helix"
+                },
+                "sum": 1,
+                "parameter": false
+            },
+            "transmembrane": {
+                "series": {
+                    "inside": "data/series.csv$tmhmm_inside",
+                    "membrane": "data/series.csv$tmhmm_membr",
+                    "outside": "data/series.csv$tmhmm_outside"
+                },
+                "sum": 1,
+                "parameter": false
+            },
+            "coiled_coil": {
+                    "series": {
+                        "mdtik_1": "data/series.csv$coilsmdtik1",
+                        "mdtik_2": "data/series.csv$coilsmdtik2",
+                        "mdtik_3": "data/series.csv$coilsmdtik3",
+                        "mdk_1": "data/series.csv$coilsmdk1",
+                        "mdk_2": "data/series.csv$coilsmdk2",
+                        "mdk_3": "data/series.csv$coilsmdk3"
+                    },
+                    "sum": false,
+                    "parameter": false
+                }
+        },
+    "annotations": ["data/annotations.csv"]
+
+    }
+}

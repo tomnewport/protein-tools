@@ -1,0 +1,14 @@
+84 d1jmsa1 Probab=18.45   E-value=47  Score=10.70  Aligned_columns=24  Identities=17%
+
+Q ss_pred             CCCCCCCCC-CCHHHHHHHHHHHHH
+Q ss_conf             899998242-651578898988999
+Q phyrecall_frag  144 CEERSRDDT-EDQFLRFFAEWEEEF  167 (1200)
+Q Consensus       144 ~~~~~~~~~-~~~~~~~~~~~~~~~  167 (1200)
+                      |..++..+. =+.|++||++|++..
+T Consensus         8 c~R~~pl~~~N~~i~~~L~~l~~~~   32 (95)
+T d1jmsa1           8 CQRRTTLNNYNQLFTDALDILAEND   32 (95)
+T ss_dssp             GGSCCCSCCTTHHHHHHHHHHHHHH
+T ss_pred             HCCCCCCCCCCHHHHHHHHHHHHHH
+T ss_conf             3899988899789999999999999
+
+

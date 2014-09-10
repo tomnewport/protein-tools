@@ -1,0 +1,14 @@
+29 d2ccya_ Probab=40.64   E-value=20  Score=13.38  Aligned_columns=24  Identities=8%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCCC
+Q ss_conf             999999998755544306542567
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIFQGKDMWN   94 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~~~~~~~~   94 (1200)
+                      .+++.|.++|-.||.|++|.--|+
+T Consensus        13 ~~mk~~~~~~~~l~~m~kg~~~~d   36 (127)
+T d2ccya_          13 GLMQTLKSQWVPIAGFAAGKADLP   36 (127)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTSSCCC
+T ss_pred             HHHHHHHHHHHHHHHHHCCCCCCC
+T ss_conf             999999999999999855988988
+
+

@@ -1,0 +1,90 @@
+./buildali_uniref50_dssp.pl  /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/query.fasta  /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a 
+$ ./reformat.pl -M first -noss a3m a3m /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/query.fasta /tmp/phyre2/10150/query.in.a3m -> 1
+$ ./reformat.pl -r a3m psi /tmp/phyre2/10150/query.in.a3m /tmp/phyre2/10150/query.psi -> 1
+
+************************************************
+ Building alignment for /tmp/phyre2/10150/query (phyrecall_fragment_0_1200_PF3D7_1149000)
+************************************************
+Building alignment for query with PSI-BLAST ...
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 80 -e 0.001  -bl 0.33 -bs 0.67  -best -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.core.psi -> 2
+$ ./alignhits.pl -cov 80 -e 0.001  -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi  -best -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.psi -> 2
+$ ./alignhits.pl -cov 80 -e 0.001  -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi  -best -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.a3m -> 2
+Found 2 sequences in PSI-BLAST round 1 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 411
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 411
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+Found 411 sequences in PSI-BLAST round 2 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 788
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 788
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+Found 788 sequences in PSI-BLAST round 3 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 583
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 583
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+Found 583 sequences in PSI-BLAST round 4 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 546
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 546
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+Found 546 sequences in PSI-BLAST round 5 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 522
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 522
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+Found 522 sequences in PSI-BLAST round 6 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 524
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 524
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+Found 524 sequences in PSI-BLAST round 7 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 20000 -v 1 -e 0.001 -d /data/data/blast/uniref50.fasta -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi &> /tmp/phyre2/10150/query.bla
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -a3m -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 511
+Found 511 sequences in PSI-BLAST round 8 (E-value<1E-03, coverage>20%, db=uniref50.fasta)
+
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.a3m
+$ ./alignhits.pl -cov 20 -e 0.001   -bl 0 -bs 0.167 -bg 20 -B /tmp/phyre2/10150/query.core.psi   -psi -q /tmp/phyre2/10150/query.seq /tmp/phyre2/10150/query.bla /tmp/phyre2/10150/query.tmp -> 511
+$ cat /tmp/phyre2/10150/query.tmp >> /tmp/phyre2/10150/query.psi
+$ ./hhfilter -M a3m -id 90  -cov 20 -diff 0 -i /tmp/phyre2/10150/query.a3m -o /tmp/phyre2/10150/query.fil
+Input file = /tmp/phyre2/10150/query.a3m
+Output file = /tmp/phyre2/10150/query.fil
+Read /tmp/phyre2/10150/query.a3m with 3887 sequences
+Alignment in /tmp/phyre2/10150/query.a3m contains 1200 match states
+2176 out of 3887 sequences passed filter (20% min coverage, 90% max pairwise sequence identity)
+$ ./reformat.pl -r a3m psi /tmp/phyre2/10150/query.fil /tmp/phyre2/10150/query.psi -> 2176
+Read DSSP state sequence
+
+Searching DSSP state assignments...
+name=phyrecall_fragment_0_1200_PF3D7_1149000  range=
+WARNING: Cannot open /bmm/data/dssp//phyrecall_fragment_0_1200_PF3D7_1149000.dssp: No such file or directory
+WARNING Cannot open /pdbphyrecall_fragment_0_1200_PF3D7_1149000.ent: No such file or directory
+Predicting secondary structure with PSIPRED ...
+$ /bmm/www/servers/phyre2/bin/blast/blastpgp -I T -s T -b 1 -j 1 -h 0.001 -d /bmm/www/servers/phyre/public_html/Version_1.1/data/dummydb -i /tmp/phyre2/10150/query.seq -B /tmp/phyre2/10150/query.psi -C /tmp/phyre2/10150/query.chk &> /tmp/phyre2/10150/query.bla
+$ /bmm/www/servers/phyre2/bin/psipred25/bin/psipred /tmp/phyre2/10150/query.mtx /bmm/www/servers/phyre2/bin/psipred25/data/weights.dat /bmm/www/servers/phyre2/bin/psipred25/data/weights.dat2 /bmm/www/servers/phyre2/bin/psipred25/data/weights.dat3 /bmm/www/servers/phyre2/bin/psipred25/data/weights.dat4 > /tmp/phyre2/10150/query.ss
+$ /bmm/www/servers/phyre2/bin/psipred25/bin/psipass2 /bmm/www/servers/phyre2/bin/psipred25/data/weights_p2.dat 1 0.98 1.09 /tmp/phyre2/10150/query.ss2 /tmp/phyre2/10150/query.ss > /tmp/phyre2/10150/query.horiz
+$ cat /tmp/phyre2/10150/query.a3m /tmp/phyre2/10150/query.in.a3m /tmp/phyre2/10150/query.fil > /tmp/phyre2/10150/query.tmp.a3m
+$ ./hhfilter -M a3m -id 90  -cov 20 -diff 0 -i /tmp/phyre2/10150/query.tmp.a3m -o /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/query.a3m
+Input file = /tmp/phyre2/10150/query.tmp.a3m
+Output file = /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/query.a3m
+Read /tmp/phyre2/10150/query.tmp.a3m with 2179 sequences
+Alignment in /tmp/phyre2/10150/query.tmp.a3m contains 1200 match states
+2176 out of 2177 sequences passed filter (20% min coverage, 90% max pairwise sequence identity)
+Written alignment with 2176 sequences to /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/query.a3m
+
+Finished  buildali.pl /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/query.fasta /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a

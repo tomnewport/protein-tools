@@ -1,0 +1,14 @@
+61 d1bbha_ Probab=24.24   E-value=36  Score=11.52  Aligned_columns=33  Identities=18%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCCCCCCHHHHHHHH
+Q ss_conf             99999999875554430654256774356799989
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIFQGKDMWNDGKYGEAKNHI  105 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  105 (1200)
+                      .+++.|..+|--||+|++|.  |+.......-..|
+T Consensus        14 ~~mk~~~~~~~~l~~m~kG~--~d~~~~~~~a~~l   46 (131)
+T d1bbha_          14 AGYEFMGWNMGKIKANLEGE--YNAAQVEAAANVI   46 (131)
+T ss_dssp             HHHHHHHHHHHHHHHHHHSC--CCHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHCCC--CCHHHHHHHHHHH
+T ss_conf             99999999999999998596--8999999999999
+
+

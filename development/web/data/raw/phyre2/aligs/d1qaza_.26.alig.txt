@@ -1,0 +1,14 @@
+26 d1qaza_ Probab=41.95   E-value=18  Score=13.72  Aligned_columns=38  Identities=18%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHCCCCHHHHHHHHHHHHHHHHH
+Q ss_conf             999999975533777654389988999999998755544
+Q phyrecall_frag   47 KKTFYLAAAGEGKKLREKHDESCDEFCDAWNRSLADYKD   85 (1200)
+Q Consensus        47 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   85 (1200)
+                      |..+|.+|..-|.-|| -|..++-.|..++++.+|-|+|
+T Consensus       251 L~~iA~ia~~~GvDLw-~y~~dG~si~~~i~f~~a~v~d  288 (351)
+T d1qaza_         251 LTMIAETASRQGIDLY-AYKENGRDIHSARKFVFAAVKN  288 (351)
+T ss_dssp             HHHHHHHHHTTTCCCT-TCCSSSCCHHHHHHHHHHHHHC
+T ss_pred             HHHHHHHHHHCCCCCC-CCCCCCHHHHHHHHHHHHHCCC
+T ss_conf             9999999984197754-4153425799999999853278
+
+

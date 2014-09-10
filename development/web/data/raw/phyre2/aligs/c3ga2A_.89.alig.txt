@@ -1,0 +1,14 @@
+89 c3ga2A_ Probab=17.78   E-value=28  Score=12.36  Aligned_columns=17  Identities=24%
+
+Q ss_pred             CCCCCCCCCCCCHHHHH
+Q ss_conf             78999982426515788
+Q phyrecall_frag  143 QCEERSRDDTEDQFLRF  159 (1200)
+Q Consensus       143 ~~~~~~~~~~~~~~~~~  159 (1200)
+                      ++..+..|-|||.||-|
+T Consensus        77 ~~~~~~~~PYIPG~LaF   93 (237)
+T c3ga2A_          77 HSXGRISVPYVSGFLAF   93 (237)
+T ss_dssp             EEEEECCCCSSSSCGGG
+T ss_pred             EEECCCCCCCCCHHHHH
+T ss_conf             64044478832403666
+
+

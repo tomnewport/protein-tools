@@ -1,0 +1,14 @@
+98 d1neia_ Probab=16.24   E-value=53  Score=10.35  Aligned_columns=19  Identities=11%
+
+Q ss_pred             HHHHHHHHHHHHHCCCCCC
+Q ss_conf             9999987555443065425
+Q phyrecall_frag   74 DAWNRSLADYKDIFQGKDM   92 (1200)
+Q Consensus        74 ~~~~~~~~~~~~~~~~~~~   92 (1200)
+                      ++-+-+.-|+-+||||-|+
+T Consensus        33 ~iaae~vKdLvNiVRgYD~   51 (60)
+T d1neia_          33 EVAAEVIKDLVNTVRSYDT   51 (60)
+T ss_dssp             HHHHHHHHHHHHHHHHTTS
+T ss_pred             HHHHHHHHHHHHHHHCCCC
+T ss_conf             4689999999999751576
+
+

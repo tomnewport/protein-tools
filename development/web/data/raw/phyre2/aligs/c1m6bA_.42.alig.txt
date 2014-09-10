@@ -1,0 +1,14 @@
+42 c1m6bA_ Probab=29.29   E-value=24  Score=12.80  Aligned_columns=12  Identities=8%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+++
+T Consensus        54 ~irg~~~~~~~~   65 (549)
+T c1m6bA_          54 VVRGTQVYDGKF   65 (549)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EECCCEEECCCE
+T ss_conf             563644414765
+
+

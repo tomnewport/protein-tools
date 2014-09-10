@@ -1,0 +1,14 @@
+47 c3be1A_ Probab=27.47   E-value=27  Score=12.43  Aligned_columns=12  Identities=25%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+++
+T Consensus        79 ~irg~~~~~~~~   90 (583)
+T c3be1A_          79 IVRGTQLFEDNY   90 (583)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EECCCEEECCCE
+T ss_conf             671642314772
+
+

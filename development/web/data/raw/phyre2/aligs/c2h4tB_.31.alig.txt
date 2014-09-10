@@ -1,0 +1,14 @@
+31 c2h4tB_ Probab=39.26   E-value=21  Score=13.23  Aligned_columns=29  Identities=24%
+
+Q ss_pred             HCCCCHHHHHHHHHHHHHHHHHHCCCCCC
+Q ss_conf             43899889999999987555443065425
+Q phyrecall_frag   64 KHDESCDEFCDAWNRSLADYKDIFQGKDM   92 (1200)
+Q Consensus        64 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   92 (1200)
+                      .++.+...||.+|.+++.||.+|+-|+.+
+T Consensus       598 ~~~t~~~~f~~~L~~al~~i~~lle~~~~  626 (626)
+T c2h4tB_         598 YSGRNAREFLHCVQKCLEDIFDALEGKAI  626 (626)
+T ss_dssp             CTTSCHHHHHHHHHHHHHHHHHHHHTCCC
+T ss_pred             CCCCCHHHHHHHHHHHHHHHHHHHCCCCC
+T ss_conf             99889999999999999999998504889
+
+

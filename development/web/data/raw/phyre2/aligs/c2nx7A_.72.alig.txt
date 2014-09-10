@@ -1,0 +1,14 @@
+72 c2nx7A_ Probab=21.14   E-value=38  Score=11.34  Aligned_columns=11  Identities=27%
+
+Q ss_pred             CCCCCHHHHHH
+Q ss_conf             65873556540
+Q phyrecall_frag   20 GCVPPRRQNLN   30 (1200)
+Q Consensus        20 ~~~~~~~~~~~   30 (1200)
+                      ||||.-|++-|
+T Consensus        15 acapacrlscc   25 (28)
+T c2nx7A_          15 ACAPACRLSCC   25 (28)
+T ss_dssp             GGTTTCCHHHH
+T ss_pred             CCCCHHCCEEE
+T ss_conf             14310100000
+
+

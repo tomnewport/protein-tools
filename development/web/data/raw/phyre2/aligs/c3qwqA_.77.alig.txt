@@ -1,0 +1,14 @@
+77 c3qwqA_ Probab=19.51   E-value=45  Score=10.86  Aligned_columns=12  Identities=17%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+.+
+T Consensus        81 ~irg~~~~~~~~   92 (613)
+T c3qwqA_          81 IIRGNMYYENSY   92 (613)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EECCCEEECCCE
+T ss_conf             562644323872
+
+

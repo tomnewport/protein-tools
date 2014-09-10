@@ -1,0 +1,14 @@
+94 c2a91A_ Probab=16.89   E-value=51  Score=10.46  Aligned_columns=12  Identities=25%
+
+Q ss_pred             HCCCCCCCCCCC
+Q ss_conf             306542567743
+Q phyrecall_frag   86 IFQGKDMWNDGK   97 (1200)
+Q Consensus        86 ~~~~~~~~~~~~   97 (1200)
+                      ||||+.||.+++
+T Consensus        80 vIRG~~l~~~~y   91 (506)
+T c2a91A_          80 IVRGTQLFEDNY   91 (506)
+T ss_dssp             EECCSSCBTTTE
+T ss_pred             EEECCEECCCCE
+T ss_conf             561552004761
+
+

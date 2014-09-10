@@ -1,0 +1,26 @@
+59 c3tqoA_ Probab=24.31   E-value=36  Score=11.53  Aligned_columns=97  Identities=9%
+
+Q ss_pred             HHHHHHHHHHHHHHHCCCCHHHHHHHHHHHHHHHHHHCCCCCCC--CCCCHHHHHHHHHH
+Q ss_conf             99997553377765438998899999999875554430654256--77435679998999
+Q phyrecall_frag   50 FYLAAAGEGKKLREKHDESCDEFCDAWNRSLADYKDIFQGKDMW--NDGKYGEAKNHIKN  107 (1200)
+Q Consensus        50 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--~~~~~~~~~~~~~~  107 (1200)
+                      +...|..+|......    .+.+...+.+.|+.+|  |.-.|.+  ...+...+..-+..
+T Consensus        77 i~~~a~~~~~~~~e~----~d~~~~~~~~~~~~l~--i~~d~~~~~~~e~~~~~~~~~~~  130 (387)
+T c3tqoA_          77 IIKRAGENKESPAAL----AERFIQILHEDEKALR--VLSPDQEPRATQYVPEIIKLIQK  130 (387)
+T ss_dssp             HHHHHHHTTSCHHHH----HHHHHHHHHHHHHHHT--CCCCSBCCBGGGCHHHHHHHHHH
+T ss_pred             HHHHHHHCCCCHHHH----HHHHHHHHHHHHHHCC--CCCCCEEEECCHHHHHHHHHHHH
+T ss_conf             998888639998999----9999999999999808--89853254030689999999999
+
+
+Q ss_pred             HHHHHCCHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHH
+Q ss_conf             9985147157799985201788997530477787778999982426515788
+Q phyrecall_frag  108 AFGDMNNRKTMLNEIEKGIKDETFSRENGLDVCKSQCEERSRDDTEDQFLRF  159 (1200)
+Q Consensus       108 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  159 (1200)
+                      ++.+.+-|...+.+||....       .|..-+..+..++....+.--|++|
+T Consensus       131 l~~~g~~y~~~~~~~y~~~~-------~~~~~g~~~~~~~~~~~~~~~~~~~  175 (387)
+T c3tqoA_         131 LLDNQYAYTGQNGDVFFDVR-------RFKDYGKLSHRHLDSKRDPLDFVLW  175 (387)
+T ss_dssp             HHHHTSEEECTTSCEEECTT-------TCTTTTTTTTCSCCCCSSTTCEEEE
+T ss_pred             HHHCCCEEECCCCCEECCHH-------HHCCCCCCCCCCCCCCCCCCCCEEE
+T ss_conf             97369501302178711233-------4022274347975300164521575
+
+

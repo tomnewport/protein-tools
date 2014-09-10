@@ -1,0 +1,38 @@
+32 c1j0yD_ Probab=35.69   E-value=24  Score=12.85  Aligned_columns=84  Identities=13%
+
+Q ss_pred             HHHHHHHHHHHHHHHHC-------------C----------------CCCCCCCCCHHHH
+Q ss_conf             99999999875554430-------------6----------------5425677435679
+Q phyrecall_frag   71 EFCDAWNRSLADYKDIF-------------Q----------------GKDMWNDGKYGEA  101 (1200)
+Q Consensus        71 ~~~~~~~~~~~~~~~~~-------------~----------------~~~~~~~~~~~~~  101 (1200)
+                      .+|++++..||+++++|             |                |-.-|+..-...+
+T Consensus       144 ~f~~sf~~~fa~~~~~It~I~vglGp~GELRYpshPa~~gW~~~neG~fqCYd~~a~~~F  203 (516)
+T c1j0yD_         144 ELYTAFAAAMKPYKDVIAKIYLSGGPAGELRYPSYTTSDGTGYPSRGKFQAYTEFAKSKF  203 (516)
+T ss_dssp             HHHHHHHHHHGGGGGGBCCEEECCSGGGBSSCCCCCTTTTCCTTSCCCCCCCSHHHHHHH
+T ss_pred             HHHHHHHHHHHHHCCHHHHHHCCCCCCCCCCCCCCCHHHCCCCCCCCCCCCCCHHHHHHH
+T ss_conf             999999999875200011110045655555367884010167588746676899999999
+
+
+Q ss_pred             HHHHHHHHHHHCCHHHHHHHHHHHHHHHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHHHH
+Q ss_conf             998999998514715779998520178899753047778777899998242651578898
+Q phyrecall_frag  102 KNHIKNAFGDMNNRKTMLNEIEKGIKDETFSRENGLDVCKSQCEERSRDDTEDQFLRFFA  161 (1200)
+Q Consensus       102 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  161 (1200)
+                      +.-|+.-|+   .--.|..+|.+...+     -....+......+.... |--+|=|||-
+T Consensus       204 R~WLk~KYg---SIdaLN~AWGt~~~s-----f~qv~PP~~~~fF~~~G-~~s~YG~fFL  254 (516)
+T c1j0yD_         204 RLWVLNKYG---SLNEVNKAWGTKLIS-----ELAILPPSDGEQFLMNG-YLSMYGKDYL  254 (516)
+T ss_dssp             HHHHHHHHS---SHHHHHHHHTCCCSS-----GGGCCSCSCHHHHHHTG-GGSHHHHHHH
+T ss_pred             HHHHHHHHC---CHHHHHHHHCCCCCC-----HHHCCCCCCCCCCCCCC-CCCHHHHHHH
+T ss_conf             999999740---488787876789988-----22046887776311487-2473356689
+
+
+Q ss_pred             HH
+Q ss_conf             98
+Q phyrecall_frag  162 EW  163 (1200)
+Q Consensus       162 ~~  163 (1200)
+                      .|
+T Consensus       255 ~W  256 (516)
+T c1j0yD_         255 EW  256 (516)
+T ss_dssp             HH
+T ss_pred             HH
+T ss_conf             99
+
+

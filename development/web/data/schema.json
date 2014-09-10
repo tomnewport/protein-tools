@@ -1,0 +1,70 @@
+{
+    "protein": {
+        "csv_files": [
+            "data/series.csv",
+            "data/annotations.csv"
+        ],
+        "metadata": "data/meta.json",
+        "position": "data/series.csv$pos",
+        "sequence": "data/series.csv$aa",
+        "series": {
+            "disorder": {
+            	"file": "data/series.csv$metaprdos_diso",
+            	"ymin": "0.5",
+            	"ymax": "2",
+            	"gauss": 1,
+            	"annotation": "Disordered Region"
+            },
+            "sequence": {
+                "file": "data/series.csv$aa",
+                "ymin": "0.5",
+                "ymax": "2",
+                "gauss": 1,
+                "annotation": "Disordered Region"
+            }
+        },
+        "series_groups": {
+            "secondary_structure": {
+                "series": {
+                    "Coil": "data/series.csv$ss2_coil",
+                    "Strand": "data/series.csv$ss2_strand",
+                    "Helix": "data/series.csv$ss2_strand"
+                },
+                "ymin": "0.5",
+            	"ymax": "2",
+            	"gauss": 0.000000001,
+                "sum": 1,
+                "parameterspace": false
+            },
+            "transmembrane": {
+                "series": {
+                    "inside": "data/series.csv$tmhmm_inside",
+                    "membrane": "data/series.csv$tmhmm_membr",
+                    "outside": "data/series.csv$tmhmm_outside"
+                },
+                "ymin": "0.5",
+                "ymax": "2",
+                "gauss": 0.000000001,
+                "sum": 1,
+                "parameterspace": false
+            },
+            "coiled_coil": {
+                    "series": {
+                        "mdtik_1": "data/series.csv$coilsmtidk1",
+                        "mdtik_2": "data/series.csv$coilsmtidk2",
+                        "mdtik_3": "data/series.csv$coilsmtidk3",
+                        "mdk_1": "data/series.csv$coilsmdk1",
+                        "mdk_2": "data/series.csv$coilsmdk2",
+                        "mdk_3": "data/series.csv$coilsmdk3"
+                    },
+                                    "ymin": "0.5",
+                "ymax": "2",
+                "gauss": 0.000000001,
+                    "sum": false,
+                    "parameterspace": false
+                }
+        },
+    "annotations": ["data/annotations.csv"]
+
+    }
+}

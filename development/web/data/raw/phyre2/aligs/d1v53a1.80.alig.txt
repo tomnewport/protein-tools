@@ -1,0 +1,14 @@
+80 d1v53a1 Probab=18.86   E-value=40  Score=11.19  Aligned_columns=12  Identities=8%
+
+Q ss_pred             HHHHHHHHHHHH
+Q ss_conf             578898988999
+Q phyrecall_frag  156 FLRFFAEWEEEF  167 (1200)
+Q Consensus       156 ~~~~~~~~~~~~  167 (1200)
+                      |++||.|||.+|
+T Consensus       200 f~~~~~eva~ey  211 (356)
+T d1v53a1         200 WREIAEETAKKY  211 (356)
+T ss_dssp             HHHHHHHHHTTC
+T ss_pred             HHHHHHHHHHHC
+T ss_conf             999999999877
+
+

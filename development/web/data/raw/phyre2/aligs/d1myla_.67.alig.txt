@@ -1,0 +1,14 @@
+67 d1myla_ Probab=23.35   E-value=15  Score=14.17  Aligned_columns=10  Identities=50%
+
+Q ss_pred             CCHH-HHHHHH
+Q ss_conf             6515-788989
+Q phyrecall_frag  153 EDQF-LRFFAE  162 (1200)
+Q Consensus       153 ~~~~-~~~~~~  162 (1200)
+                      +||| |||-.|
+T Consensus         2 mpqfnlrwpre   12 (45)
+T d1myla_           2 MPQFNLRWPRE   12 (45)
+T ss_dssp             CCCCCCCCCHH
+T ss_pred             CCCCCCCCHHH
+T ss_conf             88766628499
+
+

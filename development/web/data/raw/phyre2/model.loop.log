@@ -1,0 +1,244 @@
+INFO  : Successfully started log file 'model.loop.log'
+________________________________________________________________________________
+
+                                     Assembler
+
+                 Protein structure prediction by fragment assembly
+                                   (Ver. 0.6.6)
+________________________________________________________________________________
+
+INFO  : Printing configuration for program 'assembler'
+INFO  : Configuration file '/bmm/www/servers/phyre2/bin/loop_local.config'
+________________________________________________________________________________
+
+[Query Input]
+FASTA_FILE                               = /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/input.fasta
+PSSM_FILE                                = /bmm/www/servers/phyre2/public_html/phyre2_output/d91567163004687a/assembler.pssm
+MODEL_START_LIST                         = model_start.list
+BUILD_INITIAL_REFERENCE                  = 0
+BUILD_UP_MAX_MODELS                      = 1
+________________________________________________________________________________
+
+[Energy Functions]
+PP_STUB                                  = /bmm/www/servers/phyre2/bin/assembler_data/default.pp
+SP_STUB                                  = /bmm/www/servers/phyre2/bin/assembler_data/default.sp
+BBDEP_LIBRARY_THRESHOLD                  = 0.9
+RADIUS_OF_GYRATION_THRESHOLD             = 2
+RADIUS_OF_GYRATION_ABSOLUTE              = 0
+CBCB_CONTACT_DIST                        = 7.5
+CONTACT_GAP                              = 5
+MAXSUB_DIST                              = 6
+MAXSUB_ITER                              = 1
+RMSD_DIST                                = 6
+HBOND_SEPARATION                         = 5
+RESIDUE_PROB_CUT_OFF                     = 0.2
+PP_RESIDUE_PROB_CUT_OFF                  = 0.4
+MAX_CALIBRATE_ENERGY                     = 500
+CUTOFF_PHI_PSI                           = 0.001
+TORSION_BILINEAR                         = 1
+LJ_SWITCH_RATIO                          = 0.7
+ENERGY_SET_MODE                          = 0
+NUMBER_OF_ENERGY_SETS                    = 1
+________________________________________________________________________________
+
+[Energy Set 1]
+T_LIMIT                                  = 0
+WEIGHT_PAIR_POTENTIAL                    = 0.215
+WEIGHT_SOLVATION_POTENTIAL               = 1
+WEIGHT_STERIC_ENERGY                     = 5.03
+WEIGHT_RADIUS_OF_GYRATION                = 2.83
+WEIGHT_TORSION_ENERGY                    = 1.14
+WEIGHT_HBONDS_ORIENT                     = 5.27
+STERIC_CLASH                             = 1
+PAIR_SEPARATION_MIN                      = 3
+SS_METHOD                                = 0
+ENERGY_SCALE_FACTOR                      = 0
+PROB_REFINE_HELIX                        = 0.3
+PROB_REFINE_SHEET                        = 0.5
+PROB_REFINE_COIL                         = 1
+PROB_SHEAR_STRAND                        = 0.05
+PROB_PHI_PSI_TWIST                       = 0.1
+PROB_PHI_PSI_TILT                        = 0.15
+PROB_TEMPLATE_SPLICE                     = 0
+PROB_FRAG_3                              = 1
+PROB_GUNN_COST_9                         = 0
+PROB_GUNN_COST_3                         = 0
+PROB_STABILISE_TWIST                     = 0
+PROB_STABILISE_TILT                      = 0
+PROB_STABILISE_TEMPLATE                  = 0
+PROB_STABILISE_FRAG_9                    = 0
+PROB_STABILISE_FRAG_3                    = 0
+PROB_STABILISE_GUNN_9                    = 0
+PROB_STABILISE_GUNN_3                    = 0
+FULL_ATOM_MODEL                          = 0
+________________________________________________________________________________
+
+[Model Building]
+MAX_MODELS                               = 1000
+MAX_BUILD_ITERATIONS                     = 100
+MAX_JOIN_ITERATIONS                      = 5
+MAX_JOIN_REFINE_ITERATIONS               = 5
+MAX_REFINE_ITERATIONS                    = 5
+MAX_SPLICE_ITERATIONS                    = 5
+SHEAR_STRAND_DISTANCE                    = 3.8
+PHI_PSI_TWIST_LENGTH                     = 3
+PHI_PSI_TWIST_RANGE                      = 5
+PHI_PSI_TILT_LENGTH                      = 5
+PHI_PSI_TILT_RANGE                       = 15
+STABILISE_SIZE                           = 5
+STABILISE_RESTRICT                       = 1
+STABILISE_ITERATIONS                     = 3
+STABILISE_BREAK_THRESHOLD                = 1
+STABILISE_HELIX                          = 0
+STABILISE_STRAND                         = 1
+STABILISE_MAX_ANGLE_UPDATE               = 15
+SHEAR_LOOP_SIZE                          = 8
+SHEAR_LOOP_COIL_SIZE                     = 5
+SHEAR_MAX_CCD_ITERATIONS                 = 300
+SHEAR_CCD_THRESHOLD                      = 0.3
+SHEAR_CCD_NC_THRESHOLD                   = 0.1
+SHEAR_CCD_RESTRICT                       = 0
+SHEAR_MAX_ANGLE_UPDATE                   = 15
+REPACK_FREQUENCY                         = 25
+REPACK_RANDOM                            = 2
+REPACK_THRESHOLD                         = 0.7
+GUNN_COST_UPPER                          = 0.03
+GUNN_COST_LOWER                          = 11.4701
+MAX_MSD_DEVIATION                        = 16
+RESEED_RESTRICTION_INTERVAL              = 0
+RANDOM_LIST_L                            = 0
+RANDOM_LIST_9                            = 0
+RANDOM_LIST_3                            = 0
+RANDOM_LIST_TEMPLATE                     = 0
+RANDOM_BUILD                             = 0
+________________________________________________________________________________
+
+[Simulated Annealing]
+T_START_TEMP                             = 10
+T_END_TEMP                               = 0
+CALIBRATION_SEED                         = 0
+T_CALIBRATION_FACTOR                     = 10
+ENERGY_CALIBRATION_FACTOR                = 4
+MAX_CALIBRATE_START                      = 500
+T_CALIBRATION_FACTOR                     = 10
+T_REDUCE_FACTOR_EXP                      = 0.5
+T_REDUCE_FACTOR_STEPS                    = 50
+RATIO_EXP_TO_LINEAR_SWITCH               = 1
+MIN_TEMP_THRESHOLD                       = 0
+MAX_TEMP_ITER                            = 1000
+MAX_TEMP_REFINE                          = 100
+MAX_STOP_ITER                            = 30000
+MAX_STOP_REFINE                          = 2000
+DELTA_ROLL_SIZE                          = 0
+DELTA_STOP_THRESHOLD                     = 0
+MAX_QUENCH                               = 5000
+NO_TEMPLATE_RATIO                        = 0.2
+________________________________________________________________________________
+
+[Loop Modelling]
+MODEL_LOOPS                              = 1
+LOOP_DATABASE                            = /data/data/blast/loopdb
+MIN_LOOP_SIZE                            = 2
+MAX_LOOP_SIZE                            = 15
+POSITIONAL_GAPS                          = 1
+TRIM_BACK                                = 1
+TRIM_BACK_STERIC_CHECKS                  = 0
+MAX_TRIM_RES                             = 6
+MAX_TRIM_EDGE                            = 6
+TRIM_BACK_GOODNESS                       = 1
+SIZE_TRIM_BACK_AV                        = 0
+MAX_SELECT_LOOPS                         = 500
+TOLERANCE                                = 0.75
+RMSD_WEIGHT                              = 80.5
+RMSD_BENCHMARK                           = 0
+FIT_ON_TRIANGLE                          = 0
+CHECK_STERIC_CLASH                       = 1
+CHECK_STERIC_ENERGY                      = 0
+STERIC_ENERGY_THRESHOLD                  = 0.5
+ABINITIO_LOOPS                           = 0
+ABINITIO_ENDS                            = 0
+ABINITIO_TRIM_COUNT                      = 0
+MAX_LOOP_MODELS                          = 1000
+CCD_LOOP_CLOSURE_TOLERANCE               = 6
+CCD_FAILURE_TOLERANCE                    = 0
+LOOP_SELECTION_TOLERANCE                 = 9
+MAX_CCD_LOOPS                            = 20
+CCD_DIRECTION                            = 1
+CCD_CLOSURE_RMSD                         = 0.08
+CCD_CLOSURE_NC_DEVIATION                 = 0.1
+CCD_MAX_ITER                             = 5000
+CCD_RESTRICT                             = 1
+CCD_MAX_ANGLE_UPDATE                     = 15
+MAX_COMBINE_LOOPS                        = 10
+START_T                                  = 2
+STEPS_PER_LOOP                           = 100
+REPLACE_TRIMMED                          = 1
+________________________________________________________________________________
+
+[Logging]
+LOG_LEVEL                                = 1
+LOG_TIME                                 = 0
+LOG_FILE                                 = 0
+LOG_FILE_NAME                            = model.loop.log
+FOLDING_PATH                             = 0
+OUTPUT_DIR                               = loop
+USE_COMPRESSION                          = 0
+FIT_ON_PREVIOUS                          = 0
+USAGE_FILE                               = assembler.model_usage
+MODEL_START_NO                           = 1
+MODEL_END_NO                             = 0
+OUTPUT_FREQUENCY                         = 100
+UNWEIGHTED_OUTPUT                        = 0
+SPLICE_INFO                              = 1
+SPLICE_FILE                              = assembler.splice_info
+FRAGVAR_INFO                             = 0
+BAD_FRAG_DIR                             = assembler_bad
+REFINE_RRG_LIMIT                         = 0
+STOP_FILE                                = assembler.stop
+OUTPUT_LOOPS                             = 0
+________________________________________________________________________________
+
+[Benchmark]
+BACKBONE_RMSD                            = 0
+OUTPUT_RMSD                              = 0
+OUTPUT_MAXSUB                            = 0
+MAXSUB_DIST                              = 6
+MAXSUB_ITER                              = 0
+________________________________________________________________________________
+
+INFO  : Reading FASTA sequence file
+INFO  : Reading query PSSM file
+INFO  : Reading Pair-potential file
+INFO  : Reading Solvation-potential file
+INFO  : Reading PDB list file 'model_start.list'
+INFO  : Successfully read 0 PDBs
+INFO  : Successfully read 1 / 1 PDBs from list file 'model_start.list'
+________________________________________________________________________________
+
+INFO  : Entering build loops routine
+________________________________________________________________________________
+
+INFO  : Processing starting model 1 - c2kp7A_.20.pdb
+________________________________________________________________________________
+
+INFO  : Performing trim back
+________________________________________________________________________________
+
+INFO  : Modelling loops
+WARN  : Model missing 153 N-terminal residues
+WARN  : Model missing 1034 C-terminal residues
+________________________________________________________________________________
+
+INFO  : Assembling final models for 0 gaps => 1 combinations
+INFO  : Removing single loop lists
+INFO  : Assembled 1 / 1 combinations
+________________________________________________________________________________
+
+INFO  : Ranking final models by energy
+INFO  : Outputting models to dir 'loop/model.1'
+INFO  : model.1.pdb : Energy = -7.046 (T = 0) : I = 0 : R = 0 : RoG = 18.760 : PP = -1.368 : SP = 1.934 : SE = 0.000 : HO = -26.135 : TE = -0.236589
+________________________________________________________________________________
+
+INFO  : Model building complete
+________________________________________________________________________________
+

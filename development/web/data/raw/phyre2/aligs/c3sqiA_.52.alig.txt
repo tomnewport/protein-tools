@@ -1,0 +1,26 @@
+52 c3sqiA_ Probab=25.75   E-value=34  Score=11.71  Aligned_columns=61  Identities=10%
+
+Q ss_pred             HCCCCCCCCCCCHHHHHHHHHHHHHHHCCHHHH---HHHHHHHHHHHHHHHHHCCCCCCC
+Q ss_conf             306542567743567999899999851471577---999852017889975304777877
+Q phyrecall_frag   86 IFQGKDMWNDGKYGEAKNHIKNAFGDMNNRKTM---LNEIEKGIKDETFSRENGLDVCKS  142 (1200)
+Q Consensus        86 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---~~~~~~~~~~~~~~~~~~~~~~~~  142 (1200)
+                      ||||++|-...    -++-|-+.+-..+.|-+|   |-.|+-++...      |.+++-+
+T Consensus       229 iiRGKSl~~YP----ReETlgNYY~~VFrYC~LpYKrReyFq~~~~~------~~yP~~s  278 (388)
+T c3sqiA_         229 IIRGKSLDQYP----RELTLGNWYPTIFKYCQLPYTKKHWFQVNQEW------PQFPDFS  278 (388)
+T ss_dssp             SSCCSSTTSCC----CHHHHHHHHHHHHHHHTCCCCHHHHHSCCTTS------CCCCCCC
+T ss_pred             CCCCCCCCCCC----HHHHHHHHHHHHHHHHCCCCCCHHEECCCCCE------EECCCCC
+T ss_conf             12178812084----01111126789898814863000010058651------2358877
+
+
+Q ss_pred             CCCCCCCCCCCCHHH
+Q ss_conf             789999824265157
+Q phyrecall_frag  143 QCEERSRDDTEDQFL  157 (1200)
+Q Consensus       143 ~~~~~~~~~~~~~~~  157 (1200)
+                      --+. -+++.||-.+
+T Consensus       279 ~~~~-~fp~~IP~Df  292 (388)
+T c3sqiA_         279 ESDS-ENTIGIPDFY  292 (388)
+T ss_dssp             CCCS-SBSSSSBHHH
+T ss_pred             CHHH-HCCCCCCHHH
+T ss_conf             5556-3002787889
+
+
