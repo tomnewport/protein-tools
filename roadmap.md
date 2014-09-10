@@ -14,8 +14,10 @@ The web interface should be able to display structure predictions for a single p
 
 ### TODO
 
-- Better zoom/pan behaviour
-- Rewrite slider bar using d3.js
+- Zoom and Pan
+    - Rewrite slider bar using d3.js
+    - Link to features
+    - Zoom/Pan graphs
 - Better domain visualisation
 - Better axis legends
 - Show secondary structure with sequence
