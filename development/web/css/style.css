@@ -1,0 +1,185 @@
+
+.figure .axis line, .figure .axis path {
+fill: none;
+vector-effect: non-scaling-stroke;
+}
+
+.figure text{
+	font-size: 10px;
+}
+.figure .fig_area{
+	fill-opacity: 0.2;
+}
+.figure .fig_line{
+	stroke-width: 1.5px;
+	fill: none;
+	vector-effect: non-scaling-stroke;
+}
+.figure .threshold path{
+	fill: none;
+	vector-effect: non-scaling-stroke;	
+	stroke-dasharray: 5,5;
+}
+.figure .threshold text{
+	text-anchor: end;
+}
+.figure .select_area{
+	fill: white;
+	opacity: 1;
+}
+.figure .select_area_negative{
+	fill: white;
+	opacity: 0.3;
+}
+
+		.aa_A, .aa_I, .aa_L, .aa_V{
+			/* Hydrophobic aliphatic */
+			color: green;
+		}
+		.aa_F, .aa_W, .aa_Y{
+			/* Hydrophobic aromatic*/
+			color: purple;
+		}
+		.aa_N, .aa_C, .aa_Q, .aa_M, .aa_S, .aa_T{
+			/* Polar */
+			color: orange;
+		}
+		 .aa_D, .aa_E{
+		 	/* Charged side chains, acidic*/
+		 	color: red;
+		 }
+		 .aa_R, .aa_H, .aa_K{
+		 	/* Charged side chains, basic*/
+		 	color: blue;
+		 }
+		 .aa_G, .aa_P{
+		 	/* Unique */
+		 	color: orange;
+		 }
+
+
+		body {
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+			margin: 0;
+			padding: 0;
+			background: rgba(251,255,255,1);
+		}
+		input{
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+		}
+		.jumbotron{
+			color: white;
+			background:  #b53939;
+		}
+		.jumbotron a.styled{
+			color: white;
+			text-decoration: underline;
+			opacity: 0.8;
+			font-weight: bold;
+		}
+		.deck{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.data_card{
+			position: relative;
+			background-color: rgba(250,250,250,1);
+			box-shadow: 0.02em 0.05em 0.3em rgba(0,0,0,0.8);
+			border-radius: 0.2em;
+			padding: 1.5em;
+			margin: 2em 0;
+		}
+		.data_card h2:first-child{
+			margin-top: 0;
+		}
+		
+		span.preposition, span.data_label{
+			font-weight: 200;
+		}
+		h3.figtitle{
+			font-weight: 300;
+		}
+		a[rel="Amino Acid Subset"], a[rel="self"]{
+			color: inherit;
+			text-decoration: inherit;
+		}
+		a[rel="Amino Acid Subset"]:before, a[rel="self"]:before{
+			content: "";
+		}
+		p{
+			text-align: justify;
+			font-weight: 300;
+
+		}
+		h1, h2, h3, h4{
+			font-weight: 500;
+		}
+		.select_container select{
+			text-transform: uppercase;
+			text-align: center;
+			float: right;
+			font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+			border: none;
+			outline: none;
+			color: #b53939;
+		}
+		.select_container{
+			width: 100%;
+			position: relative;
+			height: 20px;
+		}
+		svg.figure{
+			width: 100%;
+		}
+		.fig_overview{
+			width: calc(100% - 32px);
+			position: relative;
+			left: 16px;
+		}
+
+		.fig_overview:before{
+			content: "";
+			display: block;
+
+		}
+		section{
+			perspective: 450px;
+		}
+		section>div{
+			transition: 0.4s opacity, 0.4s background-color, 0.4s max-height, 0.4s transform;
+			transform: rotateX(0deg);
+			transform-origin: 0px 0px 0px;
+			opacity: 1;
+			overflow: hidden;
+		}
+		section.collapsed>div{
+			background-color: white;
+			max-height: 0px !important;
+			transform: rotateX(-90deg);
+			transform-origin: 0px 0px 0px;
+			opacity: 0;
+		}
+		section h4{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow-x: hidden;
+			outline: 1px solid transparent;
+			cursor: pointer;
+			transform-origin: 0px 0px 0px;
+		}
+		section.collapsed h4{
+			cursor: pointer;
+			transform-origin: 0px 0px 0px;
+		}
+		section h4 span{
+			margin-right: 10px;
+			transition: 0.4s transform;
+			position: relative;
+			display: inline-block;
+			transform-origin: 50% 50% 0px;
+			transform: rotate(90deg);
+		}
+		section.collapsed h4 span{
+			transform: rotate(0deg);
+		}
+
