@@ -138,13 +138,13 @@ D3SeriesGroupOverview = function(element, data, viewscope, options) {
     var self = this;
 
     this.redraw = function() {
-        self.data.series.start = this.viewscope.start;
-        self.data.series.end = this.viewscope.end;
+        self.data.start = this.viewscope.start;
+        self.data.end = this.viewscope.end;
         s = [{
-            position: self.data.series.start,
+            position: self.data.start,
             value: self.ymax
         }, {
-            position: self.data.series.end,
+            position: self.data.end,
             value: self.ymax
         }];
         select_area = self.chart.select(".select_area");
