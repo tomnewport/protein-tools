@@ -76,7 +76,6 @@ D3AnnotationPlot = function(element, data, viewscope, options){
             if (st.search("Pfam") != -1){
             	c = "Plum";
             }
-            console.log(a);
             self.chart.append("svg:rect")
             .attr("x", PLOT_MARGIN + self.x_scale(a.start))
             .attr("y", aid * 5 )
@@ -106,7 +105,6 @@ AnnotationList = function(element, data, viewscope, options){
 				new_element.find("div").css("max-height", new_element.find("div").height() + "px")
 				new_element.addClass("collapsed");
 				new_element.find(".btn").click(function(e){
-					console.log(self);
 				});
 			}
 		}
@@ -505,6 +503,8 @@ D3SingleSeriesOverview = function(element, data, viewscope, options) {
     };
 };
 
+PLOT_PER_LINE = 50;
+
 D3SecondaryStructure = function(element, data, viewscope, options) {
 
     this.container = element;
@@ -516,14 +516,46 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
 
 
     this.draw = function(){
-        this.element = d3.select(this.container);
+        this.root = d3.select(this.container);
+        //Number of bases to plot:
+        n = (this.viewscope.max - this.viewscope.min) + 1;
+        //Each base gets a box of width PLOT_WIDTH/PLOT_PER_LINE
+        // and height = width * 2
+        //N bases will need ceil(N/PLOT_PER_LINE) lines
+        // so height = PLOT_WIDTH*2/PLOT_PER_LINE * ceil(N/PLOT_PER_LINE)
+        plot_height = PLOT_WIDTH*2/PLOT_PER_LINE * Math.ceil(n/PLOT_PER_LINE);
+
+        self.chart = this.root.append("svg:svg")
+            .attr("viewbox", "0 0 " + PLOT_WIDTH + " 0")
+            .attr("preserveAspectRatio", "xMidYMid meet")
+            .attr("class", "figure figure_secondary_structure")
+            //.attr("width", PLOT_WIDTH);
+        self.chart.append("rect").attr("x",0).attr("y",0).attr("width","10000").attr("height","10000");
         self.redraw();
     }
     this.redraw = function(){
+        //Number of bases to plot:
+        n = (this.viewscope.end - this.viewscope.start) + 1;
+        //Each base gets a box of width PLOT_WIDTH/PLOT_PER_LINE
+        // and height = width * 2
+        //N bases will need ceil(N/PLOT_PER_LINE) lines
+        // so height = PLOT_WIDTH*2/PLOT_PER_LINE * ceil(N/PLOT_PER_LINE)
+        plot_height = PLOT_WIDTH*2/PLOT_PER_LINE * Math.ceil(n/PLOT_PER_LINE);
+
+        self.chart.attr("viewbox", "0 0 " + PLOT_WIDTH + " " + plot_height);
+        self.chart.attr("height", plot_height)
+
         self.data.sequence.series.start = this.viewscope.start;
         self.data.sequence.series.end = this.viewscope.end;
-        var sequence = self.data.sequence.series.d();
+        self.data.secondary_structure.start = this.viewscope.start;
+        self.data.secondary_structure.end = this.viewscope.end;
+        for (var pos = this.viewscope.start; pos < this.viewscope.end; pos++){
+            var aa = this.data.sequence.series.data[pos];
+            var coil = this.data.secondary_structure.series.Coil.series.data[pos];
+            var strand = this.data.secondary_structure.series.Strand.series.data[pos];
+            var helix = this.data.secondary_structure.series.Helix.series.data[pos];
 
+        }
     }
 
 }
