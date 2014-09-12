@@ -505,6 +505,24 @@ D3SingleSeriesOverview = function(element, data, viewscope, options) {
     };
 };
 
+D3SecondaryStructure = function(element, data, viewscope, options) {
+
+    this.container = element;
+    this.data = data;
+    this.options = options;
+    this.viewscope = viewscope;
+
+    var self = this;
+
+    this.draw = function(){
+        d3.select(this.container).append("p").text("Hello");
+    }
+    this.redraw = function(){
+
+    }
+
+}
+
 MatchVisibility =  function(element, data, viewscope, options){
 	this.container = $(element);
 	this.data = data;

@@ -108,11 +108,11 @@
 			//});
 			protein_data = new Data_manager();
 			protein_data.ready = function(){
-				for (i in protein_data.series.sequence.series.d()){
-					aa = protein_data.series.sequence.series.d()[i];
-				$("#secondary_structure").append($("<span class='aa_"+aa+"'>"+aa+" </span>"));
-				}
-				$("#secondary_structure").css("font-family","monospace")
+				//for (i in protein_data.series.sequence.series.d()){
+				//	aa = protein_data.series.sequence.series.d()[i];
+				//$("#secondary_structure").append($("<span class='aa_"+aa+"'>"+aa+" </span>"));
+				//}
+				//$("#secondary_structure").css("font-family","monospace");
 				view = new Viewscope(protein_data);
 				view.start = 16;
 				view.end = 511;
@@ -122,6 +122,8 @@
 				ui.bind_view_scope("#rs_view");
 
 				ui.bind(".protein_title", protein_data.metadata, WriteMeta, {"key":"name"});
+
+				ui.bind("#secondary_structure", 2, D3SecondaryStructure, 2);
 
 				//ui.bind("#inspect", view, MatchVisibility, {"key":"detail_view"})
 
