@@ -274,6 +274,33 @@ function Annotated_series(series, ymin, ymax, gauss, title){
 
 function Series_group(){
 	this.series = {};
+	var self = this;
+	this.__defineSetter__("start", function(val){
+        for (seriesname in self.series){
+        	if (_.isObject(self.series[seriesname])){
+        		self.series[seriesname].series.start = val;
+        	}
+        }
+        this._start = val;
+        return val;
+    });
+    this.__defineGetter__("start", function(val){
+        return this._start;
+    });
+
+	this.__defineSetter__("end", function(val){
+        for (seriesname in self.series){
+        	if (_.isObject(self.series[seriesname])){
+        		self.series[seriesname].series.end = val;
+        	}
+        }
+        this._end = val;
+        return val;
+    });
+    this.__defineGetter__("end", function(val){
+        return this._end;
+    });
+
 	this.sum = false;
 	this.parameterspace = false;
 }
