@@ -514,10 +514,15 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
 
     var self = this;
 
+
     this.draw = function(){
-        d3.select(this.container).append("p").text("Hello");
+        this.element = d3.select(this.container);
+        self.redraw();
     }
     this.redraw = function(){
+        self.data.sequence.series.start = this.viewscope.start;
+        self.data.sequence.series.end = this.viewscope.end;
+        var sequence = self.data.sequence.series.d();
 
     }
 

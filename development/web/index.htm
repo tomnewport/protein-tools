@@ -123,7 +123,7 @@
 
 				ui.bind(".protein_title", protein_data.metadata, WriteMeta, {"key":"name"});
 
-				ui.bind("#secondary_structure", 2, D3SecondaryStructure, 2);
+				ui.bind("#secondary_structure", {"sequence":protein_data.series.sequence,"secondary_structure":protein_data.series_groups.secondary_structure}, D3SecondaryStructure, {});
 
 				//ui.bind("#inspect", view, MatchVisibility, {"key":"detail_view"})
 
