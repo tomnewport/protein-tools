@@ -26,9 +26,9 @@
         "series_groups": {
             "secondary_structure": {
                 "series": {
-                    "Coil": "data/series.csv$ss2_coil",
-                    "Strand": "data/series.csv$ss2_strand",
-                    "Helix": "data/series.csv$ss2_strand"
+                    "Coil": "data/series.csv$ss_coil",
+                    "Strand": "data/series.csv$ss_strand",
+                    "Helix": "data/series.csv$ss_helix"
                 },
                 "ymin": "0.5",
             	"ymax": "2",
