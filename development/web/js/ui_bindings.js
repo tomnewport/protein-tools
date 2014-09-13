@@ -503,7 +503,7 @@ D3SingleSeriesOverview = function(element, data, viewscope, options) {
     };
 };
 
-PLOT_PER_LINE = 50;
+PLOT_PER_LINE = 30;
 
 D3SecondaryStructure = function(element, data, viewscope, options) {
 
@@ -518,7 +518,7 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
     this.draw = function(){
         this.root = d3.select(this.container);
         //Number of bases to plot:
-        n = (this.viewscope.max - this.viewscope.min) + 1;
+        n = (this.viewscope.start - this.viewscope.min) + 1;
         //Each base gets a box of width PLOT_WIDTH/PLOT_PER_LINE
         // and height = width * 2
         //N bases will need ceil(N/PLOT_PER_LINE) lines
@@ -528,9 +528,25 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
         self.chart = this.root.append("svg:svg")
             .attr("viewbox", "0 0 " + PLOT_WIDTH + " 0")
             .attr("preserveAspectRatio", "xMidYMid meet")
-            .attr("class", "figure figure_secondary_structure")
-            //.attr("width", PLOT_WIDTH);
-        self.chart.append("rect").attr("x",0).attr("y",0).attr("width","10000").attr("height","10000");
+            .attr("class", "figure figure_secondary-structure");
+        for (var pos = this.viewscope.min; pos < this.viewscope.max; pos++){
+            var aa = this.data.sequence.series.data[pos];
+            var coil = this.data.secondary_structure.series.Coil.series.data[pos];
+            var strand = this.data.secondary_structure.series.Strand.series.data[pos];
+            var helix = this.data.secondary_structure.series.Helix.series.data[pos];
+            var base_plot = self.chart.append("g")
+                .attr("class", "ss_base base_"+pos+" IUPAC_"+aa)
+            base_plot.append("text").text(aa)
+                .attr("class", "aa_code").attr("y",-10).attr("text-anchor", "center");;
+            postext = "";
+            if (pos % 5 == 0){
+                postext = "|";
+            }
+            if (pos % 10 == 0){
+                postext = pos;
+            }
+            base_plot.append("text").text(postext).attr("class", "aa_pos").attr("text-anchor", "center");
+        }
         self.redraw();
     }
     this.redraw = function(){
@@ -540,21 +556,26 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
         // and height = width * 2
         //N bases will need ceil(N/PLOT_PER_LINE) lines
         // so height = PLOT_WIDTH*2/PLOT_PER_LINE * ceil(N/PLOT_PER_LINE)
-        plot_height = PLOT_WIDTH*2/PLOT_PER_LINE * Math.ceil(n/PLOT_PER_LINE);
+        plot_height = PLOT_WIDTH*3/PLOT_PER_LINE * Math.ceil(n/PLOT_PER_LINE);
 
         self.chart.attr("viewbox", "0 0 " + PLOT_WIDTH + " " + plot_height);
         self.chart.attr("height", plot_height)
 
-        self.data.sequence.series.start = this.viewscope.start;
-        self.data.sequence.series.end = this.viewscope.end;
-        self.data.secondary_structure.start = this.viewscope.start;
-        self.data.secondary_structure.end = this.viewscope.end;
-        for (var pos = this.viewscope.start; pos < this.viewscope.end; pos++){
-            var aa = this.data.sequence.series.data[pos];
-            var coil = this.data.secondary_structure.series.Coil.series.data[pos];
-            var strand = this.data.secondary_structure.series.Strand.series.data[pos];
-            var helix = this.data.secondary_structure.series.Helix.series.data[pos];
-
+        self.data.sequence.series.start = self.viewscope.start;
+        self.data.sequence.series.end = self.viewscope.end;
+        self.data.secondary_structure.start = self.viewscope.start;
+        self.data.secondary_structure.end = self.viewscope.end;
+        for (var pos = self.viewscope.min; pos < self.viewscope.max; pos++){
+            offsetpos = pos - self.viewscope.start;
+            var xpos = (PLOT_WIDTH/PLOT_PER_LINE) * (offsetpos % PLOT_PER_LINE);
+            var ypos = (PLOT_WIDTH*3/PLOT_PER_LINE) * (1 + Math.floor(offsetpos / PLOT_PER_LINE));
+            var base = self.chart.select(".base_"+pos);
+            if (pos < self.viewscope.start || pos > self.viewscope.end){
+                base.style("opacity",0);
+            } else {
+                base.style("opacity",1);
+                base.attr("transform","translate("+xpos+","+ypos+")");
+            }
         }
     }
 

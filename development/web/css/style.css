@@ -31,30 +31,41 @@
 	fill: white;
 	opacity: 0.3;
 }
+.figure_secondary-structure .ss_base{
+	font-family: 'Ubuntu Mono', monospace;
+}
+.figure_secondary-structure .ss_base .aa_code{
+	font-size: 1.5em;
+}
 
-.aa_A, .aa_I, .aa_L, .aa_V{
+.figure_secondary-structure .ss_base .aa_pos{
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 0.6em;
+	transform: translate(0,-10);
+}
+
+.IUPAC_A .aa_code, .IUPAC_I .aa_code, .IUPAC_L .aa_code, .IUPAC_V .aa_code{
 	/* Hydrophobic aliphatic */
-	color: green;
+	fill: green;
 }
-.aa_F, .aa_W, .aa_Y{
+.IUPAC_F .aa_code, .IUPAC_W .aa_code, .IUPAC_Y .aa_code{
 	/* Hydrophobic aromatic*/
-	color: purple;
+	fill: purple;
 }
-.aa_N, .aa_C, .aa_Q, .aa_M, .aa_S, .aa_T{
-	/* Polar */
-	color: orange;
+.IUPAC_N .aa_code, .IUPAC_C .aa_code, .IUPAC_Q .aa_code, .IUPAC_M .aa_code, .IUPAC_S .aa_code, .IUPAC_T .aa_code{
+	fill: orange;
 }
-.aa_D, .aa_E{
-	/* Charged side chains, acidic*/
-	color: red;
+.IUPAC_D .aa_code, .IUPAC_E .aa_code{
+
+	fill: red;
 }
-.aa_R, .aa_H, .aa_K{
-	/* Charged side chains, basic*/
-	color: blue;
+.IUPAC_R .aa_code, .IUPAC_H .aa_code, .IUPAC_K .aa_code{
+
+	fill: blue;
 }
-.aa_G, .aa_P{
-	/* Unique */
-	color: orange;
+.IUPAC_G .aa_code, .IUPAC_P .aa_code{
+
+	fill: orange;
 }
 
 
