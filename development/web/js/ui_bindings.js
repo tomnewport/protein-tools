@@ -531,17 +531,11 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
             .attr("class", "figure figure_secondary-structure");
         for (var pos = this.viewscope.min; pos < this.viewscope.max; pos++){
             var aa = this.data.sequence.series.data[pos];
-<<<<<<< HEAD
             var characters = []
             characters.push(["c",this.data.secondary_structure.series.Coil.series.data[pos]]);
             characters.push(["s",this.data.secondary_structure.series.Strand.series.data[pos]]);
             characters.push(["h",this.data.secondary_structure.series.Helix.series.data[pos]]);
             characters.sort(function(a,b){return b[1]-a[1]});
-=======
-            var coil = this.data.secondary_structure.series.Coil.series.data[pos];
-            var strand = this.data.secondary_structure.series.Strand.series.data[pos];
-            var helix = this.data.secondary_structure.series.Helix.series.data[pos];
->>>>>>> b8e5ca4e6b119c536af11c6699c2b4f992de1c8b
             var base_plot = self.chart.append("g")
                 .attr("class", "ss_base base_"+pos+" IUPAC_"+aa)
             base_plot.append("text").text(aa)
@@ -554,7 +548,6 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
                 postext = pos;
             }
             base_plot.append("text").text(postext).attr("class", "aa_pos").attr("text-anchor", "center");
-<<<<<<< HEAD
             if (characters[0][0] == "c"){
                 base_plot.append("rect")
                     .attr("y",-35)
@@ -576,8 +569,6 @@ D3SecondaryStructure = function(element, data, viewscope, options) {
                     .attr("height", 10)
                     .style("fill", "green");
             }
-=======
->>>>>>> b8e5ca4e6b119c536af11c6699c2b4f992de1c8b
         }
         self.redraw();
     }
