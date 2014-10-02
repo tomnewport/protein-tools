@@ -180,4 +180,10 @@ Stéfan van~der Walt, S~Chris Colbert, and Gaël Varoquaux.
 \newblock {The NumPy Array: A Structure for Efficient Numerical Computation}.
 \newblock {\em Computing in Science \& Engineering}, 13(2):22--30, March 2011.
 
+\bibitem{Bostock2011}
+Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer.
+\newblock {D³: Data-Driven Documents.}
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  17(12):2301--9, December 2011.
+
 \end{thebibliography}

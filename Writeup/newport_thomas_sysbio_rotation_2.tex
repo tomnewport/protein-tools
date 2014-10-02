@@ -171,34 +171,61 @@ The \texttt{data\_manager} class will first download a schema from the server in
 
 An unlimited number of three different data types, series, series groups and annotation lists may then be defined.
 
-\subsubsubsection{The \texttt{Series} object}
+\paragraph{The \texttt{Series} class}
 
-The series object is named and contains an identifier locating that series within the required csv files. It will also contain minimum and maximum y-value thresholds to annotate features, and the standard deviation of a gaussian kernel convolution kernel which may be used to smooth the series before annotating features, and a description for features annotated in this manner. In the example shown in Figure 3, the named series "disorder" may be convolved using a gaussian kernel of standard deviation 1, and values higher than 0.5 but lower than 2 (unrealistically high to cause upper bound to be ignored) may be annotated as "Disordered Region".
+The series class is named and contains an identifier locating that series within the required csv files. It will also contain minimum and maximum y-value thresholds to annotate features, and the standard deviation of a gaussian kernel convolution kernel which may be used to smooth the series before annotating features, and a description for features annotated in this manner. In the example shown in Figure 3, the named series "disorder" may be convolved using a gaussian kernel of standard deviation 1, and values higher than 0.5 but lower than 2 (unrealistically high to cause upper bound to be ignored) may be annotated as "Disordered Region".
 
-\subsubsubsectoion{The \texttt{Series\_ Group} object}
+\paragraph{The \texttt{Series\_Group} class}
 
-The series group object is named and contains several series objects. The properties of these objects for annotation are shared, and additional properties may be used to indicate that the series taken together should sum to a particular value for all amino acids, or that the series each represent a different point in parameter space for some algorithm.
+The series group class is named and contains several series objects. The properties of these objects for annotation are shared, and additional properties may be used to indicate that the series taken together should sum to a particular value for all amino acids, or that the series each represent a different point in parameter space for some algorithm.
 
-\subsubsubsectoion{The \texttt{Annotation} object}
+\paragraph{The \texttt{Annotation} object}
 
-The annotation object simply contains a list of annotations, with a start, end, source and description. Each protein possesses only one annotation list and 
+The annotation object simply contains a list of annotations, with a start, end, source and description. Each protein possesses only one annotation list, which can be populated from multiple files.
 
 \subsubsection{The \texttt{ui\_bindings} class}
 
-\cite{Bostock2011}
+The UI Bindings class will consist of a UI Manager, which coordinates initialising and updating UI elements in response to user actions, a viewscope class which defines the part of the sequence being viewed by the user, and a plot class, which keeps an individual plot up to date. Plotting is primarily performed in a vector format using Data Driven Documents (d3.js) \cite{Bostock2011}. 
+
+\paragraph{The UI manager and viewscope}
+
+\paragraph{Plotting}
+
+In the sense used here, a plot may be anything which uses a piece of data to alter the user interface. This may be as simple as printing a piece of text or toggling the visibility of some UI element, or as complex as an interactive visualisation of large amounts of data. The only required feature of a plot is that it should exist at a fixed position in the DOM (Document Object Model) and be able to initialise and update (draw and redraw) itself. Typically plots 'subscribe' to changes in a viewscope object through the UI Manager. For example, a UI element may show disorder in a region of the gene specified by a viewscope object. If the update (redraw) method of the UI element is subscribed to the viewscope object, it will be called each time the user changes the view.
+
+Several different plots will be implemented:
+
+\paragraph{D3 Annotation Plot}
+\paragraph{D3 Annotation Plot}
+\paragraph{D3 Annotation Plot}
+\paragraph{D3 Annotation Plot}
+
+
 
 \subsection{Implementation}
 
+% Introduction
+
+% Specific milestones
+
 \section{Discussion}
 
+% Possible overall benefits
+
+% Benefits of flexibility
+
+% Alternatives
+
 \section{Limitations and Further Work}
+
+% Personalised annotations
 
 %300 words
 %------------------------------------------------
 \phantomsection
 \section*{Acknowledgments}
 
-I am grateful to John Vakonakis for his insight and encouragement whilst supervising this project.
+I am grateful to John Vakonakis for his insight, enthusiasm and encouragement whilst supervising this project.
 
 \addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
 
