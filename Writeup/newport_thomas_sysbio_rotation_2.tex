@@ -1,71 +1,25 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Stylish Article
-% LaTeX Template
-% Version 2.0 (13/4/14)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Mathias Legrand (legrand.mathias@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[fleqn,10pt]{article} % Document font size and equations flushed left
 
-\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
-
-%----------------------------------------------------------------------------------------
-%	COLUMNS
-%----------------------------------------------------------------------------------------
-
-\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
-\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
-
-%----------------------------------------------------------------------------------------
-%	COLORS
-%----------------------------------------------------------------------------------------
-
-\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
-\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
-
-%----------------------------------------------------------------------------------------
-%	HYPERLINKS
-%----------------------------------------------------------------------------------------
 
 \usepackage{hyperref} % Required for hyperlinks
-\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{caption}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-%----------------------------------------------------------------------------------------
-%	ARTICLE INFORMATION
-%----------------------------------------------------------------------------------------
-
-\JournalInfo{DTC Dissertation, Thomas Newport, Systems Biology 2013} % Journal information
-\Archive{Rotation 2} % Additional notes (e.g. copyright, DOI, review/research article)
-
-\PaperTitle{Article Title} % Article title
-
-\Authors{Tom Newport} % Authors
-
-\Keywords{} % Keywords - if you don't want any simply remove all the text between the curly brackets
-\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
-
-%----------------------------------------------------------------------------------------
-%	ABSTRACT
-%----------------------------------------------------------------------------------------
-
-\Abstract{There's nothing here yet}
-
-%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\flushbottom % Makes all text pages the same height
+\title{Article Title} % Article title
+
+\author{Tom Newport} % Authors
+\maketitle
+
+
+\begin{abstract}
+There's nothing here yet
+\end{abstract}
 
 \maketitle % Print the title and abstract box
 
@@ -110,41 +64,77 @@ In order to avoid detection in the spleen, many exported proteins are associated
 %% TN Introduce exportome in a genomic context
 To date, at least 10\% of the protein products of the \pf genome have been shown to be exported to the host cell \cite{Boddey2013a}. Within this exportome, there exist 360 distinct proteins once close duplicates are excluded.
 
-
-\subsection*{The Plasmodium Export Element (PEXEL) Motif}
 %% Why predict the exportome?
 Whilst the \pf genome has been available since 2002 \cite{Gardner2002}, comparatively few genes have been studied in depth, and many remain of unknown function. The discovery of a motif termed the PEXEL (Plasmodium Export Element) shared between many exportome components has made it possible to reliably predict the \pf exportome in the absence of other information \cite{Sargeant2006}.
 
 %% The pexel motif, and how this is exported
-The PEXEL motif is pentameric, located near the N-terminal of the protein, and can be generalised as the amino acid sequence \texttt{RxLxE/Q/D} \cite{Goldberg2010}, where \texttt{x} is any non-charged amino acid \cite{Dietz2014} although the non-canonical PEXEL motif \texttt{\str{K}xLxE/Q/D} and relaxed PEXEL motif \texttt{RxxLxE/Q/D} are also seen occasionally \cite{Elsworth2014}. It is known that the amino acid sequence cleaved after the leucine residue in the parasite ER \cite{Goldberg2010} although how the PEXEL motif targets the protein for export remains unclear. The \pf protein Plasmepsin V has been shown to cleave a subset of PEXEL-carrying proteins \cite{Boddey2013}.
+The PEXEL motif is pentameric, located near the N-terminal of the protein, and can be generalised as the amino acid sequence \texttt{RxLxE/Q/D} \cite{Goldberg2010}, where \texttt{x} is any non-charged amino acid \cite{Dietz2014} although the non-canonical PEXEL motif \texttt{\str{K}xLxE/Q/D} and relaxed PEXEL motif \texttt{Rx\str{x}LxE/Q/D} are also seen occasionally \cite{Elsworth2014}. It is known that the amino acid sequence cleaved after the leucine residue in the parasite ER \cite{Goldberg2010} although how the PEXEL motif targets the protein for export remains unclear. The \pf protein Plasmepsin V has been shown to cleave a subset of PEXEL-carrying proteins \cite{Boddey2013}.
 
-% Where do pexel proteins go next?
+% Possible - Where do pexel proteins go next?
 
-\subsection*{PEXEL Negative Exported Proteins (PNEPs)}
+In addition to exported PEXEL proteins, several PEXEL Negative exported proteins have been identified using transcription profiling \cite{Heiber2013}. Based on experimental evidence, a cryptic signal is though to exist near the N-terminal of both mature (cleaved) PEXEL proteins and PNEPs \cite{Gruring2012}, although the nature of this sequence remains unclear.
 
-In addition to exported PEXEL proteins, several PEXEL Negative proteins have been identified as exportome components using transcription profiling \cite{Heiber2013}.
+Understanding the protein-protein interactions responsible for the transformation of the infected red blood cell is both an interesting scientific challenge and an important step towards a better understanding of malaria in humans. Whilst an interactome for \pf proteins has been produced using a yeast-two-hybrid \cite{LaCount2005} it is of low quality and contains many false positives.
 
 \subsection{Protein Structure Prediction}
 
-\subsubsection*{Disorder Prediction (metaPrDOS}
+The design of constructs for experimental use is hampered somewhat a lack of structural information about \pf exportome components. To date, only 4 components of the \pf exportome have solved structures in the PDB (own research, \url{https://gist.github.com/tomnewport/a04868602d3482d33921}), and so knowledge based modelling using a tool such as MODELLER \cite{Eswar2007} is not applicable. There exist several tools, however, which are able to predict features and domains of proteins using a variety of approaches.
 
-\subsubsection*{Coiled Coil Prediction (Coils)}
+\subsubsection*{Secondary Structure and Disorder Prediction}
 
-\subsubsection*{Transmembrane Prediction (TMHMM)}
+Parts of a protein such as helices and strands will have a fixed 3D structure and pattern of amino acids and are said to be ordered. Other parts of the protein, especially loops, may not possess such an ordered or fixed structure and so are said to be disordered. Disordered parts of a protein often connect domains or features of the protein secondary structure and so disorder prediction can be used to find domain boundaries. Several algorithms exist to predict both secondary structure and disorder from amino acid sequence, and the tool metaPrDOS \cite{Ishida2008} can be used to obtain a consensus from a selection of disorder prediction algorithms.
 
-\subsubsection*{Combined Approaches (Phyre2 and InterPro)}
+\subsubsection*{Coiled Coil Prediction}
+
+Coiled coils are a common structural motif whereby two or more alpha helices are wound together, often important in the formation of obligomers and complexes. The COILS software tool uses a database of known coiled coil motifs to predict the likelihood of a coiled coil at particular sites on in an amino acid sequence \cite{Lupas1991}.
+
+\subsubsection*{Transmembrane Prediction}
+
+Proteins may include several domains which cross or interact with the hydrophobic environment of the lipid membrane of a cell or compartments within the cell. The software tool TMHMM uses a hidden Markov model based approach to predict these domains based on the protein's amino acid sequence alone \cite{Krogh2001}.
+
+\subsubsection*{Combined Approaches}
+
+Some software tools combine several different approaches to structure prediction. InterPro \cite{Mulder2002} performs coiled coil prediction and transmembrane prediction, and searches for known domains with similar sequences. Results are presented in a single graphic showing predicted domains along the amino acid sequence.
+
+Phyre2 \cite{Kelley2009} performs disorder prediction, secondary structure prediction and transmembrane prediction before comparing against a fold database and attempting to build a model of the tertiary structure based on the amino acid sequence. Results are presented in a series of figures as well as 3D models based on different templates in a PDB format.
+
+\section{Software implementation}
+
+This project aims to build software tools to automate bioinformatic analysis of \pf exported proteins and red blood cell proteins and present the results in a web-based interface. This will be used to aid in the design of protein constructs used to produce a high quality interactome for exported \pf proteins. 
+
+% Shortcomings of existing tools and databases
+
+\begin{figure}
+\includegraphics[width=7cm]{figs/plasmodbview}
+\caption{\str{PlasmoDB Structural information for PF3D7\_1149000} | This includes, amongst others, InterPro domains, secondary structure prediction and export domains. Note that the protein product of PF3D7\_1149000 has been shown to be exported.}
+\label{fig:plasmodb}
+\end{figure}
+
+The \pf genome and other associated data are already available from several online databases, including the dedicated PlasmoDB (\url{http://plasmodb.org/}) \cite{Aurrecoechea2009} which provides functional genomic data for genes found in several \bn{Plasmodium} species and includes annotations such as gene location, polymorphisms and expression data, as well as some limited structural annotations (Figure 1). No database presently provides a broad range of structural annotations required for construct design, or allows the user to look only at proteins known to be exported to the red blood cell.
+
+% Flexibility and modularity
+
+The software tools available to 
 
 
-\section{Software Implementation}
-%2000 words
+
 \subsection{Automating Sequence Submission}
+
+
 \subsection{Collating output formats}
+
+
 \subsection{Visualisation}
+
+
 \section{Limitations and Further Work}
+
 %300 words
 %------------------------------------------------
 \phantomsection
 \section*{Acknowledgments}
+
+I am grateful to John Vakonakis for his insight and encouragement whilst supervising this project.
 
 \addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
 

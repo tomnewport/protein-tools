@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{WorldHealthOrganisation2013}
 {World Health Organisation}.
@@ -48,5 +48,123 @@ Justin~a Boddey, Teresa~G Carvalho, Anthony~N Hodder, Tobias~J Sargeant, Brad~E
 \newblock {Role of plasmepsin V in export of diverse protein families from the
   Plasmodium falciparum exportome.}
 \newblock {\em Traffic (Copenhagen, Denmark)}, 14(5):532--50, May 2013.
+
+\bibitem{Gardner2002}
+Malcolm~J Gardner, Neil Hall, Eula Fung, Owen White, Matthew Berriman,
+  Richard~W Hyman, Jane~M Carlton, Arnab Pain, Karen~E Nelson, Sharen Bowman,
+  Ian~T Paulsen, Keith James, Jonathan~A Eisen, Kim Rutherford, Steven~L
+  Salzberg, Alister Craig, Sue Kyes, Man-Suen Chan, Vishvanath Nene, Shamira~J
+  Shallom, Bernard Suh, Jeremy Peterson, Sam Angiuoli, Mihaela Pertea, Jonathan
+  Allen, Jeremy Selengut, Daniel Haft, Michael~W Mather, Akhil~B Vaidya, David
+  M~A Martin, Alan~H Fairlamb, Martin~J Fraunholz, David~S Roos, Stuart~A
+  Ralph, Geoffrey~I McFadden, Leda~M Cummings, G~Mani Subramanian, Chris
+  Mungall, J~Craig Venter, Daniel~J Carucci, Stephen~L Hoffman, Chris Newbold,
+  Ronald~W Davis, Claire~M Fraser, and Bart Barrell.
+\newblock {Genome sequence of the human malaria parasite Plasmodium
+  falciparum.}
+\newblock {\em Nature}, 419(6906):498--511, October 2002.
+
+\bibitem{Sargeant2006}
+Tobias~J Sargeant, Matthias Marti, Elisabet Caler, Jane~M Carlton, Ken Simpson,
+  Terence~P Speed, and Alan~F Cowman.
+\newblock {Lineage-specific expansion of proteins exported to erythrocytes in
+  malaria parasites.}
+\newblock {\em Genome biology}, 7(2):R12, January 2006.
+
+\bibitem{Goldberg2010}
+Daniel~E Goldberg and Alan~F Cowman.
+\newblock {Moving in and renovating: exporting proteins from Plasmodium into
+  host erythrocytes.}
+\newblock {\em Nature reviews. Microbiology}, 8(9):617--21, September 2010.
+
+\bibitem{Dietz2014}
+Olivier Dietz.
+\newblock {Studies on interactions of exported" plasmodium falciparum" membrane
+  proteins}.
+\newblock {\em PhD Thesis}, 2014.
+
+\bibitem{Boddey2013}
+Justin~a Boddey and Alan~F Cowman.
+\newblock {Plasmodium nesting: remaking the erythrocyte from the inside out.}
+\newblock {\em Annual review of microbiology}, 67:243--69, January 2013.
+
+\bibitem{Heiber2013}
+Arlett Heiber, Florian Kruse, Christian Pick, Christof Gr\"{u}ring, Sven
+  Flemming, Alexander Oberli, Hanno Schoeler, Silke Retzlaff, Paolo
+  Mes\'{e}n-Ram\'{\i}rez, Jan~a Hiss, Madhusudan Kadekoppala, Leonie Hecht,
+  Anthony~a Holder, Tim-Wolf Gilberger, and Tobias Spielmann.
+\newblock {Identification of new PNEPs indicates a substantial non-PEXEL
+  exportome and underpins common features in Plasmodium falciparum protein
+  export.}
+\newblock {\em PLoS pathogens}, 9(8):e1003546, January 2013.
+
+\bibitem{Gruring2012}
+Christof Gr\"{u}ring, Arlett Heiber, Florian Kruse, Sven Flemming, Gianluigi
+  Franci, Sara~F Colombo, Elisa Fasana, Hanno Schoeler, Nica Borgese, Hendrik~G
+  Stunnenberg, Jude~M Przyborski, Tim-Wolf Gilberger, and Tobias Spielmann.
+\newblock {Uncovering common principles in protein export of malaria
+  parasites.}
+\newblock {\em Cell host \& microbe}, 12(5):717--29, November 2012.
+
+\bibitem{LaCount2005}
+Douglas~J LaCount, Marissa Vignali, Rakesh Chettier, Amit Phansalkar, Russell
+  Bell, Jay~R Hesselberth, Lori~W Schoenfeld, Irene Ota, Sudhir Sahasrabudhe,
+  Cornelia Kurschner, Stanley Fields, and Robert~E Hughes.
+\newblock {A protein interaction network of the malaria parasite Plasmodium
+  falciparum.}
+\newblock {\em Nature}, 438(7064):103--7, November 2005.
+
+\bibitem{Eswar2007}
+Narayanan Eswar, Ben Webb, Marc~A Marti-Renom, M~S Madhusudhan, David Eramian,
+  Min-Yi Shen, Ursula Pieper, and Andrej Sali.
+\newblock {Comparative protein structure modeling using MODELLER.}
+\newblock {\em Current protocols in protein science / editorial board, John E.
+  Coligan ... [et al.]}, Chapter 2:Unit 2.9, November 2007.
+
+\bibitem{Ishida2008}
+Takashi Ishida and Kengo Kinoshita.
+\newblock {Prediction of disordered regions in proteins based on the meta
+  approach.}
+\newblock {\em Bioinformatics (Oxford, England)}, 24(11):1344--8, June 2008.
+
+\bibitem{Lupas1991}
+a~Lupas, M~{Van Dyke}, and J~Stock.
+\newblock {Predicting coiled coils from protein sequences.}
+\newblock {\em Science (New York, N.Y.)}, 252(5009):1162--4, May 1991.
+
+\bibitem{Krogh2001}
+a~Krogh, B~Larsson, G~von Heijne, and E~L Sonnhammer.
+\newblock {Predicting transmembrane protein topology with a hidden Markov
+  model: application to complete genomes.}
+\newblock {\em Journal of molecular biology}, 305(3):567--80, January 2001.
+
+\bibitem{Mulder2002}
+Nicola~J Mulder, Rolf Apweiler, Terri~K Attwood, Amos Bairoch, Alex Bateman,
+  David Binns, Margaret Biswas, Paul Bradley, Peer Bork, Phillip Bucher,
+  Richard Copley, Emmanuel Courcelle, Richard Durbin, Laurent Falquet, Wolfgang
+  Fleischmann, Jerome Gouzy, Sam Griffith-Jones, Daniel Haft, Henning
+  Hermjakob, Nicolas Hulo, Daniel Kahn, Alexander Kanapin, Maria Krestyaninova,
+  Rodrigo Lopez, Ivica Letunic, Sandra Orchard, Marco Pagni, David Peyruc,
+  Chris~P Ponting, Florence Servant, and Christian J~a Sigrist.
+\newblock {InterPro: an integrated documentation resource for protein families,
+  domains and functional sites.}
+\newblock {\em Briefings in bioinformatics}, 3(3):225--35, September 2002.
+
+\bibitem{Kelley2009}
+Lawrence~a Kelley and Michael J~E Sternberg.
+\newblock {Protein structure prediction on the Web: a case study using the
+  Phyre server.}
+\newblock {\em Nature protocols}, 4(3):363--71, January 2009.
+
+\bibitem{Aurrecoechea2009}
+Cristina Aurrecoechea, John Brestelli, Brian~P Brunk, Jennifer Dommer, Steve
+  Fischer, Bindu Gajria, Xin Gao, Alan Gingle, Greg Grant, Omar~S Harb, Mark
+  Heiges, Frank Innamorato, John Iodice, Jessica~C Kissinger, Eileen Kraemer,
+  Wei Li, John~A Miller, Vishal Nayak, Cary Pennington, Deborah~F Pinney,
+  David~S Roos, Chris Ross, Christian~J Stoeckert, Charles Treatman, and
+  Haiming Wang.
+\newblock {PlasmoDB: a functional genomic database for malaria parasites.}
+\newblock {\em Nucleic acids research}, 37(Database issue):D539--43, January
+  2009.
 
 \end{thebibliography}
