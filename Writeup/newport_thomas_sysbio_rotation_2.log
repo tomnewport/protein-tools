@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.1)  2 OCT 2014 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.1)  2 OCT 2014 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,15 +289,15 @@ Overfull \hbox (2.23363pt too wide) in paragraph at lines 50--51
 -ci-parum \OT1/cmr/m/n/10 is the most vir-u-lent causative
  []
 
+[1
 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (6.75078pt too wide) in paragraph at lines 56--57
 \OT1/cmr/m/n/10 are a nu-tri-tion-ally poor en-vi-ron-ment, with a pro-teome do
 m-i-nated by haemoglobin,
  []
 
-[1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (0.25063pt too wide) in paragraph at lines 59--60
 \OT1/cmr/m/n/10 range of pro-teins which rad-i-cally trans-form the red blood c
 ell, col-lec-tively termed
@@ -311,34 +311,60 @@ Overfull \hbox (38.3854pt too wide) in paragraph at lines 81--82
 ub . com / tomnewport / a04868602d3482d33921$[]\OT1/cmr/m/n/10 ),
  []
 
-[3] <figs/plasmodbview.png, id=121, 893.3375pt x 1101.11375pt>
+[3] <figs/plasmodbview.png, id=148, 893.3375pt x 1101.11375pt>
 File: figs/plasmodbview.png Graphic file (type png)
 
 <use figs/plasmodbview.png>
-Package pdftex.def Info: figs/plasmodbview.png used on input line 108.
+Package pdftex.def Info: figs/plasmodbview.png used on input line 109.
 (pdftex.def)             Requested size: 199.16928pt x 245.4885pt.
- [4 <./figs/plasmodbview.png>]
-(./newport_thomas_sysbio_rotation_2.bbl [5] [6] [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
 
-(./newport_thomas_sysbio_rotation_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+<figs/softwareoverview.png, id=152, 439.6425pt x 526.96875pt>
+File: figs/softwareoverview.png Graphic file (type png)
+
+<use figs/softwareoverview.png>
+Package pdftex.def Info: figs/softwareoverview.png used on input line 122.
+(pdftex.def)             Requested size: 256.0748pt x 306.9447pt.
+ [4] [5 <./figs/plasmodbview.png>] [6 <./figs/softwareoverview.png>] [7] <figs/
+schema.png, id=190, 316.18124pt x 685.56125pt>
+File: figs/schema.png Graphic file (type png)
+
+<use figs/schema.png>
+Package pdftex.def Info: figs/schema.png used on input line 166.
+(pdftex.def)             Requested size: 199.16928pt x 431.85356pt.
+
+
+LaTeX Warning: Citation `Bostock2011' on page 8 undefined on input line 174.
+
+(./newport_thomas_sysbio_rotation_2.bbl [8] [9 <./figs/schema.png>] [10]
+[11]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no Å in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+ (./newport_thomas_sysbio_rotation_2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `newport_thomas_sysbio_rotation_2.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 26C57F61E36CE4F6841F2383CCCFAC08;510.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+(rerunfilecheck)             Checksum: 64BF1169083DBFBA1A34DFF1561017C1;921.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 6558 strings out of 493117
- 100704 string characters out of 6135433
- 191756 words of memory out of 5000000
- 9930 multiletter control sequences out of 15000+600000
+ 6593 strings out of 493117
+ 101320 string characters out of 6135433
+ 192756 words of memory out of 5000000
+ 9947 multiletter control sequences out of 15000+600000
  9016 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,38p,748b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,7n,38p,860b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -348,11 +374,11 @@ local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
 /texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on newport_thomas_sysbio_rotation_2.pdf (8 pages, 198052 bytes).
-
+Output written on newport_thomas_sysbio_rotation_2.pdf (12 pages, 491986 bytes)
+.
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

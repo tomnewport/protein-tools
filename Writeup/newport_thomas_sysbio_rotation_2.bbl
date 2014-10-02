@@ -167,4 +167,17 @@ Cristina Aurrecoechea, John Brestelli, Brian~P Brunk, Jennifer Dommer, Steve
 \newblock {\em Nucleic acids research}, 37(Database issue):D539--43, January
   2009.
 
+\bibitem{Cock2009}
+Peter J~A Cock, Tiago Antao, Jeffrey~T Chang, Brad~A Chapman, Cymon~J Cox,
+  Andrew Dalke, Iddo Friedberg, Thomas Hamelryck, Frank Kauff, Bartek
+  Wilczynski, and Michiel J~L de~Hoon.
+\newblock {Biopython: freely available Python tools for computational molecular
+  biology and bioinformatics.}
+\newblock {\em Bioinformatics (Oxford, England)}, 25(11):1422--3, June 2009.
+
+\bibitem{VanderWalt2011}
+Stéfan van~der Walt, S~Chris Colbert, and Gaël Varoquaux.
+\newblock {The NumPy Array: A Structure for Efficient Numerical Computation}.
+\newblock {\em Computing in Science \& Engineering}, 13(2):22--30, March 2011.
+
 \end{thebibliography}

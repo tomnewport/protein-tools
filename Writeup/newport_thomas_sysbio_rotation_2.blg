@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: newport_thomas_sysbio_rotation_2.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 24 entries,
+You've used 26 entries,
             1791 wiz_defined-function locations,
-            625 strings with 10765 characters,
-and the built_in function-call counts, 7408 in all, are:
-= -- 522
-> -- 643
+            638 strings with 11307 characters,
+and the built_in function-call counts, 7995 in all, are:
+= -- 567
+> -- 689
 < -- 0
-+ -- 223
-- -- 199
-* -- 764
-:= -- 1311
-add.period$ -- 72
-call.type$ -- 24
-change.case$ -- 23
++ -- 239
+- -- 213
+* -- 825
+:= -- 1412
+add.period$ -- 78
+call.type$ -- 26
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 216
-empty$ -- 543
-format.name$ -- 199
-if$ -- 1472
+cite$ -- 26
+duplicate$ -- 234
+empty$ -- 588
+format.name$ -- 213
+if$ -- 1590
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 25
-newline$ -- 123
-num.names$ -- 24
-pop$ -- 32
+int.to.str$ -- 26
+missing$ -- 27
+newline$ -- 133
+num.names$ -- 26
+pop$ -- 34
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 78
+skip$ -- 84
 stack$ -- 0
-substring$ -- 487
-swap$ -- 24
+substring$ -- 528
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 65
-width$ -- 26
-write$ -- 264
+while$ -- 71
+width$ -- 28
+write$ -- 286

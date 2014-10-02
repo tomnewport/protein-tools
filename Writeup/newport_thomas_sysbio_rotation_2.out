@@ -1,8 +1,14 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Protein Structure Prediction}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Software implementation}{}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Automating Sequence Submission}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Collating output formats}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Visualisation}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Limitations and Further Work}{}% 7
-\BOOKMARK [1][-]{section*.8}{Acknowledgments}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Aims}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Overview}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Python server}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Public facing server}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Remote JavaScript client}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.4}{The data\137manager class}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.5}{The ui\137bindings class}{subsection.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Implementation}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Discussion}{}% 12
+\BOOKMARK [1][-]{section.4}{Limitations and Further Work}{}% 13
+\BOOKMARK [1][-]{section*.12}{Acknowledgments}{}% 14
