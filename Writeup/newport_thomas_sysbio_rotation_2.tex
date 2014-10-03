@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage[english]{babel}
 \usepackage{caption}
+\usepackage{listings}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 
@@ -152,7 +153,7 @@ Parsing of results will be performed primarily using the Pandas dataframe provid
 
 \subsubsection{Public facing server}
 
-Since the public-facing HTTP server only retrieves files (and is not able to trigger any additional server-side processing), any expertly built HTTP server may be used without modification, greatly simplifying the problems of installing, maintaining and securing a publicly accessible server on the web.
+Since the public-facing HTTP server only retrieves files (and is not able to trigger any additional server-side processing), any off-the-shelf HTTP server may be used without modification, greatly simplifying the problems of installing, maintaining and securing a publicly accessible server on the web.
 
 Unlike most existing web-based tools for viewing genomic data where visualisations are rendered on the server and transmitted as images, visualisations will be rendered client-side based on raw data. Users will therefore require a recently updated web browser in order to view visualisations of data using the remote client. The client-side approach removes the need for the server to render images, reducing load on the server, and also removes the need to transmit images, reducing the load on the network. Additionally, advanced users are able to tweak visualisations as required simply by changing rules in the CSS (Cascading StyleSheet) files supplied with the remote client.
 
@@ -189,18 +190,59 @@ The UI Bindings class will consist of a UI Manager, which coordinates initialisi
 
 \paragraph{The UI manager and viewscope}
 
+The UI manager will provide a simple way to populate the user interface with interactive, data-driven elements. Creating a new plot will involve binding a new UI element to the UI manager using the DOM position (in CSS selector format), the data to be plotted, the class used to draw the plot and any additional options. An example of this is shown in Figure 4.
+
+Plots may subscribe to changes in a viewscope object through the UI Manager. For example, a UI element may show disorder in a region of the gene specified by a viewscope object. If the update (redraw) method of the UI element is subscribed to the viewscope object, it will be called each time the user changes the view, redrawing the plot.
+
+\begin{figure}
+\begin{lstlisting}
+ui.bind(
+	"#fig_overview_disorder", 
+	protein_data.series.disorder,
+	D3SingleSeriesOverview, 
+	{round:true, cscheme:"darkred"} 
+);
+\end{lstlisting}
+\caption{\str{Example usage of \texttt{bind} method of UI Manager class} | Arguments are 1) DOM Position as CSS selector 2) Data to plot 3) Class used to draw plot 4) Options passed to plot.}
+\end{figure}
+
 \paragraph{Plotting}
 
-In the sense used here, a plot may be anything which uses a piece of data to alter the user interface. This may be as simple as printing a piece of text or toggling the visibility of some UI element, or as complex as an interactive visualisation of large amounts of data. The only required feature of a plot is that it should exist at a fixed position in the DOM (Document Object Model) and be able to initialise and update (draw and redraw) itself. Typically plots 'subscribe' to changes in a viewscope object through the UI Manager. For example, a UI element may show disorder in a region of the gene specified by a viewscope object. If the update (redraw) method of the UI element is subscribed to the viewscope object, it will be called each time the user changes the view.
+In the sense used here, a plot may be anything which uses a piece of data to alter the user interface. This may be as simple as printing a piece of text or toggling the visibility of some UI element, or as complex as an interactive visualisation of large amounts of data. The only required feature of a plot is that it should exist at a specific fixed point or set of points in the DOM (Document Object Model) specified using a CSS selector, and be able to initialise and update (draw and redraw) itself.
 
-Several different plots will be implemented:
+Several different subclasses of plot will be implemented:
 
 \paragraph{D3 Annotation Plot}
-\paragraph{D3 Annotation Plot}
-\paragraph{D3 Annotation Plot}
-\paragraph{D3 Annotation Plot}
 
+Annotations arranged along an x-axis representing residue number.
 
+\paragraph{D3 Single Series Overview}
+
+A single series plotted along an x-axis representing residue number.
+
+\paragraph{D3 Series Group Overview}
+
+A group of series plotted along an x-axis representing residue number.
+
+\paragraph{D3 Secondary Structure}
+
+A plot showing the amino acid code at each residue number as well as the secondary structure feature (coil, helix or strand) predicted at that residue.
+
+\paragraph{Annotation List}
+
+A simple list of annotations, not plotted on an axis.
+
+\paragraph{Write Meta}
+
+Inserts a particular piece of protein metadata at a point (or points) in the DOM.
+
+\paragraph{Match Visibility}
+
+Shows or hides a DOM element based on the truth value of a piece of data.
+
+\paragraph{View Slider}
+
+An interactive element which may be used to both change and display region of the protein currently being viewed by the user.
 
 \subsection{Implementation}
 

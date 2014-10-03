@@ -13,12 +13,17 @@
 \contentsline {paragraph}{The \texttt {Annotation} object}{10}{section*.13}
 \contentsline {subsubsection}{\numberline {2.2.5}The \texttt {ui\_bindings} class}{10}{subsubsection.2.2.5}
 \contentsline {paragraph}{The UI manager and viewscope}{10}{section*.14}
-\contentsline {paragraph}{Plotting}{10}{section*.15}
-\contentsline {paragraph}{D3 Annotation Plot}{10}{section*.16}
-\contentsline {paragraph}{D3 Annotation Plot}{10}{section*.17}
-\contentsline {paragraph}{D3 Annotation Plot}{10}{section*.18}
-\contentsline {paragraph}{D3 Annotation Plot}{10}{section*.19}
+\contentsline {paragraph}{Plotting}{10}{section*.16}
+\contentsline {paragraph}{D3 Annotation Plot}{11}{section*.17}
+\contentsline {paragraph}{D3 Single Series Overview}{11}{section*.18}
+\contentsline {paragraph}{D3 Series Group Overview}{11}{section*.19}
+\contentsline {paragraph}{D3 Secondary Structure}{11}{section*.20}
+\contentsline {paragraph}{Paragraph}{11}{section*.21}
+\contentsline {paragraph}{Annotation List}{11}{section*.22}
+\contentsline {paragraph}{Write Meta}{11}{section*.23}
+\contentsline {paragraph}{Match Visibility}{11}{section*.24}
+\contentsline {paragraph}{View Slider}{11}{section*.25}
 \contentsline {subsection}{\numberline {2.3}Implementation}{11}{subsection.2.3}
 \contentsline {section}{\numberline {3}Discussion}{11}{section.3}
 \contentsline {section}{\numberline {4}Limitations and Further Work}{11}{section.4}
-\contentsline {section}{Acknowledgments}{11}{section*.21}
+\contentsline {section}{Acknowledgments}{11}{section*.27}
