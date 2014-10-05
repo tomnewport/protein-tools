@@ -12,14 +12,18 @@
 
 \begin{document}
 
-\title{Article Title} % Article title
+\title{A web-based viewer for protein structure predictions for the \textit{Plasmodium falciparum} exportome.} % Article title
 
 \author{Tom Newport} % Authors
 \maketitle
 
 
 \begin{abstract}
-There's nothing here yet
+
+The intracellular parasite \textit{Plasmodium falciparum} significantly modifies human red blood cells to create an environment suitable for parasite proliferation. Both the modification of red blood cells and proliferation of the parasite are responsible for the most severe symptoms of malaria in humans. In order to effect this modification, \textit{P. falciparum} exports a set of proteins termed the exportome, of which approximately 360 unique members have now been identified. Understanding the interaction network for host and parasite proteins within the red blood cell represents both an interesting scientific challenge and an important step in understanding severe malaria at a molecular scale, but experimental efforts are hampered by a lack of structural information.
+
+Here I present work towards a software tool which will automatically apply a range of pre-existing structure prediction tools to proteins in the \textit{P. falciparum} exportome and display the results in a user friendly web based interface. Once complete, this tool will aid in the design of protein constructs used to experimentally determine the interaction network for parasite and host proteins.
+
 \end{abstract}
 
 \maketitle % Print the title and abstract box
@@ -27,11 +31,6 @@ There's nothing here yet
 \tableofcontents % Print the contents section
 
 \thispagestyle{empty} % Removes page numbering from the first page
-
-%----------------------------------------------------------------------------------------
-%	ARTICLE CONTENTS
-%----------------------------------------------------------------------------------------
-% Total word count should be approx. 4500 words
 
 % Add command to format binomial species name:
 \newcommand{\bn}
@@ -81,6 +80,11 @@ Understanding the protein-protein interactions responsible for the transformatio
 
 The design of constructs for experimental use is hampered somewhat a lack of structural information about \pf exportome components. To date, only 4 components of the \pf exportome have solved structures in the PDB (own research, \url{https://gist.github.com/tomnewport/a04868602d3482d33921}), and so knowledge based modelling using a tool such as MODELLER \cite{Eswar2007} is not applicable. There exist several tools, however, which are able to predict features and domains of proteins using a variety of approaches.
 
+\begin{figure}
+\includegraphics[width=9cm]{figs/scopresults}
+\caption{\str{Superfamily Annotations per sequence} | Histogram showing frequency of superfamily annotations for all currently known components of the \pf exportome. Over 75\% of sequences did not match any domains.}
+\end{figure}
+
 \subsubsection*{Secondary Structure and Disorder Prediction}
 
 Parts of a protein such as helices and strands will have a fixed 3D structure and pattern of amino acids and are said to be ordered. Other parts of the protein, especially loops, may not possess such an ordered or fixed structure and so are said to be disordered. Disordered parts of a protein often connect domains or features of the protein secondary structure and so disorder prediction can be used to find domain boundaries. Several algorithms exist to predict both secondary structure and disorder from amino acid sequence, and the tool metaPrDOS \cite{Ishida2008} can be used to obtain a consensus from a selection of disorder prediction algorithms.
@@ -128,7 +132,7 @@ The finished software will consist of three distinct parts. A local client imple
 
 \subsubsection{Python server}
 
-The local python client, which is responsible for requesting, retrieving and parsing structure predictions, may be provided with a list of gene names which correspond to genes available through PlasmoDB (\url{http://plasmodb.org/}) \cite{Aurrecoechea2009}. These will then be retrieved in FASTA format from PlasmoDB and submitted several servers: TMHMM for transmembrane prediction; Phyre2 for fold recognition and secondary structure predication; metaPrDOS for disorder prediction; COILS for coiled coil prediction and InterPro for feature annotation. Submission to web-based servers will be performed using HTTP requests to CGI (Common Gateway Interface) scripts on respective remote servers using the Python Requests library (\url{http://python-requests.org}) and similarly retrieved once completed.
+The local python client, which is responsible for requesting, retrieving and parsing structure predictions, may be provided with a list of gene names which correspond to genes available through PlasmoDB (\url{http://plasmodb.org/}) \cite{Aurrecoechea2009}. These will then be retrieved in FASTA format from PlasmoDB and submitted several servers: TMHMM for transmembrane prediction; Phyre2 for fold recognition and secondary structure predication; metaPrDOS for disorder prediction; COILS for coiled coil prediction and InterPro for feature annotation. Submission to web-based servers will be performed using HTTP requests to CGI (Common Gateway Interface) scripts on respective remote servers using the Python Requests library (\url{http://python-requests.org}). Where possible, the client will be notified by email when results are available, however if this feature is not offered by a particular server the client will make periodic HTTP requests to determine if the job has been completed. Once the job is completed, it may be retrieved using an additional HTTP request.
 
 Parsing of results will be performed primarily using the Pandas dataframe provided by PyData (\url{http://pandas.pydata.org}), assisted by BioPython \cite{Cock2009}, used to open files in biological formats such as PDB and FASTA, and Numpy \cite{VanderWalt2011}, which implements a computationally efficient n-dimensional array for the Python language. Results from many servers will be saved to two files in comma-separated values format, one storing series with a defined value for each amino acid (a prediction of the likelihood of each amino acid forming part of a coiled coil, for example), and one (annotations) storing annotations identifying features stretching across several amino acids (domains identified based on similarity to common motifs in a database, for example).
 
@@ -210,7 +214,7 @@ ui.bind(
 
 In the sense used here, a plot may be anything which uses a piece of data to alter the user interface. This may be as simple as printing a piece of text or toggling the visibility of some UI element, or as complex as an interactive visualisation of large amounts of data. The only required feature of a plot is that it should exist at a specific fixed point or set of points in the DOM (Document Object Model) specified using a CSS selector, and be able to initialise and update (draw and redraw) itself.
 
-Several different subclasses of plot will be implemented:
+Several different subclasses of plot will be implemented. Those prefixed with "D3" primarily use the Data Driven Documents JavaScript library to simplify the generation of SVG (Scalable Vector Graphics) plots.
 
 \paragraph{D3 Annotation Plot}
 
@@ -246,13 +250,58 @@ An interactive element which may be used to both change and display region of th
 
 \subsection{Implementation}
 
-% Introduction
+Whilst the present implementation is incomplete, significant progress has been made and several parts are now fully functional. The remote JavaScript client is close to completion (Figure 5), and can provide an interactive user interface which can be used to view protein data generated by the local Python client. The local Python client is incomplete, and whilst methods have been written to carry out individual steps, the client is not yet capable of the autonomous capabilities required to carry out protein structure prediction in a high throughput manner.
 
-% Specific milestones
+\begin{figure}
+\includegraphics[width=12cm]{figs/weball}
+\caption{\str{Remote client} | An example page generated by the remote client, showing examples of the D3 Annotation plot, Write Meta plot, View Slider plot, D3 Single Series plot, D3 Series Group plot and D3 Secondary Structure plot.}
+\end{figure}
+
+\subsubsection{Milestones}
+
+\paragraph{Local python client}
+
+The local python client is able to submit sequences to TMHMM, Phyre2, metaPrDOS and COILS but is not able to submit sequences to InterPro (although it is trivial to adapt code for other servers for this purpose).
+
+The local python client is able to check the status of a job submitted to Phyre and metaPrDOS using an IMAP email server, but is not able to check the status of jobs submitted to InterPro, TMHMM or COILS (although this is expected to be trivial to implement).
+
+The local python client is able to retrieve jobs submitted to Phyre, metaPrDOS and TMHMM, but is not able to retrieve jobs submitted to COILS or InterPro (although this is expected to be trivial to implement).
+
+The local python client is able to parse output from Phyre, metaPrDOS, COILS, TMHMM and InterPro and save the combined output.
+
+\paragraph{Public-facing HTTP Server}
+
+The public facing HTTP Server works when implemented using the built in Python SimpleHTTPServer class. Implementation using any other off-the-shelf server package will be trivial.
+
+\paragraph{Remote Client}
+
+With the exception of a few refinements, the remote JavaScript client (as shown in Figure 5) is complete. Protein data can be loaded and interpreted using the schema JSON file and used to generate several interactive plots. New plots may be added to the user interface with a single line of JavaScript, the modularity of the code new types of plots to be added to the UI manager easily.
+
+Some examples of plots are shown in Figure 6 (D3 Single Series), Figure 7 (D3 Series Group), Figure 8 (D3 Secondary Structure) and Figure 9 (D3 Annotation). 
+
+\begin{figure}
+\includegraphics[width=9cm]{figs/seriesplot}
+\caption{\str{D3 Series Plot} | Disorder is plotted for the first 1000 residues of the protein. In order to identify disordered regions (shaded in red) the series is first convolved using a gaussian kernel of standard deviation equal to 1 (as per the JSON schema file). The region between residue 1 and 452 is selected and emphasised in the plot.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=9cm]{figs/seriesgroupplot}
+\caption{\str{D3 Series Group Plot} | This plot shows TMHMM predictions for each residue. The region between 1 and 452 is selected and emphasised.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=9cm]{figs/secondarystructureplot}
+\caption{\str{D3 Secondary Structure Plot} | Sequence and secondary structure are plotted. Helices are shown in green and strands are shown in blue.}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=9cm]{figs/annotationplot}
+\caption{\str{D3 Annotation Plot} | Annotations are shown coloured by source.}
+\end{figure}
 
 \section{Discussion}
 
-% Possible overall benefits
+Once complete, the system designed here will provide an 
 
 % Benefits of flexibility
 
