@@ -12,7 +12,7 @@
 
 \begin{document}
 
-\title{A web-based viewer for protein structure predictions for the \textit{Plasmodium falciparum} exportome.} % Article title
+\title{A web-based protein structure prediction viewer for the \textit{Plasmodium falciparum} exportome.} % Article title
 
 \author{Tom Newport} % Authors
 \maketitle
@@ -20,9 +20,9 @@
 
 \begin{abstract}
 
-The intracellular parasite \textit{Plasmodium falciparum} significantly modifies human red blood cells to create an environment suitable for parasite proliferation. Both the modification of red blood cells and proliferation of the parasite are responsible for the most severe symptoms of malaria in humans. In order to effect this modification, \textit{P. falciparum} exports a set of proteins termed the exportome, of which approximately 360 unique members have now been identified. Understanding the interaction network for host and parasite proteins within the red blood cell represents both an interesting scientific challenge and an important step in understanding severe malaria at a molecular scale, but experimental efforts are hampered by a lack of structural information.
+The intracellular parasite \textit{Plasmodium falciparum} significantly modifies human red blood cells to create an environment suitable for parasite proliferation. Both the modification of red blood cells and proliferation of the parasite are responsible for the most severe symptoms of malaria in humans. In order to effect this modification, \textit{P. falciparum} exports a set of proteins termed the exportome, of which approximately 360 unique members have now been identified. Understanding the interaction network for host and parasite proteins within the red blood cell represents both an interesting scientific challenge and an important step in understanding severe malaria at a molecular scale, but experimental efforts are hampered by a lack of structural information, and computational efforts are hampered by a lack of homologues for \textit{P. falciparum} genes in model organisms.
 
-Here I present work towards a software tool which will automatically apply a range of pre-existing structure prediction tools to proteins in the \textit{P. falciparum} exportome and display the results in a user friendly web based interface. Once complete, this tool will aid in the design of protein constructs used to experimentally determine the interaction network for parasite and host proteins.
+Here I present work towards a software tool which will automatically apply a range of pre-existing structure prediction tools to proteins in the \textit{P. falciparum} exportome and display the results in a visually consistent user friendly web based interface. Once complete, this tool will aid in the design of protein constructs used to experimentally determine the interaction network for parasite and host proteins.
 
 \end{abstract}
 
@@ -43,32 +43,33 @@ Here I present work towards a software tool which will automatically apply a ran
 % Add semantic strong (replaces bold)
 \newcommand{\str}
 [1]{\textbf{#1}}
+\openup 1em
 
 \section{Introduction} 
 
 %% TN Introduce Plasmodium falciparum, establish that it lives inside red blood cells
-The apicomplexan parasite \bn{Plasmodium falciparum} is the most virulent causative agent of malaria, and responsible for over 600,000 deaths annually \cite{WorldHealthOrganisation2013}. Along with other members of the \bn{Plasmodium} family, \pf has a complex lifecycle, moving between several different tissues in both mammalian and arthropod hosts. Symptomatic disease in humans occurs when \pf undergoes rounds of asexual reproduction inside human red blood cells (RBCs) \cite{Chen2000}.
+The apicomplexan parasite \bn{Plasmodium falciparum} is the most virulent causative agent of malaria, responsible for over 600,000 deaths annually \cite{WorldHealthOrganisation2013}. Along with other members of the \bn{Plasmodium} family, \pf has a complex lifecycle, moving between several different tissues in both mammalian and arthropod hosts. Symptomatic disease in humans occurs when \pf undergoes rounds of asexual reproduction inside human red blood cells \cite{Chen2000}.
 
 %% TN Introduce RBC intracellular environment, benefits and challenges
-In some respects, the intracellular environment of a red blood cell is an ideal location for parasite proliferation. The cells' lack of an MHC (Major Histocompatibility Complex) system, which would otherwise be used to identify intracellular pathogens to the host immune system, renders parasites immunologically invisible \cite{Kirchgatter2005}, whilst the vascular system allows the parasite to travel throughout the body. The highly specialised nature of RBCs, however, means that the intracellular environment also presents significant challenges to parasite survival.
+In some respects, the intracellular environment of a red blood cell is an ideal location for parasite proliferation. The cells' lack of an MHC (Major Histocompatibility Complex) system, which would otherwise be used to identify intracellular pathogens to the host immune system, renders parasites immunologically invisible \cite{Kirchgatter2005}, whilst the vascular system allows the parasite to travel throughout the body. The highly specialised nature of red blood cells, however, means that the intracellular environment also presents significant challenges to parasite survival.
 
 %% TN Introduce challenges to pf survival
-Mature red blood cells lack protein production and export machinery, and are a nutritionally poor environment, with a proteome dominated by haemoglobin, which typically accounts for around 98\% of the protein content of the cell \cite{DAlessandro2010}. \pf is able to digest RBC proteins, however haemoglobin lacks several amino acids required for protein production. Red blood cells are also  subject to regular 'quality control' in the spleen, where damaged or infected cells are killed and recycled \cite{Elsworth2014}.
+Mature red blood cells lack protein production and export machinery, and are a nutritionally poor environment, with a proteome dominated by haemoglobin, which typically accounts for around 98\% of the protein content of the cell \cite{DAlessandro2010}. \pf is able to digest red blood cell proteins, however haemoglobin lacks several amino acids required for protein production. Red blood cells are also  subject to regular 'quality control' in the spleen, where damaged or infected cells are killed and recycled \cite{Elsworth2014}.
 
 %% TN Introduce exportome
-In order to survive and proliferate inside RBCs, \pf exports a range of proteins which radically transform the red blood cell, collectively termed the \str{exportome}. Many of these proteins are involved in setting up a parasite-derived protein export system, capable of directing exported \pf proteins to sites both inside and outside the RBC. \pf resides inside a parasitophorous vacuole, and exports proteins via structures termed Maurer's Clefts \cite{Marti2013}, which bear some similarity to golgi apparatus \cite{Mundwiler-Pachlatko2013}.
+In order to survive and proliferate inside red blood cells, \pf exports a range of proteins which radically transform the red blood cell, collectively termed the \str{exportome}. Many of these proteins are involved in setting up a parasite-derived protein export system, capable of directing exported \pf proteins to sites both inside and outside the red blood cell. \pf resides inside a parasitophorous vacuole, and exports proteins via structures termed Maurer's Clefts \cite{Marti2013}, which bear some similarity to golgi apparatus \cite{Mundwiler-Pachlatko2013}.
 
 %% TN Split paragraph
-In order to avoid detection in the spleen, many exported proteins are associated with the formation of knobs, specialised structures which form at the RBC membrane and promote cytoadherence to epithelial cells, platelets and other red blood cells \cite{Kraemer2006}. Severe forms of malaria, including cerebral malaria, are believed to be caused by sequestration of infected red blood cells in deep tissues, as well as overinduction of inflammatory cytokines \cite{Chen2000}. Other exported components have been associated with increasing RBC membrane permeability to facilitate nutrient and waste exchange and strengthening the RBC cytoskeleton (Reviewed in \cite{Elsworth2014}). 
+Many exported proteins are associated with the formation of knobs, specialised structures which form at the red blood cell membrane and promote cytoadherence to epithelial cells, platelets and other red blood cells \cite{Kraemer2006} to avoid detection and destruction in the spleen. Severe forms of malaria, including cerebral malaria, are believed to be caused by sequestration of infected red blood cells in deep tissues, as well as overinduction of inflammatory cytokines caused by cell adhesion \cite{Chen2000}. Other exported components have been associated with increasing red blood cell membrane permeability to facilitate nutrient and waste exchange and strengthening the red blood cell cytoskeleton (Reviewed in \cite{Elsworth2014}). 
 
 %% TN Introduce exportome in a genomic context
 To date, at least 10\% of the protein products of the \pf genome have been shown to be exported to the host cell \cite{Boddey2013a}. Within this exportome, there exist 360 distinct proteins once close duplicates are excluded.
 
 %% Why predict the exportome?
-Whilst the \pf genome has been available since 2002 \cite{Gardner2002}, comparatively few genes have been studied in depth, and many remain of unknown function. The discovery of a motif termed the PEXEL (Plasmodium Export Element) shared between many exportome components has made it possible to reliably predict the \pf exportome in the absence of other information \cite{Sargeant2006}.
+Whilst the \pf genome has been available since 2002 \cite{Gardner2002}, comparatively few genes have been studied in depth, and many remain of unknown function. The discovery of a motif termed the PEXEL (Plasmodium Export Element) shared between many exportome components has made it possible to reliably predict some components of the \pf exportome in the absence of other information \cite{Sargeant2006}.
 
 %% The pexel motif, and how this is exported
-The PEXEL motif is pentameric, located near the N-terminal of the protein, and can be generalised as the amino acid sequence \texttt{RxLxE/Q/D} \cite{Goldberg2010}, where \texttt{x} is any non-charged amino acid \cite{Dietz2014} although the non-canonical PEXEL motif \texttt{\str{K}xLxE/Q/D} and relaxed PEXEL motif \texttt{Rx\str{x}LxE/Q/D} are also seen occasionally \cite{Elsworth2014}. It is known that the amino acid sequence cleaved after the leucine residue in the parasite ER \cite{Goldberg2010} although how the PEXEL motif targets the protein for export remains unclear. The \pf protein Plasmepsin V has been shown to cleave a subset of PEXEL-carrying proteins \cite{Boddey2013}.
+The PEXEL motif is pentameric, located near the N-terminal of the protein, and can be generalised as the amino acid sequence \texttt{RxLxE/Q/D} \cite{Goldberg2010}, where \texttt{x} is any non-charged amino acid \cite{Dietz2014} although the non-canonical PEXEL motif \texttt{\str{K}xLxE/Q/D} and relaxed PEXEL motif \texttt{Rx\str{x}LxE/Q/D} are also seen occasionally \cite{Elsworth2014}. It is known that the amino acid sequence is cleaved after the leucine residue in the parasite ER \cite{Goldberg2010} although how the PEXEL motif targets the protein for export remains unclear. A subset of PEXEL-carrying proteins have been shown to be cleaved by the \pf protein Plasmepsin V \cite{Boddey2013}.
 
 % Possible - Where do pexel proteins go next?
 
@@ -78,11 +79,11 @@ Understanding the protein-protein interactions responsible for the transformatio
 
 \subsection{Protein Structure Prediction}
 
-The design of constructs for experimental use is hampered somewhat a lack of structural information about \pf exportome components. To date, only 4 components of the \pf exportome have solved structures in the PDB (own research, \url{https://gist.github.com/tomnewport/a04868602d3482d33921}), and so knowledge based modelling using a tool such as MODELLER \cite{Eswar2007} is not applicable. There exist several tools, however, which are able to predict features and domains of proteins using a variety of approaches.
+The design of constructs for experimental use is hampered by a lack of structural information about \pf exportome components. The considerable evolutionary distance between \pf and eukaryotic model organisms means that around 60\% of genes in the \pf genome have no clear homologues\cite{Wuchty2007, Date2006}. Using the SUPERFAMILY database to search for previously identified structural domains matches fewer than 25\% of the components of the \pf exportome (own research, summarised in Figure 1). To date, only 4 components of the \pf exportome have solved structures in the PDB (own research, \url{https://gist.github.com/tomnewport/a04868602d3482d33921}). Knowledge based modelling using a tool such as MODELLER \cite{Eswar2007} is therefore not applicable. There exist several tools, however, which are able to predict features and domains of proteins using a variety of approaches which are less reliant on the existence of homologous genes in model organisms.
 
 \begin{figure}
 \includegraphics[width=9cm]{figs/scopresults}
-\caption{\str{Superfamily Annotations per sequence} | Histogram showing frequency of superfamily annotations for all currently known components of the \pf exportome. Over 75\% of sequences did not match any domains.}
+\caption{\str{Superfamily annotation frequency for \pf exportome components} | Histogram showing frequency of superfamily annotations for all currently known components of the \pf exportome. Over 75\% of sequences did not match any domains.}
 \end{figure}
 
 \subsubsection*{Secondary Structure and Disorder Prediction}
@@ -115,7 +116,7 @@ This project aims to build software tools to automate bioinformatic analysis of 
 \caption{\str{PlasmoDB Structural information for PF3D7\_1149000} | This includes, amongst others, InterPro domains, secondary structure prediction and export domains. Note that the protein product of PF3D7\_1149000 has been shown to be exported.}
 \end{figure}
 
-The \pf genome and other associated data are already available from several online databases, including the dedicated PlasmoDB (\url{http://plasmodb.org/}) \cite{Aurrecoechea2009} which provides functional genomic data for genes found in several \bn{Plasmodium} species and includes annotations such as gene location, polymorphisms and expression data, as well as some limited structural annotations (Figure 1). No database presently provides a broad range of structural annotations required for construct design, or allows the user to look only at proteins known to be exported to the red blood cell.
+The \pf genome and other associated data are already available from several online databases, including the dedicated PlasmoDB \cite{Aurrecoechea2009} which provides functional genomic data for genes found in several \bn{Plasmodium} species and includes annotations such as gene location, polymorphisms and expression data, as well as some limited structural annotations (e.g. Figure 2). No database presently provides a broad range of structural annotations required for construct design, or allows the user to look only at proteins known to be exported to the red blood cell.
 
 % Flexibility and modularity
 
@@ -128,13 +129,13 @@ Protein structure prediction is a fast evolving field. As existing tools are upd
 \caption{\str{High-level overview of planned software} | Sequence data is submitted to the servers TMHMM, Phyre2, metaPrDOS, COILS and InterPro using a python script running on a local server. The data is then retrieved and processed. Once processed and stored, data may be requested by the client and displayed using client-side scripts for visualisation.}
 \end{figure}
 
-The finished software will consist of three distinct parts. A local client implemented in Python, will request analyses of newly added sequences from remote servers and then parse and store the response, whilst a remote client implemented in JavaScript will load and display protein files to the end user. A simple HTTP server will serve and cache JavaScript files necessary for the remote client and data files generated by the Python client.
+The finished software will consist of three distinct parts. A local client implemented in Python will request analyses of newly added sequences from remote servers and then parse and store the response, whilst a remote client implemented in JavaScript will load and display protein files to the end user. A simple HTTP server will serve and cache JavaScript files necessary for the remote client and data files generated by the Python client.
 
 \subsubsection{Python server}
 
 The local python client, which is responsible for requesting, retrieving and parsing structure predictions, may be provided with a list of gene names which correspond to genes available through PlasmoDB (\url{http://plasmodb.org/}) \cite{Aurrecoechea2009}. These will then be retrieved in FASTA format from PlasmoDB and submitted several servers: TMHMM for transmembrane prediction; Phyre2 for fold recognition and secondary structure predication; metaPrDOS for disorder prediction; COILS for coiled coil prediction and InterPro for feature annotation. Submission to web-based servers will be performed using HTTP requests to CGI (Common Gateway Interface) scripts on respective remote servers using the Python Requests library (\url{http://python-requests.org}). Where possible, the client will be notified by email when results are available, however if this feature is not offered by a particular server the client will make periodic HTTP requests to determine if the job has been completed. Once the job is completed, it may be retrieved using an additional HTTP request.
 
-Parsing of results will be performed primarily using the Pandas dataframe provided by PyData (\url{http://pandas.pydata.org}), assisted by BioPython \cite{Cock2009}, used to open files in biological formats such as PDB and FASTA, and Numpy \cite{VanderWalt2011}, which implements a computationally efficient n-dimensional array for the Python language. Results from many servers will be saved to two files in comma-separated values format, one storing series with a defined value for each amino acid (a prediction of the likelihood of each amino acid forming part of a coiled coil, for example), and one (annotations) storing annotations identifying features stretching across several amino acids (domains identified based on similarity to common motifs in a database, for example).
+Parsing of results will be performed primarily using the Pandas dataframe provided by PyData (\url{http://pandas.pydata.org}), assisted by BioPython \cite{Cock2009}, used to open files in biological formats such as PDB and FASTA, and Numpy \cite{VanderWalt2011}, which implements a computationally efficient n-dimensional array for the Python language. Results from many servers will be saved to two files in comma-separated values (CSV) format, one (\textbf{series}) storing series with a defined value for each amino acid (a prediction of the likelihood of each amino acid forming part of a coiled coil, for example), and one (\textbf{annotations}) storing annotations identifying features stretching across several amino acids (domains identified based on similarity to common motifs in a database, for example).
 
 \begin{table}[h]
 \begin{tabular}{llllll}
@@ -159,7 +160,7 @@ Parsing of results will be performed primarily using the Pandas dataframe provid
 
 Since the public-facing HTTP server only retrieves files (and is not able to trigger any additional server-side processing), any off-the-shelf HTTP server may be used without modification, greatly simplifying the problems of installing, maintaining and securing a publicly accessible server on the web.
 
-Unlike most existing web-based tools for viewing genomic data where visualisations are rendered on the server and transmitted as images, visualisations will be rendered client-side based on raw data. Users will therefore require a recently updated web browser in order to view visualisations of data using the remote client. The client-side approach removes the need for the server to render images, reducing load on the server, and also removes the need to transmit images, reducing the load on the network. Additionally, advanced users are able to tweak visualisations as required simply by changing rules in the CSS (Cascading StyleSheet) files supplied with the remote client.
+Unlike most existing web-based tools for viewing genomic data where visualisations are rendered on the server and transmitted as images, visualisations will be rendered client-side based on raw data. Users will therefore require a recently updated web browser in order to view visualisations of data using the remote client. The client-side approach removes the need for the server to render images, reducing load on the server, and also removes the need to transmit images, reducing load on the network. Additionally, advanced users are able to tweak visualisations as required simply by changing rules in the CSS (Cascading StyleSheet) files supplied with the remote client.
 
 \subsubsection{Remote JavaScript client}
 
@@ -172,21 +173,21 @@ An HTML (HyperText Markup Language) document provided by the server will downloa
 \caption{\str{Tree visualisation of JSON Schema} | Each protein object contains a list of required CSV files and a link to a protein metadata file. Position identifies a spreadsheet column which contains the amino acid position, and sequence identifies a spreadsheet column which contains a single-letter amino acid code for each position. Series are then defined, followed by series groups and finally annotations. Only one object of each type is shown expanded. Visualised using \url{http://www.jsontree.com}.}
 \end{figure}
 
-The \texttt{data\_manager} class will first download a schema from the server in JSON format which will describe where data required for visualisations may be found. This will provide a machine readable description of the contents of the data files and the relationships between them. All proteins will likely share a single schema file, however updates to the schema file can be used to change the way the remote client interprets data files. A visualisation of an example schema file is shown in Figure 3. Several objects appear once per schema, including an array of required csv files, a link to protein metadata (properties of the protein such as its length and gene name), an identifier for the position series which contains the position of each amino acid in the series table, and an identifier for the sequence series, which defines the residue at each position.
+The \texttt{data\_manager} class will first download a schema from the server in JSON format which will describe where data required for visualisations may be found. This will provide a machine readable description of the contents of the data files and the relationships between them. All proteins will likely share a single schema file, however updates to the schema file can be used to change the way the remote client interprets data files. A visualisation of an example schema file is shown in Figure 4. Several objects appear once per schema, including an array of required csv files, a link to protein metadata (properties of the protein such as its length and gene name), an identifier for the position series which contains the position of each amino acid in the series table, and an identifier for the sequence series, which defines the residue at each position.
 
-An unlimited number of three different data types, series, series groups and annotation lists may then be defined.
+An unlimited number of three different data types: \str{series}; \str{series groups} and \str{annotation lists} may then be defined.
 
 \paragraph{The \texttt{Series} class}
 
-The series class is named and contains an identifier locating that series within the required csv files. It will also contain minimum and maximum y-value thresholds to annotate features, and the standard deviation of a gaussian kernel convolution kernel which may be used to smooth the series before annotating features, and a description for features annotated in this manner. In the example shown in Figure 3, the named series "disorder" may be convolved using a gaussian kernel of standard deviation 1, and values higher than 0.5 but lower than 2 (unrealistically high to cause upper bound to be ignored) may be annotated as "Disordered Region".
+The series class is named and will contain an identifier locating that series within the required csv files. It will also contain minimum and maximum y-value thresholds to annotate features, and the standard deviation of a gaussian kernel convolution kernel which may be used to smooth the series before annotating features, and a description for features annotated in this manner. In the example shown in Figure 4, the named series "disorder" may be convolved using a gaussian kernel of standard deviation 1, and values higher than 0.5 but lower than 2 (unrealistically high to cause upper bound to be ignored) may be annotated as "Disordered Region".
 
 \paragraph{The \texttt{Series\_Group} class}
 
-The series group class is named and contains several series objects. The properties of these objects for annotation are shared, and additional properties may be used to indicate that the series taken together should sum to a particular value for all amino acids, or that the series each represent a different point in parameter space for some algorithm.
+The series group class is named and will contain several named series objects. The properties of these objects for the purpose of automatic annotation will be shared, and additional properties may be used to indicate that the series taken together should sum to a particular value for all amino acids, or that the series each represent a different point in parameter space for some algorithm.
 
 \paragraph{The \texttt{Annotation} object}
 
-The annotation object simply contains a list of annotations, with a start, end, source and description. Each protein possesses only one annotation list, which can be populated from multiple files.
+The annotation object will simply contain a list of annotations, with a start, end, source and description. Each protein possesses only one annotation list, which can be populated from multiple files.
 
 \subsubsection{The \texttt{ui\_bindings} class}
 
@@ -194,7 +195,7 @@ The UI Bindings class will consist of a UI Manager, which coordinates initialisi
 
 \paragraph{The UI manager and viewscope}
 
-The UI manager will provide a simple way to populate the user interface with interactive, data-driven elements. Creating a new plot will involve binding a new UI element to the UI manager using the DOM position (in CSS selector format), the data to be plotted, the class used to draw the plot and any additional options. An example of this is shown in Figure 4.
+The UI manager will provide a simple way to populate the user interface with interactive, data-driven elements. Creating a new plot will involve binding a new UI element to the UI manager using the DOM position (in CSS selector format), the data to be plotted, the class used to draw the plot and any additional options. An example of this is shown in Figure 5.
 
 Plots may subscribe to changes in a viewscope object through the UI Manager. For example, a UI element may show disorder in a region of the gene specified by a viewscope object. If the update (redraw) method of the UI element is subscribed to the viewscope object, it will be called each time the user changes the view, redrawing the plot.
 
@@ -212,7 +213,7 @@ ui.bind(
 
 \paragraph{Plotting}
 
-In the sense used here, a plot may be anything which uses a piece of data to alter the user interface. This may be as simple as printing a piece of text or toggling the visibility of some UI element, or as complex as an interactive visualisation of large amounts of data. The only required feature of a plot is that it should exist at a specific fixed point or set of points in the DOM (Document Object Model) specified using a CSS selector, and be able to initialise and update (draw and redraw) itself.
+In the sense used here, a plot may be any method which uses a piece of data to alter the user interface. This may be as simple as printing a piece of text or toggling the visibility of some UI element, or as complex as an interactive visualisation of large amounts of data. The only required feature of a plot is that it should exist at a specific fixed point or set of points in the DOM (Document Object Model) specified using a CSS selector, and be able to initialise and update (draw and redraw) itself.
 
 Several different subclasses of plot will be implemented. Those prefixed with "D3" primarily use the Data Driven Documents JavaScript library to simplify the generation of SVG (Scalable Vector Graphics) plots.
 
@@ -250,7 +251,7 @@ An interactive element which may be used to both change and display region of th
 
 \subsection{Implementation}
 
-Whilst the present implementation is incomplete, significant progress has been made and several parts are now fully functional. The remote JavaScript client is close to completion (Figure 5), and can provide an interactive user interface which can be used to view protein data generated by the local Python client. The local Python client is incomplete, and whilst methods have been written to carry out individual steps, the client is not yet capable of the autonomous capabilities required to carry out protein structure prediction in a high throughput manner.
+Whilst the present implementation is incomplete, significant progress has been made and several parts are now fully functional. The remote JavaScript client is close to completion (see Figure 6), and can provide an interactive user interface which can be used to view protein data generated by the local Python client. The local Python client is incomplete, and whilst methods have been written to carry out individual steps, the client is not yet capable of automatically carrying out protein structure prediction in a high throughput manner. Software engineering challenges have been almost entirely solved in the general case, and it is expected to be trivial to implement remaining specific cases based on these solutions.
 
 \begin{figure}
 \includegraphics[width=12cm]{figs/weball}
@@ -261,11 +262,11 @@ Whilst the present implementation is incomplete, significant progress has been m
 
 \paragraph{Local python client}
 
-The local python client is able to submit sequences to TMHMM, Phyre2, metaPrDOS and COILS but is not able to submit sequences to InterPro (although it is trivial to adapt code for other servers for this purpose).
+The local python client is able to submit sequences to TMHMM, Phyre2, metaPrDOS and COILS but is not able to submit sequences to InterPro.
 
-The local python client is able to check the status of a job submitted to Phyre and metaPrDOS using an IMAP email server, but is not able to check the status of jobs submitted to InterPro, TMHMM or COILS (although this is expected to be trivial to implement).
+The local python client is able to check the status of a job submitted to Phyre and metaPrDOS using an IMAP email server, but is not able to check the status of jobs submitted to InterPro, TMHMM or COILS.
 
-The local python client is able to retrieve jobs submitted to Phyre, metaPrDOS and TMHMM, but is not able to retrieve jobs submitted to COILS or InterPro (although this is expected to be trivial to implement).
+The local python client is able to track the status of jobs submitted to Phyre, metaPrDOS and TMHMM and retrieve the results, but is not able to retrieve jobs submitted to COILS or InterPro.
 
 The local python client is able to parse output from Phyre, metaPrDOS, COILS, TMHMM and InterPro and save the combined output.
 
@@ -275,9 +276,9 @@ The public facing HTTP Server works when implemented using the built in Python S
 
 \paragraph{Remote Client}
 
-With the exception of a few refinements, the remote JavaScript client (as shown in Figure 5) is complete. Protein data can be loaded and interpreted using the schema JSON file and used to generate several interactive plots. New plots may be added to the user interface with a single line of JavaScript, the modularity of the code new types of plots to be added to the UI manager easily.
+With the exception of a few refinements, the remote JavaScript client (as shown in Figure 6) is complete. Protein data can be loaded and interpreted using the schema JSON file and used to generate several interactive plots. New plots may be added to the user interface with a single line of JavaScript, the modularity of the code new types of plots to be added to the UI manager easily.
 
-Some examples of plots are shown in Figure 6 (D3 Single Series), Figure 7 (D3 Series Group), Figure 8 (D3 Secondary Structure) and Figure 9 (D3 Annotation). 
+Some examples of plots are shown in Figure 7 (D3 Single Series), Figure 8 (D3 Series Group), Figure 9 (D3 Secondary Structure) and Figure 10 (D3 Annotation). 
 
 \begin{figure}
 \includegraphics[width=9cm]{figs/seriesplot}
@@ -301,28 +302,28 @@ Some examples of plots are shown in Figure 6 (D3 Single Series), Figure 7 (D3 Se
 
 \section{Discussion}
 
-Once complete, the system designed here will provide an 
+Once complete, it is hoped that the system presented here will effectively present data which will aid in the design of protein constructs which can be used to experimentally test interactions between both protein components of the human red blood cell proteome and exported \pf proteome (exportome). 
 
-% Benefits of flexibility
+Previously, attempts to map interactions between \pf genes (e.g. \cite{LaCount2005}) have produced poor quality data, whilst computational approaches (e.g. \cite{Wuchty2007, Date2006}) have been hampered by a lack of homologous genes in model organisms. By focusing on the exportome, a small subset of the \pf genome which accounts for much of the virulence of malaria in humans, it will be possible to produce higher quality data from an experimental system.
 
-% Alternatives
+The tool presented here will combine the results of several different protein structure prediction tools in one visually consistent interface, which will allow an experienced structural biologist to gain an understanding of the basic architecture of the protein (such as domain boundaries, transmembrane regions and common structural motifs) sufficient to optimise constructs for experimental use. The flexibility inherent in the design of the software will allow new tools to be added and existing tools to be rearranged and reconfigured to meet new requirements and integrate new or improved approaches in the same visually consistent manner.
 
-\section{Limitations and Further Work}
+Whilst detailed structural information is absent from many genetic databases, this tool will provide a database of \pf exportome proteins with structural predictions drawn from a range of sources. Information provided will be similar to the output provided by tools such as InterPro and Phyre2, although optimised both for a specific set of proteins; the \pf exportome, and a specific application; design of experimental protein constructs.
 
-% Personalised annotations
+The system as proposed has several limitations which will provide a focus for future development. For example, it is not yet possible for users to add personal annotations for later reference. The ability to select an area of a gene, add notes and download the amino acid sequence would greatly improve the experience of a user designing protein constructs using this system. This will, however, require considerable increases in the complexity of the public-facing HTTP server.
 
-%300 words
-%------------------------------------------------
+Use of client-side rendering for graphics means that displaying more than 6 plots becomes taxing for a modern computer and so it is necessary to reduce the graphical intensity of plots (by removing animated behaviours, for example). The system does not yet have any means of handling data which does not conform to the two implemented data models; series (with a single defined value at each residue) or annotation (a span with a defined start and end). Notably, there is presently no support for predictions in the form of 3D models such as those generated by Phyre2.
+
+Several protein structure prediction tools specify an upper limit on sequence length, and this limitation (often around 1000 residues) will initially be carried through to the tool proposed here. Splitting a large protein into several overlapping segments could overcome this limitation, however in several cases it is unclear how (or indeed whether) the results of these multiple analyses could be reliably reassembled to produce a single valid output for the protein.
+
+Whilst an increasing number of increasingly powerful protein structure prediction tools are available to researchers, each tool typically uses a distinct visual language, complicating direct comparison and cross referencing using the results of several tools. Additionally, many tools are built to handle a single protein at a time, complicating attempts to batch-process several proteins. The local python client described here will allow a set of methods to be applied to a set of proteins automatically, whilst the remote JavaScript client is able to present the output of these methods in a visually consistent and appealing manner.
+
 \phantomsection
 \section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments} 
 
 I am grateful to John Vakonakis for his insight, enthusiasm and encouragement whilst supervising this project.
 
-\addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
-
-%----------------------------------------------------------------------------------------
-%	REFERENCE LIST
-%----------------------------------------------------------------------------------------
 \phantomsection
 \bibliographystyle{unsrt}
 \bibliography{references}
